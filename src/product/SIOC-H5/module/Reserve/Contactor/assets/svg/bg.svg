@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="750px" height="160px" viewBox="0 0 750 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>椭圆形</title>
+    <defs>
+        <polygon id="path-1" points="0 0 750 0 750 160 0 160"></polygon>
+        <linearGradient x1="59.9062191%" y1="47.1612122%" x2="29.8933654%" y2="94.3333692%" id="linearGradient-3">
+            <stop stop-color="#9CA6F4" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#5D53D9" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="17.5717136%" id="linearGradient-4">
+            <stop stop-color="#5D53D9" stop-opacity="0.1" offset="0%"></stop>
+            <stop stop-color="#9CA6F4" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="现场指挥部-联系人" transform="translate(0.000000, -128.000000)">
+            <g id="椭圆形" transform="translate(0.000000, 128.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="蒙版" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <circle stroke="#9CA6F4" opacity="0.200000003" mask="url(#mask-2)" cx="708.5" cy="-6.5" r="129"></circle>
+                <circle fill="url(#linearGradient-3)" mask="url(#mask-2)" cx="678.5" cy="-16.5" r="129.5"></circle>
+                <circle stroke="#9CA6F4" opacity="0.200000003" mask="url(#mask-2)" cx="67.5" cy="243.5" r="129"></circle>
+                <circle fill="url(#linearGradient-4)" mask="url(#mask-2)" cx="92.5" cy="248.5" r="129.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

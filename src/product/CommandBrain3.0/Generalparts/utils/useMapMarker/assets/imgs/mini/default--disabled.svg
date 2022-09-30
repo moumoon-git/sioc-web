@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="24px" viewBox="0 0 20 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>空4备份</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="落点切图" transform="translate(-129.000000, -287.000000)">
+            <g id="空4备份" transform="translate(129.000000, 287.000000)">
+                <path d="M10,0.5 C12.6233526,0.5 14.9983526,1.56332372 16.7175144,3.28248558 C18.4366763,5.00164744 19.5,7.37664744 19.5,10 C19.5,13.0460551 18.0663431,15.7572032 15.8371563,17.4957464 L15.8371563,17.4957464 L10.0000901,23.2950852 L4.17742239,17.5070936 C1.93990984,15.7690125 0.5,13.0526904 0.5,10 C0.5,7.37664744 1.56332372,5.00164744 3.28248558,3.28248558 C5.00164744,1.56332372 7.37664744,0.5 10,0.5 Z" id="形状结合" stroke="#FFFFFF" fill="#999999" fill-rule="nonzero"></path>
+                <circle id="椭圆形" fill="#FFFFFF" cx="10" cy="10" r="4"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

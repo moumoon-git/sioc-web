@@ -1,0 +1,129 @@
+.flight-record-detail {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  // 摄像头图标
+  &__header__right {
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      width: 14px;
+      height: 14px;
+      background: no-repeat center/100% url(../assets/monitor.svg);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(-110%, -50%);
+    }
+  }
+  // 列表主体
+  & > main {
+    flex: 1;
+    height: calc(100% - 180px);
+    overflow: hidden auto;
+    // 滚动条
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #56E9FF;
+      border-radius: 5px;
+    }
+    &::-webkit-scrollbar-corner {
+      background: transparent;
+    }
+    & > ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      & > li {
+        background: linear-gradient(90deg, rgba(0, 193, 222, .3) 0%, rgba(24, 38, 50, 0) 100%);
+        margin: 0 10px 10px;
+        padding: 9px 7px;
+        color: #FFFFFF;
+        position: relative;
+        &:hover {
+          border-left: 2px solid #56E9FF;
+          padding-left: 5px;
+          background: linear-gradient(90deg, rgba(0, 193, 222, .7) 0%, rgba(24, 38, 50, 0) 100%);
+          & > h5 > .flight-record-detail__list-item__button {
+            display: inline-block;
+          }
+        }
+        & > h5 {
+          margin: 0;
+          padding: 0;
+          font-size: 18px;
+          font-weight: 500;
+          & > .flight-record-detail__record__icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: no-repeat center/100% 100% transparent;
+            vertical-align: middle;
+            margin-right: 6px;
+            position: relative;
+            bottom: 2px;
+            &--dot {
+              background-image: url(../assets/dot.svg);
+            }
+            &--line {
+              background-image: url(../assets/line.svg);
+            }
+            &--area {
+              background-image: url(../assets/area.svg);
+            }
+          }
+          & > span {
+            font-size: 18px;
+          }
+          & > .flight-record-detail__list-item__button {
+            float: right;
+            display: none;
+          }
+        }
+        // 标签栏
+        & > p {
+          margin: 0 0 10px 0;
+          padding: 10px 0 0 0;
+          max-height: 130px;
+          overflow-y: auto;
+          // 隐藏滚动条
+          &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+  & > footer {
+    height: 137px;
+    line-height: 137px;
+    text-align: center;
+    border-top: 1px solid rgba(84, 88, 96, .64);
+  }
+  &__top-operation {
+    text-align: right;
+    & > button {
+      color: #56E9FF;
+      font-size: 16px;
+      font-weight: 400;
+      background: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 0 10px;
+      &:hover {
+        opacity: .7;
+      }
+      &:not(:last-child) {
+        border-right: 1px solid rgba(255, 255, 255, 0.15);
+      }
+    }
+  }
+}

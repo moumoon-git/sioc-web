@@ -1,0 +1,8 @@
+.sv-form.el-form {
+  & > .el-form-item {
+    & > .el-form-item__label {
+      color: #555;
+      margin-right: 5px;
+    }
+  }
+}

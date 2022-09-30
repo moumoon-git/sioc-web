@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="205px" height="3px" viewBox="0 0 205 3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Slice</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="三角形" fill="#56E9FF" fill-rule="nonzero" transform="translate(203.500000, 1.500000) rotate(90.000000) translate(-203.500000, -1.500000) " points="203.5 0 205 3 202 3"></polygon>
+        <rect id="矩形" fill="#56E9FF" fill-rule="nonzero" x="0" y="1" width="200" height="1"></rect>
+    </g>
+</svg>

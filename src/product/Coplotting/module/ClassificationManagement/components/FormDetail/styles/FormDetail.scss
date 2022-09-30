@@ -1,0 +1,25 @@
+.preview {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: no-repeat center/100% 100%;
+}
+.line,
+.other {
+  width: 70px;
+  border-color: currentColor;
+}
+.area {
+  box-sizing: border-box;
+  width: 70px;
+  height: 32px;
+  & > div {
+    height: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+.sv-button.el-button {
+  padding: 0 14px;
+  min-height: unset !important;
+  height: 30px;
+  border-radius: 3px;
+  &.el-button--small {
+    padding: 0 8px;
+    height: 24px;
+    border-radius: 0 !important;
+    &:not(.el-button--primary) {
+      border-color: #C5DEFE;
+      &:active {
+        border-color: currentColor;
+      }
+    }
+    & > span {
+      font-size: 12px !important;
+      color: #0091FF;
+    }
+    &.el-button--primary > span {
+      color: #FFFFFF;
+    }
+  }
+}

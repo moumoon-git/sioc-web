@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="82px" height="79px" viewBox="0 0 82 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>分组 16备份 7</title>
+    <defs>
+        <ellipse id="path-1" cx="40.8510638" cy="65.3617021" rx="40.8510638" ry="13.6170213"></ellipse>
+        <filter x="-6.1%" y="-18.4%" width="112.2%" height="136.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.211764706   0 0 0 0 0.976470588   0 0 0 0 0.746732955  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="地图导航H5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="路径分享" transform="translate(-234.000000, -445.000000)">
+            <g id="分组-16备份-7" transform="translate(234.000000, 445.000000)">
+                <g id="椭圆形备份" fill="black" fill-opacity="1">
+                    <use filter="url(#filter-2)" xlink:href="#path-1"></use>
+                </g>
+                <ellipse id="椭圆形备份-2" fill="#007E5C" opacity="0.5" cx="40.8510638" cy="65.3617021" rx="20.4255319" ry="6.80851064"></ellipse>
+                <path d="M41.0689362,0.85 C48.4148521,0.85 55.0653308,3.82752075 59.8793306,8.64152048 C64.6933303,13.4555202 67.6708511,20.1059989 67.6708511,27.4519149 C67.6708511,34.6260771 64.8309566,41.1369583 60.2139658,45.9216519 L60.2139658,45.9216519 L41.0688487,65.0726079 L22.33132,46.3348183 L21.9189295,45.9222718 C17.3069419,41.137081 14.4670213,34.626147 14.4670213,27.4519149 C14.4670213,20.1059989 17.444542,13.4555202 22.2585418,8.64152048 C27.0725415,3.82752075 33.7230202,0.85 41.0689362,0.85 Z" id="形状结合备份" stroke="#FFFFFF" stroke-width="1.7" fill="#0BD295" fill-rule="nonzero"></path>
+                <text id="起" font-family="PingFangSC-Medium, PingFang SC" font-size="27.2340426" font-weight="400" fill="#FFFFFF">
+                    <tspan x="27.2340426" y="39.212766">起</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

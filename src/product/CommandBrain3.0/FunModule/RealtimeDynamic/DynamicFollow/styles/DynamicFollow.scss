@@ -1,0 +1,98 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  // 1. 类型单选器
+  .header {
+    flex-shrink: 0;
+    min-height: 49px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  // 2. 列表
+  .main {
+    flex: 1;
+    overflow-y: auto;
+    // 滚动条
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #56E9FF;
+      border-radius: 5px;
+    }
+    &::-webkit-scrollbar-corner {
+      background: transparent;
+    }
+    // 2-1. 类型标题
+    .title {
+      display: flex;
+      height: 100%;
+      align-items: center;
+    }
+    // 2-2. 具体列表
+    .list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      color: #FFF;
+      & > li {
+        display: flex;
+        align-items: center;
+        border-left: 2px solid transparent;
+        padding: 3px 0;
+        &:hover {
+          background: linear-gradient(90deg, rgba(0, 193, 222, .7) 0%, transparent 100%);
+          border-left: 2px solid #56E9FF;
+          .textBtn { display: inline-block; }
+        }
+        // 2-2-1. 图标
+        .icon {
+          width: 26px;
+          height: 29px;
+          background: no-repeat left center;
+          margin: 0 4px 0 10px;
+        }
+        // 各种图标
+        $icon-list: contactor, contactor-device-2, contactor-device-3, task, team, team-device-2, team-device-3, expert, riskDanger, article, articleStorehouse, area, protect, equipment, equipmentGroup, device-0, device-1, device-2, device-3;
+        @each $icon in $icon-list {
+          .icon--#{$icon}-offline {
+            background-image: url(../../imgs/#{$icon}-offline.svg);
+          }
+          .icon--#{$icon}-online {
+            background-image: url(../../imgs/#{$icon}-online.svg);
+          }
+        }
+        // 2-2-2. 名称和地址
+        .listContent {
+          flex: 1;
+          & > p {
+            margin: 0;
+            padding: 0;
+            &:last-child {
+              color: #A4ADB5;
+            }
+          }
+        }
+        // 2-2-3. 取消关注按钮
+        .textBtn {
+          display: none;
+        }
+      }
+    }
+    .textBtn {
+      border: none;
+      outline: none;
+      background: none;
+      cursor: pointer;
+      color: #56E9FF;
+      &:hover {
+        filter: brightness(110%);
+      }
+      &:active {
+        filter: brightness(90%);
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+:root {
+  --text-white: #fff;
+}
+ul,
+ol {
+  list-style: none outside none;
+  padding-inline-start: 0;
+}

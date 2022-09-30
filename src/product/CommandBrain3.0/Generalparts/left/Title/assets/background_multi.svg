@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="16px" viewBox="0 0 360 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>background_multi</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="background_multi" fill-rule="nonzero">
+            <rect id="矩形" fill="#56E9FF" opacity="0.101948583" x="10" y="0" width="9" height="9"></rect>
+            <rect id="矩形" fill="#56E9FF" x="12" y="4" width="5" height="1"></rect>
+            <rect id="矩形" fill="#56E9FF" transform="translate(14.500000, 4.500000) rotate(90.000000) translate(-14.500000, -4.500000) " x="12" y="4" width="5" height="1"></rect>
+            <g id="Rectangle-8" opacity="0.296170967" transform="translate(2.000000, 6.000000)">
+                <g id="path-16-link" fill="#000000">
+                    <polygon id="path-16" points="0 0 4 2.14285714 4 10 0 7.8571429"></polygon>
+                </g>
+                <g id="path-16-link" fill="#F7B500">
+                    <polygon id="path-16" points="0 0 4 2.14285714 4 10 0 7.8571429"></polygon>
+                </g>
+            </g>
+            <g id="Rectangle-8" transform="translate(0.000000, 3.000000)">
+                <g id="path-18-link" fill="#000000">
+                    <polygon id="path-18" points="0 0 4 2.14285714 4 10 0 7.8571429"></polygon>
+                </g>
+                <g id="path-18-link" fill="#F7B500">
+                    <polygon id="path-18" points="0 0 4 2.14285714 4 10 0 7.8571429"></polygon>
+                </g>
+            </g>
+            <polygon id="矩形" fill="#FFFFFF" opacity="0.149999991" points="23 15 300 15 300 16 23 16"></polygon>
+            <g id="编组-10" transform="translate(302.000000, 15.000000)">
+                <rect id="矩形" fill="#56E9FF" x="0" y="0" width="8" height="1"></rect>
+                <rect id="矩形" fill="#56E9FF" x="10" y="0" width="8" height="1"></rect>
+                <rect id="矩形" fill="#56E9FF" x="20" y="0" width="8" height="1"></rect>
+                <rect id="矩形" fill="#F7B500" x="30" y="0" width="8" height="1"></rect>
+                <rect id="矩形" fill="#F7B500" x="40" y="0" width="8" height="1"></rect>
+                <rect id="矩形" fill="#56E9FF" x="50" y="0" width="8" height="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

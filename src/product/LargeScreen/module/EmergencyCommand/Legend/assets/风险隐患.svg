@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>风险隐患</title>
+    <defs>
+        <ellipse id="path-1" cx="20" cy="33" rx="20" ry="7"></ellipse>
+        <filter x="-10.0%" y="-28.6%" width="120.0%" height="157.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="4" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.568627451   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="落点切图" transform="translate(-1248.000000, -81.000000)">
+            <g id="风险隐患" transform="translate(1248.000000, 81.000000)">
+                <g id="椭圆形" fill="black" fill-opacity="1">
+                    <use filter="url(#filter-2)" xlink:href="#path-1"></use>
+                </g>
+                <ellipse id="椭圆形" fill="#00519B" opacity="0.703760901" filter="url(#filter-3)" cx="20" cy="33" rx="10" ry="3.5"></ellipse>
+                <path d="M20,0.5 C23.7279221,0.5 27.1029221,2.01103897 29.5459415,4.45405845 C31.988961,6.89707794 33.5,10.2720779 33.5,14 C33.5,18.3257105 31.4654458,22.1761668 28.3012384,24.6468968 L28.3012384,24.6468968 L20.000092,32.895055 L11.7196612,24.6631831 C8.54351615,22.1931056 6.5,18.3352269 6.5,14 C6.5,10.2720779 8.01103897,6.89707794 10.4540585,4.45405845 C12.8970779,2.01103897 16.2720779,0.5 20,0.5 Z" id="形状结合" stroke="#FFFFFF" fill="#0091FF" fill-rule="nonzero"></path>
+                <path d="M28.8446374,19.2626489 L22.1332923,6.37895799 C21.2282563,4.81224004 18.9656661,4.81224004 18.0606301,6.37895799 L11.3512962,19.2626489 C10.7318493,20.3346138 11.506158,21.6760783 12.7450517,21.6760783 L27.452893,21.6760783 C28.6897756,21.6760783 29.4640843,20.3346138 28.8446374,19.2626489 Z M20.1200899,19.1822012 C19.4885759,19.1942684 18.9757221,18.6874482 18.9877893,18.0659901 C18.9978452,17.4807335 19.4845535,17.00207 20.0778549,16.9900028 C20.7093689,16.9779357 21.2222227,17.4847558 21.2101555,18.1062139 C21.2000996,18.6934818 20.7133913,19.1721453 20.1200899,19.1822012 Z M20.6711563,16.1754704 L19.5227661,16.1754704 C19.3256694,16.1754704 19.1587405,16.0326758 19.1265614,15.8396014 L18.3985102,12.0525284 C18.3442081,11.722693 18.4930362,11.3868241 18.7846589,11.2219064 C18.901308,11.1555371 19.038069,11.1173245 19.1808636,11.1173245 L21.0110476,11.1173245 C21.1558534,11.1173245 21.2906032,11.1555371 21.4072523,11.2219064 C21.6968638,11.3868241 21.8477032,11.722693 21.793401,12.0525284 L21.0653498,15.8396014 C21.0371931,16.0326758 20.868253,16.1754704 20.6711563,16.1754704 Z" id="形状" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="47px" viewBox="0 0 48 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>分组 16备份 8</title>
+    <defs>
+        <ellipse id="path-1" cx="24" cy="38.4" rx="24" ry="8"></ellipse>
+        <filter x="-6.2%" y="-18.8%" width="112.5%" height="137.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="3" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.976470588   0 0 0 0 0.305882353   0 0 0 0 0.211764706  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="步行-骑行-驾车" transform="translate(-1185.000000, -723.000000)">
+            <g id="分组-16备份-8" transform="translate(1185.000000, 723.000000)">
+                <g id="椭圆形备份-3" fill="black" fill-opacity="1">
+                    <use filter="url(#filter-2)" xlink:href="#path-1"></use>
+                </g>
+                <ellipse id="椭圆形备份-4" fill="#7E0F00" opacity="0.5" cx="24" cy="38.4" rx="12" ry="4"></ellipse>
+                <path d="M24.128,0.4 C28.4711673,0.4 32.4031673,2.16041636 35.2493755,5.00662455 C38.0955836,7.85283273 39.856,11.7848327 39.856,16.128 C39.856,20.3716622 38.1753338,24.2227893 35.4481386,27.0471069 L35.4481386,27.0471069 L24.1279592,38.3707063 L12.8089034,27.0514956 C10.0806925,24.2229009 8.4,20.3717216 8.4,16.128 C8.4,11.7848327 10.1604164,7.85283273 13.0066245,5.00662455 C15.8528327,2.16041636 19.7848327,0.4 24.128,0.4 Z" id="形状结合" stroke="#FFFFFF" stroke-width="0.8" fill="#F66E6E" fill-rule="nonzero"></path>
+                <text id="终" font-family="PingFangSC-Medium, PingFang SC" font-size="16" font-weight="400" fill="#FFFFFF">
+                    <tspan x="16" y="23">终</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

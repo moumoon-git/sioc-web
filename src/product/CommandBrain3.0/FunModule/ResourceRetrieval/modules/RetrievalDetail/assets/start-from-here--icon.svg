@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>从这出发</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="筛地点-选中地点之后" transform="translate(-1869.000000, -980.000000)">
+            <g id="编组-16" transform="translate(1742.000000, 937.000000)">
+                <g id="编组-18" transform="translate(126.999773, 43.000000)">
+                    <circle id="椭圆形" fill="#FFFFFF" cx="3" cy="13" r="3"></circle>
+                    <polyline id="路径-2" stroke="#FFFFFF" points="3 9.5 3 3.23155026 14.3416357 3.23155026"></polyline>
+                    <polygon id="三角形" fill="#FFFFFF" transform="translate(13.000000, 3.000000) rotate(-270.000000) translate(-13.000000, -3.000000) " points="13 0 16 6 10 6"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

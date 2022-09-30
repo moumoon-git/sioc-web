@@ -1,0 +1,327 @@
+.structure__section {
+    width: 100%;
+    display: flex;
+    position: relative;
+    &__left {
+      width: 360px;
+      height: 740px;
+      overflow: hidden;
+      &__top {
+        height: 79px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        &__item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          cursor: pointer;
+          &:hover{
+            .structure__section__left__top__icon1{background: url(../assets/tab1Active.svg) no-repeat;}
+            .structure__section__left__top__icon2{background: url(../assets/tab2Active.svg) no-repeat;}
+            .structure__section__left__top__icon3{background: url(../assets/tab3Active.svg) no-repeat;}
+            .structure__section__left__top__icon4{background: url(../assets/tab4Active.svg) no-repeat center/100% 100%;}
+            color: rgba(86, 233, 255, 1);
+            transition: transform .3s;
+            transform:scale(0.95);
+          }
+          .structure__section__left__top__icon1 {
+            background: url(../assets/tab1.svg) no-repeat;
+            width: 30px;
+            height: 23px;
+          }
+          .structure__section__left__top__icon2 {
+            background: url(../assets/tab2.svg) no-repeat;
+            width: 30px;
+            height: 23px;
+          }
+          .structure__section__left__top__icon3 {
+            background: url(../assets/tab3.svg) no-repeat;
+            width: 30px;
+            height: 23px;
+          }
+          .structure__section__left__top__icon4 {
+            background: url(../assets/tab4.svg) no-repeat center/100% 100%;
+            width: 30px;
+            height: 23px;
+          }
+           &--active{
+            color: rgba(86, 233, 255, 1);
+            .structure__section__left__top__icon1{background: url(../assets/tab1Active.svg) no-repeat;}
+            .structure__section__left__top__icon2{background: url(../assets/tab2Active.svg) no-repeat;}
+            .structure__section__left__top__icon3{background: url(../assets/tab3Active.svg) no-repeat;}
+            .structure__section__left__top__icon4{background: url(../assets/tab4Active.svg) no-repeat center/100% 100%;}
+          }
+          .structure__section__left__top__title {
+            margin-top: 4px;
+          }
+        }
+      }
+      &__bottom {
+        height: 660px;
+        overflow: auto;
+        overflow-x: hidden;
+        color: #fff;
+        // 滚动条
+            &::-webkit-scrollbar {
+                width: 5px;
+                height: 5px;
+                background: transparent;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #56e9ff;
+                border-radius: 5px;
+            }
+            &::-webkit-scrollbar-corner {
+                background: transparent;
+            }
+        &__contactSection{
+            .structure__contactSection__search{
+                width: 322px;
+                margin: 0 auto;
+                margin-top: 12px;
+            }
+            .structure__contactSection__recent{
+                &__title{
+                    width: 96%;
+                    height: 32px;
+                    display: flex;
+                    align-items: center;
+                    margin: 0 auto;
+                    cursor: pointer;
+                    &--icon{
+                        width: 14px;
+                        height: 14px;
+                        background: url(../assets/recent.svg) no-repeat;
+                    }
+                    &--name{
+                        font-size: 14px;
+                        margin-left: 4px;
+
+                    }
+                    &--expand--icon{
+                        width: 16px;
+                        height: 16px;
+                        transform: rotate(90deg);
+                        margin-left: 20px;
+                        background: url(../assets/right.svg) no-repeat;
+                        &--active {
+                            transform: rotate(270deg);
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+                &__content{
+                    width: 86%;
+                    margin: 0 auto;
+                    &:empty::before{
+                        content:'暂无最近联系人';
+                        color: rgba(255, 255, 255, 0.8);
+                        font-size: 12px;
+                    }
+                    &__item{
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                }
+            }
+            .structure__contactSection__use{
+                &__title{
+                    width: 96%;
+                    height: 32px;
+                    display: flex;
+                    align-items: center;
+                    margin: 0 auto;
+                    cursor: pointer;
+                    &--icon{
+                        width: 14px;
+                        height: 14px;
+                        background: url(../assets/use.svg) no-repeat;
+                    }
+                    &--name{
+                        font-size: 14px;
+                        margin-left: 4px;
+                    }
+                    &--expand--icon{
+                        width: 16px;
+                        height: 16px;
+                        transform: rotate(90deg);
+                        margin-left: 20px;
+                        background: url(../assets/right.svg) no-repeat;
+                        &--active {
+                            transform: rotate(270deg);
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+                &__content{
+                    width: 86%;
+                    margin: 0 auto;
+                    &:empty::before{
+                        content:'暂无常用联系人';
+                        color: rgba(255, 255, 255, 0.8);
+                        font-size: 12px;
+                    }
+                    &__item{
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                }
+            }
+            .structure__contactSection__tree{
+                margin-top: 10px;
+            }
+            .structure__contactSection__searchContent{
+                &__tree{
+                    display: flex;
+                    flex-direction: column;
+                    &__title{
+                        font-size: 16px;
+                        color: #56e9ff;
+                        font-weight: 500;
+                        height: 16px;
+                        line-height: 16px;
+                        padding-left: 10px;
+                        border-left: 6px solid rgba(86, 233, 255, 1);
+                        width: 91%;
+                        margin: 0 auto;
+                        margin-top: 13px;
+                        margin-bottom: 16px;
+                    }
+                    &__tree{
+                        &:empty::before{
+                            content: "暂无数据";
+                            min-height: 100px;
+                            display: block;
+                            text-align: center;
+                            line-height: 100px;
+                        }
+                    }
+
+                }
+                &__list{
+                    display: flex;
+                    flex-direction: column;
+                    &__title{
+                        font-size: 16px;
+                        color: #56e9ff;
+                        font-weight: 500;
+                        height: 16px;
+                        line-height: 16px;
+                        padding-left: 10px;
+                        border-left: 6px solid rgba(86, 233, 255, 1);
+                        width: 91%;
+                        margin: 0 auto;
+                        margin-top: 13px;
+                        margin-bottom: 16px;
+                    }
+                    &__list{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        &:empty::before{
+                            content: "暂无数据";
+                            min-height: 100px;
+                            display: block;
+                            text-align: center;
+                            line-height: 100px;
+                        }
+                    }
+                }
+            }
+        }
+        &__specialSection{
+            .structure__specialSection__search{
+                width: 322px;
+                margin: 0 auto;
+                margin-top: 12px;
+            }
+            .structure__specialSection__leader{
+                display: flex;
+                height: 32px;
+                align-items: center;
+                margin-top: 12px;
+                cursor: pointer;
+                border-left: 2px solid rgba(86, 233, 255, 0);
+                &__icon{
+                    width: 17px;
+                    height: 14px;
+                    background: url(../assets/folderImg.svg)no-repeat;
+                    margin-left: 20px;
+                }
+                &__name{
+                    margin-left: 5px;
+                }
+                &:hover{
+                    background: linear-gradient(90deg, rgba(0, 193, 222, 0.7) 0%, rgba(24, 38, 50, 0) 100%);
+                    border-left: 2px solid rgba(86, 233, 255, 1);
+                    color: rgba(86, 233, 255, 1);
+                }
+            }
+            .structure__specialSection__leader--active{
+                    background: linear-gradient(90deg, rgba(0, 193, 222, 0.7) 0%, rgba(24, 38, 50, 0) 100%);
+                    border-left: 2px solid rgba(86, 233, 255, 1);
+                    color: rgba(86, 233, 255, 1);
+            }
+            .structure__specialSection__tree{
+                margin-top: 10px;
+            }
+
+        }
+        &__sceneSection{
+            .structure__sceneSection__search{
+                width: 322px;
+                margin: 0 auto;
+                margin-top: 12px;
+            }
+            .structure__sceneSection__leader{
+                display: flex;
+                height: 32px;
+                align-items: center;
+                margin-top: 12px;
+                cursor: pointer;
+                border-left: 2px solid rgba(86, 233, 255, 0);
+                &__icon{
+                    width: 17px;
+                    height: 14px;
+                    background: url(../assets/folderImg.svg)no-repeat;
+                    margin-left: 20px;
+                }
+                &__name{
+                    margin-left: 5px;
+                }
+                &:hover{
+                    background: linear-gradient(90deg, rgba(0, 193, 222, 0.7) 0%, rgba(24, 38, 50, 0) 100%);
+                    border-left: 2px solid rgba(86, 233, 255, 1);
+                    color: rgba(86, 233, 255, 1);
+                }
+            }
+            .structure__sceneSection__leader--active{
+                background: linear-gradient(90deg, rgba(0, 193, 222, 0.7) 0%, rgba(24, 38, 50, 0) 100%);
+                border-left: 2px solid rgba(86, 233, 255, 1);
+                color: rgba(86, 233, 255, 1);
+        }
+            .structure__sceneSection__tree{
+                margin-top: 10px;
+            }
+        }
+      }
+    }
+    &__right {
+      width: 793px;
+      height: 740px;
+      overflow: hidden;
+      border-left: 1px solid rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+.structure__sceneSection__search__cascader {
+    width: 100%;
+    margin-bottom: 5px;
+}

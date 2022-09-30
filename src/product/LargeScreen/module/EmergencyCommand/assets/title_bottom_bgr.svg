@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="630px" height="2px" viewBox="0 0 630 2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>矩形备份 7</title>
+    <defs>
+        <linearGradient x1="-2.67766357%" y1="0%" x2="100%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#00F0F3" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#00F0F3" offset="51.3621853%"></stop>
+            <stop stop-color="#00F0F3" stop-opacity="0.0251738008" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应急指挥" transform="translate(-35.000000, -581.000000)" fill="url(#linearGradient-1)">
+            <g id="风险隐患分析" transform="translate(35.000000, 38.000000)">
+                <g id="编组-39" transform="translate(0.000000, 505.000000)">
+                    <polygon id="矩形备份-7" transform="translate(315.000000, 39.000000) rotate(-180.000000) translate(-315.000000, -39.000000) " points="-1.21585207e-12 38 630 38 630 40 -1.21585207e-12 40"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,141 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  user-select: none;
+
+  // 起始、终止时间
+  .time {
+    color: #FFF;
+    flex: 0;
+
+    &:first-child {
+      margin-left: 10px;
+      margin-right: 20px;
+    }
+
+    &:last-child {
+      margin-left: 20px;
+      margin-right: 10px;
+    }
+  }
+}
+
+// 进度条
+.progress {
+  flex: 1;
+  height: 5px;
+  border-radius: 3px;
+  background: #FFF;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    height: 7px;
+  }
+
+  // 气泡
+  .popup {
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: default;
+
+    // 底部三角形
+    &::after {
+      content: '';
+      display: block;
+      background: #000;
+      width: 8px;
+      height: 8px;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+      transform: translateX(-50%) rotate(45deg);
+    }
+  }
+
+  // 滑块
+  .slider {
+    background: #FFF;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+    border: 3px solid #00C1DE;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 2;
+    
+    &:hover {
+      box-shadow: 0 0 5px #00C1DE;
+    }
+  }
+
+  // 悬浮预览气泡
+  .hoverPopup {
+    width: 0px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+    &::after {
+      content: '';
+      display: block;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid #00C1DE;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      position: absolute;
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .fragWrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  // 离线片段
+  .offlineFrag {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    background: #666666;
+    z-index: 0;
+  }
+
+  // 关键点
+  .keyPoint {
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+}

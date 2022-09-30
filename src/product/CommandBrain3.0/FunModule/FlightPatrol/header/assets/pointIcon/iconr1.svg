@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="50px" viewBox="0 0 44 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 4</title>
+    <defs>
+        <ellipse id="path-1" cx="22" cy="42.3333333" rx="22" ry="7.33333333"></ellipse>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-6.8%" y="-20.5%" width="113.6%" height="140.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
+            <feGaussianBlur stdDeviation="2" in="shadowSpreadInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.632133152   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="飞巡" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="检索" transform="translate(-631.000000, -792.000000)">
+            <g id="编组-3" transform="translate(631.000000, 626.000000)">
+                <g id="编组-4" transform="translate(0.000000, 166.000000)">
+                    <g id="椭圆形" opacity="0.800000012" filter="url(#filter-2)" fill="black" fill-opacity="1">
+                        <use filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    </g>
+                    <ellipse id="椭圆形" fill="#531010" opacity="0.703760901" filter="url(#filter-4)" cx="22" cy="42" rx="12" ry="4"></ellipse>
+                    <path d="M22,42 C32.6666667,30.557704 38,21.8910373 38,16 C38,7.163444 30.836556,0 22,0 C13.163444,0 6,7.163444 6,16 C6,21.8910373 11.3333333,30.557704 22,42 Z" id="椭圆形" fill="#FF3F3F"></path>
+                    <text id="1" font-family="DIN-Medium, DIN" font-size="24" font-weight="400" fill="#FFFFFF">
+                        <tspan x="15.4" y="25">1</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>形状</title>
+    <g id="PC端" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="模板管理" transform="translate(-315.000000, -222.000000)" fill="#0091FF" fill-rule="nonzero">
+            <g id="win-copy-2备份" transform="translate(30.000000, 30.000000)">
+                <g id="编组-3备份" transform="translate(259.000000, 169.000000)">
+                    <path d="M33.6999972,27.8999897 L32.2999841,27.8999897 L32.2999841,26.4999953 L33.6999972,26.4999953 L33.6999972,27.8999897 Z M33.6999972,33.4999859 L32.2999841,33.4999859 L32.2999841,29.2999841 L33.6999972,29.2999841 L33.6999972,33.4999859 Z M33,23 C29.1500014,23 26,26.1500014 26,30 C26,33.8499799 29.1500014,36.9999813 33,36.9999813 C36.8499986,36.9999813 40,33.8499799 40,30 C40,26.1500014 36.8499986,23 33,23 Z" id="形状"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="85px" height="18px" viewBox="0 0 85 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>title备份 2</title>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#36DCFF" offset="0%"></stop>
+            <stop stop-color="#366AFF" offset="24.8620655%"></stop>
+            <stop stop-color="#4BE2FF" offset="49.9785014%"></stop>
+            <stop stop-color="#366AFF" offset="73.5898699%"></stop>
+            <stop stop-color="#36DCFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M3312.83034,0.63 C3322.02009,0.63 3330.83346,4.28061452 3337.33159,10.77875 L3419.86832,93.3154755 C3425.18497,98.6321319 3432.39591,101.618998 3439.91479,101.618998 L3653.43988,101.618998 C3658.57093,101.618998 3663.60579,100.226455 3668.00761,97.5898509 L3678.30233,91.4235118 C3683.68233,88.2009952 3689.83604,86.4989983 3696.10732,86.4989983 L3833.37268,86.4989983 C3839.44166,86.4989983 3845.40054,88.09296 3850.65464,91.1164081 L3851.17767,91.4235118 L3861.47239,97.5898509 C3865.717,100.132291 3870.55024,101.517944 3875.49075,101.613676 L3876.04012,101.618998 L4076.96521,101.618998 C4084.32064,101.618998 4091.38136,98.7605841 4096.66228,93.6589041 L4097.01168,93.3154755 L4179.54841,10.77875 C4185.92394,4.40322085 4194.52815,0.768772752 4203.5299,0.633893446 L4204.04966,0.63 L7530.56,0.63 L7530.56,0.690505395 L7541.9,18.3305054 L7521.65964,18.3305054 L7514.33027,6.93 L4204.04966,6.93 C4196.69423,6.93 4189.6335,9.78841423 4184.35259,14.8900942 L4184.00318,15.2335228 L4101.46646,97.7702483 C4095.09093,104.145777 4086.48671,107.780226 4077.48497,107.915105 L4076.96521,107.918998 L3876.04012,107.918998 C3869.97113,107.918998 3864.01225,106.325037 3858.75816,103.301589 L3858.23512,102.994485 L3847.9404,96.8281457 C3843.69579,94.2857057 3838.86255,92.9000525 3833.92204,92.8043201 L3833.37268,92.7989983 L3696.10732,92.7989983 C3690.97627,92.7989983 3685.94142,94.1915412 3681.5396,96.8281457 L3671.24488,102.994485 C3665.86488,106.217001 3659.71117,107.918998 3653.43988,107.918998 L3439.91479,107.918998 C3430.72504,107.918998 3421.91168,104.268384 3415.41354,97.7702483 L3332.87682,15.2335228 C3327.56016,9.91686642 3320.34923,6.93 3312.83034,6.93 L28.1186382,6.929 L20.79,18.3305054 L0.549638155,18.3305054 L11.8366382,0.772 L11.8372669,0.63 L3312.83034,0.63 Z" id="path-2"></path>
+        <filter x="-0.1%" y="-8.4%" width="100.2%" height="116.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.214528093   0 0 0 0 0.332722405   0 0 0 0 1  0 0 0 0.747877038 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-0.1%" y="-6.5%" width="100.2%" height="113.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.779474432   0 0 0 0 0.999812733   0 0 0 0 1  0 0 0 0.304998868 0" type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner2"></feGaussianBlur>
+            <feOffset dx="0" dy="-1" in="shadowBlurInner2" result="shadowOffsetInner2"></feOffset>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.198869452   0 0 0 0 0.0371585406   0 0 0 0 0.542012117  0 0 0 0.5 0" type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-6" points="27.98 35.23 45.62 35.23 57.1133994 52.87 39.9926525 52.87"></polygon>
+        <filter x="-77.2%" y="-127.6%" width="254.5%" height="355.1%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.262531461   0 0 0 0 0.966039541   0 0 0 0 0.863015345  0 0 0 0.680763134 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-8" points="1.98951966e-13 35.23 17.64 35.23 29.1333994 52.87 12.0126525 52.87"></polygon>
+        <filter x="-77.2%" y="-127.6%" width="254.5%" height="355.1%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.262531461   0 0 0 0 0.966039541   0 0 0 0 0.863015345  0 0 0 0.680763134 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应急管理" transform="translate(-10.000000, 0.000000)">
+            <g id="编组-46" transform="translate(10.000000, -35.000000)">
+                <g id="分组-3" transform="translate(56.860000, 34.020000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="合并形状">
+                        <!-- <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use> -->
+                        <!-- <use fill-opacity="0.540000021" fill="#020508" fill-rule="evenodd" xlink:href="#path-2"></use> -->
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <!-- <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-2"></use> -->
+                    </g>
+                </g>
+                <g id="矩形-copy-3" opacity="0.75" transform="translate(42.546700, 44.050000) scale(-1, 1) translate(-42.546700, -44.050000) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                    <use fill="#37DBFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                </g>
+                <g id="矩形-copy-3备份" opacity="0.5" transform="translate(14.566700, 44.050000) scale(-1, 1) translate(-14.566700, -44.050000) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                    <use fill="#37DBFF" fill-rule="evenodd" xlink:href="#path-8"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

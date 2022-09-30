@@ -1,0 +1,210 @@
+@import '../assets/css/common'; /*引入公共样式*/
+
+// 图片地址：
+$img_running: url('../assets/images/taskStatuses/handling.png'); // 图片-执行中
+$img_finish: url('../assets/images/taskStatuses/finished.png'); // 图片-已完成
+$img_cancel: url('../assets/images/taskStatuses/cancel.png'); // 图片-已取消
+$img_edit: url('../assets/images/icons/edit.png'); // 图片-编辑
+$img_transform: url('../assets/images/icons/transform.png'); // 图片-转发
+$img_phone: url('../assets/images/icons/phone.png'); // 图片-手机
+
+// 图片-手机
+.icon_image {
+  background-image: $img_phone;
+  width: 0.24rem;
+  height: 0.34rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+// 图片-修订
+.icon-edit {
+  background-image: $img_edit;
+  width: 0.3rem;
+  height: 0.3rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+// 图片-转发
+.icon-transform {
+  background-image: $img_transform;
+  width: 0.3rem;
+  height: 0.3rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+// 卡片内容样式：
+.infomation-card_container {
+  padding: 0 0.22rem 0.2rem 0.22rem;
+  background: #ffffff;
+  border-radius: 0.05rem;
+  margin-bottom: 0.2rem;
+  position: relative;
+}
+
+// 卡片标题栏样式：
+.infomation-card_header {
+  border-bottom: 0.01rem solid $color_1;
+  padding: 0.2rem 0.18rem;
+  font-size: $font_size_1;
+  height: 0.9rem;
+  box-sizing: border-box;
+  line-height: 0.5rem;
+}
+
+// 状态样式：执行中
+.infomation-card_status-handling {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-image: $img_running;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
+  z-index: 1;
+}
+// 状态样式：已完成
+.infomation-card_status-finished {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-image: $img_finish;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
+  z-index: 1;
+}
+
+// 状态样式：已取消
+.infomation-card_status-cancel {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-image: $img_cancel;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
+  z-index: 1;
+}
+
+
+// 剩余时间样式：
+.infomation-card_header_count-down {
+  color: $warning_color;
+  font-size: $font_size_1;
+  line-height: 0.5rem;
+  height: 100%;
+
+  & > span {
+    color: $warning_color;
+  }
+}
+
+
+// 详情信息样式：
+.infomation-card-style_1 {
+  height: calc(100vh - 3rem);
+}
+.infomation-card-style_2 {
+  height: calc(100vh - 2.1rem);
+}
+.infomation-card {
+  padding: 0.2rem;
+  background: #F5F5F5;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.task-details-style_1 {
+  // padding: 1.88rem 0 1.12rem 0;
+  // height: calc(100vh - 3rem);
+  padding: 0 0 1.12rem 0;
+  height: calc(100vh - 1.12rem);
+}
+.task-details-style_2 {
+  // padding: 1.88rem 0 0 0;
+  // height: calc(100vh - 1.88rem);
+  padding: 0;
+  height: 100vh;
+}
+.task-details-information-container {
+  // padding: 1.88rem 0 1.12rem 0;
+  @extend .flex_style;
+  flex-direction: column;
+  position: relative;
+  // height: calc(100vh - 2.12rem);
+  // height: calc(100vh - 3rem);
+  overflow: scroll;
+  background: #F5F5F5;
+  flex: 1;
+
+  .task-details-information_footer-container {
+    @extend .flex_style;
+    justify-content: space-between;
+    width: 100%;
+    height: 1.12rem;
+    background: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0rem -0.01rem 0rem 0rem #EEEEEE;
+
+    // 左侧边按钮
+    .footer-container_left-side {
+      width: 2.06rem;
+      @extend .flex_style;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      padding: 0 0.26rem;
+      cursor: pointer;
+      
+      span {
+        font-size: $font_size_2;
+        color: $color_4;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0.32rem;
+        height: 0.64rem;
+        width: 0.01rem;
+        background: $color_1;
+      }
+    }
+
+    // 右侧边按钮
+    .footer-container_right-side {
+      flex: 1;
+    }
+
+    :deep( .van-button ){
+      height: 1.12rem;
+      width: 50%;
+      font-size: 0.3rem;
+    }
+    :deep( .van-button__text) {
+      font-size: 0.3rem;
+    }
+    :deep( .van-button--default ) {
+      border-color: transparent;
+    }
+    :deep( .cancel .van-button__text ) {
+      color: $error_color;
+    }
+  }
+}
+
+// 公共样式——普通按钮
+.ordinary_button {
+  @extend .flex_style;
+  flex-direction: column;
+  align-items: center;
+}

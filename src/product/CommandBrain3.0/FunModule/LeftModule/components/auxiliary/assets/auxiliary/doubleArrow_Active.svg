@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="34px" viewBox="0 0 41 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>通用工具</title>
+    <defs>
+        <path d="M339.603222,31.5689638 C339.446321,19.5133802 345.066963,14.1092216 346.218897,12.3078354 L342.713443,12.0059493 L349.952752,8 L352.052052,15.8589694 L349.160301,14.3296779 L349.086815,14.758674 C347.803799,25.3326322 351.569185,25.7756699 353.734272,25.9661958 L355.499909,25.9562654 C358.052899,25.9562654 363.223824,25.5511024 361.913003,14.758674 L361.839517,14.3296779 L358.947766,15.8589694 L361.047066,8 L368.286375,12.0059493 L364.780921,12.3078354 C365.932855,14.1092216 371.551511,19.5133802 371.396596,31.5689638" id="path-1"></path>
+        <filter x="-20.4%" y="-28.6%" width="140.9%" height="156.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.337254902   0 0 0 0 0.91372549   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="事件信息、组织动态、辅助工具" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="辅助工具" transform="translate(-777.000000, -197.000000)" fill-rule="nonzero">
+            <g id="左侧数据看板" transform="translate(430.000000, 132.000000)">
+                <g id="路径" transform="translate(12.000000, 62.000000)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use stroke="#56E9FF" stroke-width="1" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

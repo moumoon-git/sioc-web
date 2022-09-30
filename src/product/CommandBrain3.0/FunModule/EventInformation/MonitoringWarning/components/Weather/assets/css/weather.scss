@@ -1,0 +1,321 @@
+.weather-container {
+  background: linear-gradient(90deg, rgba(0, 193, 222, 20%) 0%, rgba(24, 38, 50, 0) 100%);
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 6px;
+  position: relative;
+
+  // 分割线
+  .division {
+    margin: 0 10px;
+    display: block;
+    width: 1px;
+    height: 20px;
+    border-radius: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 51%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  // 头部
+  .weather-container-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .weather-container-header-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px 0;
+
+      .weather-container-header-container__left {
+        height: 62px;
+        line-height: 62px;
+        padding: 0 10px;
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 10px;
+          height: 46px;
+          width: 1px;
+          border-radius: 100%;
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 51%, rgba(255, 255, 255, 0) 100%);
+        }
+      }
+
+      .weather-container-header-container__right {
+        padding-left: 10px;
+        flex: 1;
+
+        .weather-container-header-container__right__top {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-bottom: 4px;
+        }
+      }
+    }
+
+    .event-address {
+      @extend .context-font;
+      text-align: left;
+      padding: 5px 10px 5px 28px;
+      background: linear-gradient(90deg, rgba(0, 193, 222, 0.7) 0%, rgba(24, 38, 50, 0) 100%);
+      min-height: 30px;
+      position: relative;
+      box-sizing: border-box;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 16px;
+        background: url('./assets/svg/location.svg');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        top: 7px;
+        left: 10px;
+      }
+    }
+
+    .weather-container-header__division {
+      width: 360px;
+      height: 2px;
+      border-radius: 100%;
+      background: rgba(86, 233, 255, 0.3);
+      box-shadow: 0px 0px 0px 0px rgb(86 233 255 / 30%), 0px 0px 50px 2px rgb(86 233 255 / 30%);
+    }
+  }
+  // 身体
+  .weather-container-body {
+    padding: 12px 10px 14px 8px;
+    box-sizing: border-box;
+
+    .weather-container-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 18px;
+
+      .weather-container-item__left {
+        width: 109px;
+
+        .temperature {
+          .number {
+            font-size: 60px;
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 42px;
+          }
+
+          .unit {
+            @extend .context-font;
+          }
+        }
+      }
+
+      .weather-container-item__division {
+        background: url('./assets/svg/division3.svg');
+        width: 3px;
+        height: 47px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+
+      .weather-container-item__right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding-left: 22px;
+
+        .weather-container-item__right__top {
+          display: flex;
+          align-items: center;
+          // justify-content: space-between;
+
+
+          .switch-button {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-left: 12px;
+          }
+
+          .sky-icon {
+            display: flex;
+            align-items: center;
+            & > img {
+              margin-right: 4px;
+              width: 16px;
+              height: 14px;
+            }
+          }
+        }
+
+        .weather-container-item__right__bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          
+        }
+      }
+
+    }
+
+    .weather-container-graph-item {
+      .weather-container-item__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .section-tabs {
+          width: 182px;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .section-tabs-item {
+            width: 60px;
+            height: 20px;
+            border: 1px solid #00c1de;
+            text-align: center;
+            @extend .context-font;
+            cursor: pointer;
+          }
+
+          .section-tabs-item___active {
+            width: 60px;
+            height: 20px;
+            border: 1px solid #00c1de;
+            text-align: center;
+            @extend .context-font;
+            background: #00c1de;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .weather-container-item__body {
+        
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          margin-top: 10px;
+
+          // 天气
+          .five-days-weather {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .five-days-weather-item {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              @extend .context-font;
+              position: relative;
+              width: 71px;
+
+              .skyIcon {
+                width: 30px;
+                height: 26px;
+
+              }
+              
+              // &::after {
+              //   display: block;
+              //   content: '';
+              //   position: absolute;
+              //   right: 0;
+              //   top: 0;
+              //   width: 1px;
+              //   height: 126px;
+              //   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 51%, rgba(255, 255, 255, 0) 100%);
+              // }
+
+              .division {
+                display: block;
+                position: absolute;
+                right: -10px;
+                top: 0;
+                width: 1px;
+                height: 126px;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 51%, rgba(255, 255, 255, 0) 100%);
+              }
+            }
+          }
+      }
+    }
+  }
+  // 分割线
+  .division-icon {
+    background: url('./assets/svg/division2.svg');
+    width: 1px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  // 字体
+  .context-font {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  .section-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #56e9ff;
+    padding-left: 8px;
+    position: relative;
+
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 13px;
+      background: #56e9ff;
+      box-shadow: 0px 0px 16px 0px #008cff;
+      border-radius: 2px;
+      left: -8px;
+      top: calc(50% - 6px);
+    }
+  }
+
+  .weather-container-icon {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .icon_shrinking {
+      background: url('./assets/svg/shrinking.svg');
+      width: 12px;
+      height: 6px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .icon_expanded {
+      @extend .icon_shrinking;
+      background: url('./assets/svg/expanded.svg');
+    }
+  }
+
+  // .sky-icon {
+  //   width: 16px;
+  //   height: 14px;
+  //   background-image: url('./assets/svg/skyIcon.png');
+  //   // background-size: 16px 14px;
+  //   // background-repeat: no-repeat;
+  //   background-position: 10px 20px;
+  // }
+
+
+}

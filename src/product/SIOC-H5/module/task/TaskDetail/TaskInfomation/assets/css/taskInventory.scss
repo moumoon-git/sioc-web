@@ -1,0 +1,154 @@
+.icon-focus {
+  width: 0.33rem;
+  height: 0.32rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url('../../assets/images/icons/focus.svg');
+}
+.icon-phone {
+  width: 0.23rem;
+  height: 0.32rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url('../../assets/images/icons/phone2.svg');
+}
+.icon-phone2 {
+  width: 0.23rem;
+  height: 0.32rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url('../../assets/images/icons/phone.png');
+}
+.inventory-container {
+  // 卡片内容样式：
+  .card__container {
+    padding: 0 0.22rem 0 0.22rem;
+    background: #F7F8FA;
+    border-radius: 0.1rem;
+    margin-top: 0.2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  // 卡片标题栏样式：
+  .card__header {
+    border-bottom: 0.01rem solid #DDDDDD;
+    height: 0.9rem;
+    box-sizing: border-box;
+    line-height: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    &__left {
+      flex: 1;
+      font-size: 0.28rem;
+    }
+
+    &__right {
+      width: 1.04rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+
+      .division {
+        width: 0.01rem;
+        height: 0.32rem;
+        background: #DDDDDD;
+      }
+    }
+  }
+
+  .card__body {
+    .list {
+
+      .item {
+        display: flex;
+        justify-content: space-between;
+        height: 0.92rem;
+        align-items: center;
+
+        &__left {
+          font-size: 0.28rem;
+          font-weight: 400;
+          color: #999999;
+        }
+
+        &__right {
+          .number {
+            font-size: 0.28rem;
+            font-weight: 400;
+            color: #333333;
+            margin-right: 0.08rem;
+          }
+          .unit {
+            font-size: 0.28rem;
+            font-weight: 400;
+            color: #999999;
+          }
+        }
+      }
+    }
+  }
+
+  .member-phone-container-layout {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    // 头部
+    .member-phone-container-header {
+      height: 0.88rem;
+      line-height: 0.88rem;
+      font-size: 0.24rem;
+      color: #333333;
+      padding: 0 0.3rem;
+    }
+
+    // 身体
+    .member-phone-container-body {
+      flex: 1;
+      padding: 0 0.3rem;
+
+      .member-phone {
+        border-top: 0.01rem solid #dddddd;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0.2rem 0;
+        box-sizing: border-box;
+        font-size: 0.24rem;
+        color: #333333;
+
+        .phone {
+          font-size: 0.28rem;
+          color: #666666;
+        }
+      }
+    }
+
+    // 尾部
+    .member-phone-container-footer {
+      height: 1rem;
+      line-height: 1rem;
+      text-align: center;
+      border-top: 0.12rem solid #f5f5f5;
+    }
+  }
+
+  // 无数据的样式-抽出来公共样式
+  .no-list_layout {
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0 0.1rem 0;
+    .no-data {
+      flex: 1;
+      text-align: center;
+      font-size: 0.28rem;
+      color: #666666;
+    }
+  }
+}

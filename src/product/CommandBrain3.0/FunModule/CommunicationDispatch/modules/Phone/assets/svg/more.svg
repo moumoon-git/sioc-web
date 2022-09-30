@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="26px" viewBox="0 0 15 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>形状结合</title>
+    <defs>
+        <path d="M300,26 C300,26.9664983 300.783502,27.75 301.75,27.75 C302.716498,27.75 303.5,26.9664983 303.5,26 C303.5,25.3747852 303.166452,24.7970629 302.625,24.4844555 C302.083548,24.1718481 301.416452,24.1718481 300.875,24.4844555 C300.333548,24.7970629 300,25.3747852 300,26 L300,26 Z M294.75,26 C294.75,26.6252148 295.083548,27.2029371 295.625,27.5155445 C296.166452,27.8281519 296.833548,27.8281519 297.375,27.5155445 C297.916452,27.2029371 298.25,26.6252148 298.25,26 C298.25,25.3747852 297.916452,24.7970629 297.375,24.4844555 C296.833548,24.1718481 296.166452,24.1718481 295.625,24.4844555 C295.083548,24.7970629 294.75,25.3747852 294.75,26 L294.75,26 Z M305.25,26 C305.25,26.9664983 306.033502,27.75 307,27.75 C307.966498,27.75 308.75,26.9664983 308.75,26 C308.75,25.0335017 307.966498,24.25 307,24.25 C306.033502,24.25 305.25,25.0335017 305.25,26 L305.25,26 Z" id="path-1"></path>
+        <filter x="-64.3%" y="-257.1%" width="228.6%" height="614.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.140585543   0 0 0 0 0.553507333   0 0 0 0 1  0 0 0 0.399748689 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="电话" transform="translate(-1358.000000, -218.000000)">
+            <g id="弹窗" transform="translate(554.000000, 143.000000)">
+                <g id="编组-6" transform="translate(510.000000, 62.000000)">
+                    <g id="形状结合" transform="translate(301.750000, 26.000000) scale(-1, -1) rotate(-270.000000) translate(-301.750000, -26.000000) ">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#56E9FF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

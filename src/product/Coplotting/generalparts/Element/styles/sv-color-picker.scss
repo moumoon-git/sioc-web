@@ -1,0 +1,32 @@
+.sv-color-picker.el-color-picker {
+  .el-color-picker__trigger {
+    width: 188px;
+    border: none;
+    padding: 0;
+    height: 30px;
+    vertical-align: middle;
+  }
+  .el-color-picker__color {
+    border: none;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .el-color-picker__icon {
+    display: none;
+  }
+}
+.sv-color-picker-popper {
+  .el-color-dropdown__btns {
+    display: flex;
+    align-items: center;
+  }
+  .el-color-dropdown__value {
+    margin-right: auto;
+  }
+  .el-color-dropdown__link-btn > span::after {
+    content: '\53d6\6d88';
+  }
+  .el-color-dropdown__btn > span::after {
+    content: '\786e\5b9a';
+  }
+}

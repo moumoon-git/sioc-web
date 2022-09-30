@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>线性icon/选择框/未选</title>
+    <g id="新增任务" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="选择参与人备份" transform="translate(-22.000000, -267.000000)">
+            <g id="编组-4" transform="translate(0.000000, 238.000000)">
+                <g id="线性icon/选择框/未选" transform="translate(22.000000, 29.000000)">
+                    <rect x="0" y="0" width="48" height="48"></rect>
+                    <path d="M23.7530864,4 C35.0459259,4 44,12.9540741 44,24.2469136 C44,35.0459259 35.0459259,44 23.7530864,44 C12.9540741,44 4,35.0459259 4,24.2469136 C4,12.9540741 12.9540741,4 23.7530864,4 Z M23.7530864,6 C13.9906384,6 6,14.1280952 6,24.2469136 C6,33.9413564 14.0586436,42 23.7530864,42 C33.8719048,42 42,34.0093616 42,24.2469136 C42,14.0586436 33.9413564,6 23.7530864,6 Z" id="Fill-3" fill="#666666"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

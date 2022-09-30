@@ -1,0 +1,44 @@
+.flight-resource {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  & > header {
+    min-height: 220px;
+  }
+  // 列表主体
+  & > main {
+    flex: 1;
+    height: calc(100% - 220px);
+    overflow: hidden auto;
+    // 滚动条
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #56E9FF;
+      border-radius: 5px;
+    }
+    &::-webkit-scrollbar-corner {
+      background: transparent;
+    }
+    
+  }
+  & > footer {
+    height: 137px;
+    line-height: 137px;
+    text-align: center;
+    border-top: 1px solid rgba(84, 88, 96, .64);
+  }
+}
+
+.flight-resource__offline-item {
+  color: #747474 !important;
+  &::after {
+    content: '已离线';
+    color: #FFF;
+    margin-left: 10px;
+    background: #747474;
+  }
+}

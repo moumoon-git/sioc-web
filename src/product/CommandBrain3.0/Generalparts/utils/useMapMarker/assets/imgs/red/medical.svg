@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="40px" viewBox="0 0 46 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>医疗机构备份 2</title>
+    <defs>
+        <ellipse id="path-1" cx="20" cy="33" rx="20" ry="7"></ellipse>
+        <filter x="-7.5%" y="-21.4%" width="115.0%" height="142.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="3" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.850980392   0 0 0 0 0.0470588235   0 0 0 0 0.0470588235  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="落点切图" transform="translate(-1312.000000, -196.000000)">
+            <g id="医疗机构备份-2" transform="translate(1312.000000, 196.000000)">
+                <g id="编组-19" transform="translate(3.000000, 0.000000)">
+                    <g id="椭圆形备份-143" fill="black" fill-opacity="1">
+                        <use filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    </g>
+                    <ellipse id="椭圆形备份-144" fill="#D90C0C" opacity="0.703760901" filter="url(#filter-3)" cx="20" cy="33" rx="10" ry="3.5"></ellipse>
+                    <path d="M20,0.5 C23.7279221,0.5 27.1029221,2.01103897 29.5459415,4.45405845 C31.988961,6.89707794 33.5,10.2720779 33.5,14 C33.5,18.3257105 31.4654458,22.1761668 28.3012384,24.6468968 L28.3012384,24.6468968 L20.000092,32.895055 L11.7196612,24.6631831 C8.54351615,22.1931056 6.5,18.3352269 6.5,14 C6.5,10.2720779 8.01103897,6.89707794 10.4540585,4.45405845 C12.8970779,2.01103897 16.2720779,0.5 20,0.5 Z" id="形状结合" stroke="#FFFFFF" fill="#D90C0C" fill-rule="nonzero"></path>
+                    <path d="M23.2,6 C23.6418278,6 24,6.3581722 24,6.79999999 L24,9.19999999 L27.2,9.19999999 C27.6418278,9.19999999 28,9.55817219 28,10 L28,21.2 C28,21.6418278 27.6418278,22 27.2,22 L12.8,22 C12.3581722,22 12,21.6418278 12,21.2 L12,10 C12,9.55817219 12.3581722,9.19999999 12.8,9.19999999 L16,9.19999999 L16,6.79999999 C16,6.3581722 16.3581722,6 16.8,6 L23.2,6 Z M20.8,12.4 L19.2,12.4 L19.2,14.8 L16.8,14.8 L16.8,16.4 L19.1992,16.4 L19.2,18.8 L20.8,18.8 L20.7992,16.4 L23.2,16.4 L23.2,14.8 L20.8,14.8 L20.8,12.4 Z M22.4,7.59999999 L17.6,7.59999999 L17.6,9.19999999 L22.4,9.19999999 L22.4,7.59999999 Z" id="形状" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+                <g id="扫描备份-20" transform="translate(0.000000, 19.000000)"></g>
+            </g>
+        </g>
+    </g>
+</svg>

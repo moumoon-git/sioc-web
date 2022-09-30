@@ -1,0 +1,101 @@
+.shareSelectGroupSection {
+    &__search {
+      height: 46px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #f2f2f2;
+      &__left {
+        margin-left: 20px;
+      }
+      &__btns {
+        display: flex;
+        margin-right: 20px;
+        &__name {
+          margin-right: 12px;
+        }
+        &__open {
+        }
+      }
+    }
+    &__tree {
+      height: 245px;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        background: transparent;
+        width: 5px;
+        height: 5px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #d5d5d5;
+        border-radius: 5px;
+      }
+      &__item {
+        display: flex;
+        height: 32px;
+        align-items: center;
+        border-bottom: 1px solid #f2f2f2;
+        padding-left: 28px;
+        &__checkbox {
+        }
+        &__name {
+        }
+      }
+    }
+    &__footer {
+      height: 60px;
+      border-top: 1px solid #f2f2f2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__left {
+        margin-left: 17px;
+      }
+      &__btns {
+        margin-right: 17px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__next {
+          width: 52px;
+          height: 30px;
+          border-radius: 3px;
+          border: 1px solid #dbe3e9;
+          text-align: center;
+          line-height: 30px;
+          margin-right: 14px;
+          font-size: 12px;
+          background: #0091ff;
+          color: #fff;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+        &__cancle {
+          width: 52px;
+          height: 30px;
+          border-radius: 3px;
+          border: 1px solid #dbe3e9;
+          text-align: center;
+          line-height: 30px;
+          font-size: 12px;
+          color: #fff;
+          cursor: pointer;
+          background: #0bd295;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+  .custom-share-tree-node {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .shareStatus {
+      margin-right: 10px;
+      color: #0bd295;
+    }
+  }

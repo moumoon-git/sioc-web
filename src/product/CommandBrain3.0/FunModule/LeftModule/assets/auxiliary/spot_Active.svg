@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="34px" viewBox="0 0 41 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>通用工具</title>
+    <defs>
+        <path d="M20.5294118,6 C26.8969301,6 32.0588235,11.1618935 32.0588235,17.5294118 C32.0588235,20.6398239 30.8271248,23.4625573 28.8248632,25.5364762 L28.8305882,25.5367937 L20.5294118,33.8344622 L12.2319227,25.5367937 C10.2316987,23.4625573 9,20.6398239 9,17.5294118 C9,11.1618935 14.1618935,6 20.5294118,6 Z" id="path-1"></path>
+        <filter x="-26.0%" y="-21.6%" width="152.0%" height="143.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.337254902   0 0 0 0 0.91372549   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="事件信息、组织动态、辅助工具" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="辅助工具" transform="translate(-442.000000, -197.000000)" fill-rule="nonzero">
+            <g id="左侧数据看板" transform="translate(430.000000, 132.000000)">
+                <g id="形状结合" transform="translate(12.000000, 62.000000)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <path stroke="#56E9FF" stroke-width="1" d="M20.5294118,6.5 C23.5750997,6.5 26.3324527,7.73450896 28.3283836,9.73043991 C30.3243146,11.7263709 31.5588235,14.4837238 31.5588235,17.5294118 C31.5588235,20.5049121 30.3805691,23.2052234 28.4712558,25.1829768 L28.4712558,25.1829768 L20.5293591,33.1273001 L12.591839,25.1897199 C10.6783132,23.2053896 9.5,20.5050058 9.5,17.5294118 C9.5,14.4837238 10.734509,11.7263709 12.7304399,9.73043991 C14.7263709,7.73450896 17.4837238,6.5 20.5294118,6.5 Z" stroke-linejoin="square"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,188 @@
+.map-poi-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+  .icon-mark {
+    width: 0.6rem;
+    height: 1.13rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('../assets/images/mark.svg');
+  }
+  .icon-map {
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-right: 0.16rem;
+  }
+  .icon-origin {
+    width: 0.82rem;
+    height: 0.79rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('../assets/images/origin.svg');
+  }
+  .icon-destination {
+    width: 0.82rem;
+    height: 0.79rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('../assets/images/destination.svg');
+  }
+  .map-container {
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f5f7fa;
+  }
+  header {
+    width: 100%;
+  }
+  main {
+    flex: 1;
+    overflow: scroll;
+    position: relative;
+
+    #appMap {
+      height: 100%;
+      width: 100vw;
+    }
+
+    .confirm-button {
+      width: 1rem;
+      font-size: 0.3rem;
+      position: absolute;
+      right: 0.2rem;
+      top: 0.2rem;
+    }
+  }
+  footer {
+    width: 100%;
+    height: 4.85rem;
+    background: #ffffff;
+    border-radius: 0.2rem 0.2rem 0.02rem 0.02rem;
+    display: flex;
+    flex-direction: column;
+
+    .reset-loading {
+      width: 100%;
+      height: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.36rem;
+    }
+
+    .search-input {
+      width: 100%;
+      height: 1rem;
+      border-bottom: 0.01rem solid #eeeeee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      .van-cell {
+        width: 6.94rem;
+        height: 0.59rem;
+        background: #f2f2f2;
+        border-radius: 0.3rem;
+        padding: 0;
+
+        .van-field__body {
+          height: 100%;
+          padding: 0 0.2rem;
+
+          .van-field__control {
+            text-align: center;
+            position: relative;
+
+            &::before {
+              width: 0.33rem;
+              height: 0.34rem;
+              display: block;
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 0;
+              background-image: url('../assets/images/search.png');
+              background-size: 100% 100%;
+              background-repeat: no-repeat;
+            }
+          }
+        }
+      }
+    }
+
+    .address-list {
+      flex: 1;
+      overflow: scroll;
+
+      .address-item {
+        min-height: 1.26rem;
+        width: 100%;
+        border-bottom: 0.01rem solid #eeeeee;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.24rem 0.2rem 0.25rem 0.28rem;
+        box-sizing: border-box;
+        position: relative;
+
+        &-top {
+          width: 5.5rem;
+          font-size: 0.3rem;
+          font-weight: 400;
+          color: #333333;
+          line-height: 0.42rem;
+
+          &--active {
+            color: rgba(0, 145, 255, 1);
+          }
+        }
+
+        &-bottom {
+          width: 5.5rem;
+          font-size: 0.24rem;
+          font-weight: 400;
+          color: #b3b3b3;
+          line-height: 0.33rem;
+          margin-top: 0.12rem;
+
+          &--active {
+            color: rgba(0, 145, 255, 1);
+          }
+        }
+
+        &-tag {
+          width: 1.14rem;
+          height: 0.37rem;
+          background: #e6efff;
+          border-radius: 0.06rem;
+          font-size: 0.24rem;
+          font-weight: 400;
+          color: #0091ff;
+          line-height: 0.33rem;
+          text-align: center;
+          position: absolute;
+          right: 0.2rem;
+          top: calc(50% - 0.19rem);
+        }
+
+        &--tick {
+          position: absolute;
+          right: 0.2rem;
+          top: calc(50% - 0.19rem);
+          width: 0.33rem;
+          height: 0.34rem;
+          background-image: url('../assets/images/tick.svg');
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}

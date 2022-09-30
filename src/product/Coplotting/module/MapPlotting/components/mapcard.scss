@@ -1,0 +1,138 @@
+.mapcard{
+    width: 360px;
+    height: 126px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px 3px rgb(54 121 225 / 9%);
+    border-radius: 4px;
+    float: left;
+    margin: 8px 9px;
+    border-top: 3px solid #fff;
+    &:hover{
+        border-top: 3px solid #54A1FF;
+        // transform: scale(1.03);
+        .mapcard--old__emergyBtn{
+            display: block;
+        }
+    }
+    &--new{
+        background: url(./assets/cardbg.png) no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &__icon{
+            width: 42px;
+            height: 42px;
+            background-size: 100% 100%;
+            background: url(./assets/add.svg)no-repeat;
+            cursor: pointer;
+        }
+        &__name{
+            margin: 0;
+            margin-top: 11px;
+        }
+    }
+    &--old{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        &__top{
+            width: 90%;
+            height: 65px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            margin-top: 14px;
+            cursor: pointer;
+            &__left{
+                width: 65px;
+                height: 65px;
+                // border: 1px solid red;
+                border-radius: 50%;
+                background: url(./assets/mapIcon.png) no-repeat;
+
+            }
+            &__right{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 12px;
+                width: 74%;
+                &__item{
+                    margin: 0;
+                    width: 100%;
+                    text-align: left;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+                &__item:nth-child(1){
+                    color: #333333;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                &__item:nth-child(2){
+                    color: #888888;
+                    margin-top: 10px;
+                    font-size: 12px;
+                }
+            }
+        }
+        &__tabs{
+            display: flex;
+            height: 24px;
+            width: 93%;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 12px;
+            .mapcard--old__shareTimes{
+                width: 85px;
+                font-size: 12px;
+                color: #666666;
+                >span{
+                    font-size: 12px;
+                    color: #3F92FE;
+                }
+            }
+            .mapcard--old__tabs__right{
+                display: flex; 
+            }
+            .mapcard--old__tab{
+                padding: 0 6px;
+                height: 24px;
+                border-radius: 1px;
+                opacity: 0.99;
+                border: 1px solid #C5DEFE;
+                color: #54A1FF;
+                margin: 0 3px;
+                cursor: pointer;
+                line-height: 24px;
+                &:hover{
+                    color: #fff;
+                    background: #0091FF;
+                }
+            }
+            
+        }
+        &__emergyBtn{
+            display: none;
+            width: 16px;
+            height: 14px;
+            position: absolute;
+            right: 10px;
+            top: 7px;
+            cursor: pointer;
+            background: url(./assets/bao.svg) no-repeat;
+        }
+        &__emergyBtn--active{
+            background: url(./assets/baoActive.svg) no-repeat;
+        }
+    }
+}

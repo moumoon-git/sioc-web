@@ -1,0 +1,157 @@
+// 当前激活的图标类型按钮
+.currentIconType {
+  color: #409EFF;
+  border-color: #c6e2ff;
+  background-color: #ecf5ff;
+}
+// 图标列表容器
+.iconSet {
+  margin: 10px 32px;
+  & > main {
+    margin-top: 10px;
+    border: 1px solid #C5DEFE;
+    border-radius: 3px;
+    height: 300px;
+    background: repeat left/8px 8px radial-gradient(rgba(0, 0, 0, .05) 20%, transparent 0);
+    .iconList {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .scroll {
+        flex: 1;
+        overflow: auto;
+        &::-webkit-scrollbar {
+          width: 0;
+          height: 0;
+        }
+      }
+      .operation {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+// 图标
+.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: no-repeat center/100% 100%;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+  &.selectedIcon::after,
+  &:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 5px;
+    background: #0091FF;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  }
+}
+// 场景图标
+.sceneIcon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: no-repeat center/100% 100%;
+  position: relative;
+  margin: 10px 25px 30px;
+  cursor: pointer;
+  & > p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &.selectedIcon::after,
+  &:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 5px;
+    background: #0091FF;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  }
+}
+.icon,
+.sceneIcon {
+  // 删除按钮
+  & > button {
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 12px;
+    height: 12px;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, .58);
+    cursor: pointer;
+    color: white;
+    overflow: hidden;
+    &:hover {
+      background: rgba(246, 110, 110, .8);
+    }
+    &::before {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 1px;
+      background: #FFF;
+      transform: rotate(45deg);
+      position: absolute;
+      left: 1px;
+      top: 5px;
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 1px;
+      background: #FFF;
+      transform: rotate(-45deg);
+      position: absolute;
+      left: 1px;
+      top: 5px;
+    }
+  }
+  &:hover > button {
+    display: block;
+  }
+}
+// 底部按钮
+.footer {
+  text-align: right;
+  padding-right: 20px;
+  height: 60px;
+  line-height: 60px;
+  border-top: 1px solid #E9ECF1;
+}
+// 表单布局
+.form {
+  :global(.el-form-item) {
+    margin-bottom: 2px;
+  }
+}

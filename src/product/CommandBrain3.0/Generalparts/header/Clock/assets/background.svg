@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="38px" viewBox="0 0 20 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 6</title>
+    <g id="工具面板" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="事件信息" transform="translate(-30.000000, -13.000000)" fill="#050505">
+            <g id="时间" transform="translate(30.000000, 11.000000)">
+                <g id="编组-6" transform="translate(0.000000, 2.000000)">
+                    <polygon id="路径-4" points="3.26171875 19 -2.98372438e-14 22.4438046 -2.98372438e-14 38 20 38 20 22.4438046 16.9114926 19"></polygon>
+                    <polygon id="路径-4" transform="translate(10.000000, 9.000000) rotate(-180.000000) translate(-10.000000, -9.000000) " points="3.26171875 0 0 3.2625517 0 18 20 18 20 3.2625517 16.9114926 0"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

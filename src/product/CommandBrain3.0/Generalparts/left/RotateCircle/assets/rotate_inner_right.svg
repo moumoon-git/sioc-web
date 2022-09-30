@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="97px" viewBox="0 0 54 97" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Oval Copy 6</title>
+    <defs>
+        <radialGradient cx="100%" cy="7.44818253%" fx="100%" fy="7.44818253%" r="185.103635%" gradientTransform="translate(1.000000,0.074482),scale(1.000000,0.500000),rotate(90.000000),translate(-1.000000,-0.074482)" id="radialGradient-1">
+            <stop stop-color="#56E9FF" offset="0%"></stop>
+            <stop stop-color="#0E8FFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <path d="M96.6,12.24 C73.2714922,12.24 54.36,31.1514922 54.36,54.48 C54.36,77.8085078 73.2714922,96.72 96.6,96.72" id="path-2"></path>
+        <filter x="-17.7%" y="-8.8%" width="135.3%" height="117.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="3.464" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="3.464" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.170063406 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="事件信息、组织动态、辅助工具" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="动效切图" transform="translate(-573.000000, -46.000000)">
+            <g id="预案响应" transform="translate(404.000000, 40.000000)">
+                <g id="Group-12-Copy" transform="translate(120.400000, 0.000000)">
+                    <g id="Oval-Copy-6" transform="translate(75.480000, 54.480000) scale(-1, -1) translate(-75.480000, -54.480000) ">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                        <use stroke="url(#radialGradient-1)" stroke-width="4.928" xlink:href="#path-2"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

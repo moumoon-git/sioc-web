@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>物资库</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="事件信息、组织动态、辅助工具" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="雪碧图" transform="translate(-659.000000, -394.000000)">
+            <g id="编组-8" transform="translate(455.000000, 337.000000)">
+                <g id="物资库" transform="translate(204.000000, 57.000000)">
+                    <circle id="Oval-9" stroke-opacity="0.5" stroke="#FFFFFF" stroke-width="2" fill="#006AC1" fill-rule="nonzero" cx="14" cy="14" r="13"></circle>
+                    <g filter="url(#filter-1)" id="编组">
+                        <g transform="translate(4.500000, 5.000000)">
+                            <path d="M9.58618775,0.5 L19.1723755,6.83578539 L17.2530838,6.83578539 L17.2530838,16.4767513 L14.2231637,16.4767513 L14.2231637,9.26999235 L4.9492118,9.26999235 L4.9492118,16.4767513 L1.91929174,16.4767513 L1.91929174,6.83578539 L3.58824082e-13,6.83578539 L9.58618775,0.5 Z M6.78770567,10.691487 L12.3846699,10.691487 L12.3846699,12.5738035 L6.78770567,12.5738035 L6.78770567,10.691487 Z M6.78770567,14.5944349 L12.3846699,14.5944349 L12.3846699,16.4774361 L6.78770567,16.4774361 L6.78770567,14.5944349 Z" id="形状" fill="#000000" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

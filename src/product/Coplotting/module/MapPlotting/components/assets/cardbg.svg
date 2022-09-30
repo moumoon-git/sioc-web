@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="254px" height="196px" viewBox="0 0 254 196" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 7</title>
+    <defs>
+        <path d="M3,0 L251,0 C252.656854,-3.04359188e-16 254,1.34314575 254,3 L254,193 C254,194.656854 252.656854,196 251,196 L3,196 C1.34314575,196 2.02906125e-16,194.656854 0,193 L0,3 C-2.02906125e-16,1.34314575 1.34314575,3.04359188e-16 3,0 Z" id="path-1"></path>
+        <filter x="-3.0%" y="-3.8%" width="105.9%" height="107.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.211764706   0 0 0 0 0.474509804   0 0 0 0 0.882352941  0 0 0 0.0865036232 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#C1D4FF" offset="0%"></stop>
+            <stop stop-color="#F8FAFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#C1D4FF" offset="0%"></stop>
+            <stop stop-color="#F8FAFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="PC端" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="协同标绘首页" transform="translate(-16.000000, -112.000000)">
+            <g id="编组-7" transform="translate(16.000000, 112.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="蒙版" opacity="0">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M-16,171.084317 C-3.66666667,175.732275 18.75,178.056254 51.25,178.056254 C100,178.056254 170.527671,119.008578 213.75,116.475244 C242.564886,114.786355 262.314886,117.598855 273,124.912744 L273,202.912744 L-16,202.912744 L-16,171.084317 Z" id="路径-2" fill="url(#linearGradient-4)" opacity="0.24" mask="url(#mask-2)"></path>
+                <path d="M-16,186.084317 C-10.3333333,190.732275 8.75,193.056254 41.25,193.056254 C90,193.056254 160.527671,144.008578 203.75,141.475244 C232.564886,139.786355 255.648219,143.932189 273,153.912744 L273,202.912744 L-16,202.912744 L-16,186.084317 Z" id="路径-2" fill="url(#linearGradient-5)" opacity="0.0820079985" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

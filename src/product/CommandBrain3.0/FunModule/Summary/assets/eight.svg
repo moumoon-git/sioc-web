@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="26px" viewBox="0 0 72 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>执行中</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.854902 0 0 0 0 0.317647 0 0 0 0 0.811765 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <rect id="path-2" x="0" y="0" width="72" height="26" rx="3"></rect>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="情况汇总" transform="translate(-2201.000000, -48.000000)">
+            <g id="编组-2" transform="translate(2109.000000, 9.000000)">
+                <g id="待支援" transform="translate(24.000000, 29.000000)">
+                    <g id="执行中" transform="translate(54.000000, 0.000000)" filter="url(#filter-1)">
+                        <g transform="translate(14.000000, 10.000000)">
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-2"></use>
+                            </mask>
+                            <rect stroke="#0091FF" x="0.5" y="0.5" width="71" height="25" rx="3"></rect>
+                            <polygon id="路径-2" fill-opacity="0.15" fill="#0091FF" fill-rule="nonzero" mask="url(#mask-3)" points="-23.2928932 32.7071068 16.7071068 -7.29289322 16 -8 -24 32"></polygon>
+                            <polygon id="路径-2复制" fill-opacity="0.15" fill="#0091FF" fill-rule="nonzero" mask="url(#mask-3)" points="-17.2928932 32.7071068 22.7071068 -7.29289322 22 -8 -18 32"></polygon>
+                            <polygon id="路径-2复制-2" fill-opacity="0.15" fill="#0091FF" fill-rule="nonzero" mask="url(#mask-3)" points="-11.2928932 32.7071068 28.7071068 -7.29289322 28 -8 -12 32"></polygon>
+                            <polygon id="路径-2复制-3" fill-opacity="0.15" fill="#0091FF" fill-rule="nonzero" mask="url(#mask-3)" points="-5.29289322 32.7071068 34.7071068 -7.29289322 34 -8 -6 32"></polygon>
+                            <polygon id="路径-2复制-4" fill-opacity="0.15" fill="#0091FF" fill-rule="nonzero" mask="url(#mask-3)" points="0.707106781 32.7071068 40.7071068 -7.29289322 40 -8 0 32"></polygon>
+                            <polygon id="路径-2复制-5" fill-opacity="0.15" fill="#0091FF" fill-rule="nonzero" mask="url(#mask-3)" points="6.70710678 32.7071068 46.7071068 -7.29289322 46 -8 6 32"></polygon>
+                            <polygon id="路径-2复制-6" fill-opacity="0.15" fill="#0091FF" fill-rule="nonzero" mask="url(#mask-3)" points="12.7071068 32.7071068 52.7071068 -7.29289322 52 -8 12 32"></polygon>
+                            <polygon id="路径-2复制-7" fill-opacity="0.15" fill="#0091FF" fill-rule="nonzero" mask="url(#mask-3)" points="18.7071068 32.7071068 58.7071068 -7.29289322 58 -8 18 32"></polygon>
+                            <polygon id="路径-2复制-8" fill-opacity="0.15" fill="#0091FF" fill-rule="nonzero" mask="url(#mask-3)" points="24.7071068 32.7071068 64.7071068 -7.29289322 64 -8 24 32"></polygon>
+                            <polygon id="路径-2复制-9" fill-opacity="0.15" fill="#0091FF" fill-rule="nonzero" mask="url(#mask-3)" points="30.7071068 32.7071068 70.7071068 -7.29289322 70 -8 30 32"></polygon>
+                            <polygon id="路径-2复制-10" fill-opacity="0.15" fill="#0091FF" fill-rule="nonzero" mask="url(#mask-3)" points="36.7071068 32.7071068 76.7071068 -7.29289322 76 -8 36 32"></polygon>
+                            <polygon id="路径-2复制-11" fill-opacity="0.15" fill="#0091FF" fill-rule="nonzero" mask="url(#mask-3)" points="42.7071068 32.7071068 82.7071068 -7.29289322 82 -8 42 32"></polygon>
+                            <polygon id="路径-2复制-12" fill-opacity="0.15" fill="#0091FF" fill-rule="nonzero" mask="url(#mask-3)" points="48.7071068 32.7071068 88.7071068 -7.29289322 88 -8 48 32"></polygon>
+                            <polygon id="路径-2复制-13" fill-opacity="0.15" fill="#0091FF" fill-rule="nonzero" mask="url(#mask-3)" points="54.7071068 32.7071068 94.7071068 -7.29289322 94 -8 54 32"></polygon>
+                            <polygon id="路径-2复制-14" fill-opacity="0.15" fill="#0091FF" fill-rule="nonzero" mask="url(#mask-3)" points="60.7071068 32.7071068 100.707107 -7.29289322 100 -8 60 32"></polygon>
+                            <polygon id="路径-2复制-15" fill-opacity="0.15" fill="#0091FF" fill-rule="nonzero" mask="url(#mask-3)" points="66.7071068 32.7071068 106.707107 -7.29289322 106 -8 66 32"></polygon>
+                            <text id="处置情况" mask="url(#mask-3)" font-family="PingFangSC-Semibold, PingFang SC" font-size="14" font-weight="500" fill="#0091FF">
+                                <tspan x="8" y="18">处置情况</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

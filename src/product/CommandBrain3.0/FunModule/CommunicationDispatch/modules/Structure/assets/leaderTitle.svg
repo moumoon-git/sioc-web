@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="752px" height="44px" viewBox="0 0 752 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Title备份 2</title>
+    <defs>
+        <linearGradient x1="52.1790958%" y1="201.375277%" x2="48.9576336%" y2="-135.651324%" id="linearGradient-1">
+            <stop stop-color="#43B5FF" offset="0%"></stop>
+            <stop stop-color="#205CE0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="现场指挥部" transform="translate(-1019.000000, -199.000000)">
+            <g id="弹窗" transform="translate(548.000000, 79.000000)">
+                <g id="编组-6备份-2" transform="translate(470.000000, 68.000000)">
+                    <g id="Title备份-2" transform="translate(1.000000, 52.000000)">
+                        <path d="M751,0 L751,30 L595.343,30 L579.390961,42.6261605 C579.072997,42.8778166 578.679375,43.0147374 578.273873,43.0147374 L175.083893,43.0147374 C174.704365,43.0147374 174.334549,42.8947746 174.027289,42.6719913 L156.551,30 L0,30 L0,0 L751,0 Z" id="合并形状" fill="#2B2F38" opacity="0.747767857"></path>
+                        <path d="M1.2,9 C1.8627417,9 2.4,9.5372583 2.4,10.2 L2.4,19.8 C2.4,20.4627417 1.8627417,21 1.2,21 C0.5372583,21 9.6934087e-16,20.4627417 0,19.8 L0,10.2 C-8.11624501e-17,9.5372583 0.5372583,9 1.2,9 Z" id="Container-Copy-2" fill="url(#linearGradient-1)"></path>
+                        <path d="M750.2,9 C750.862742,9 751.4,9.5372583 751.4,10.2 L751.4,19.8 C751.4,20.4627417 750.862742,21 750.2,21 C749.537258,21 749,20.4627417 749,19.8 L749,10.2 C749,9.5372583 749.537258,9 750.2,9 Z" id="Container-Copy-3" fill="url(#linearGradient-1)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

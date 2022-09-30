@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="403px" height="1px" viewBox="0 0 403 1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>矩形</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="background_single" transform="translate(-86.000000, -43.000000)" fill-rule="nonzero">
+            <g id="编组-10" transform="translate(431.000000, 43.000000)">
+                <rect id="矩形" fill="#56E9FF" x="0" y="0" width="8" height="1"></rect>
+                <rect id="矩形" fill="#56E9FF" x="10" y="0" width="8" height="1"></rect>
+                <rect id="矩形" fill="#56E9FF" x="20" y="0" width="8" height="1"></rect>
+                <rect id="矩形" fill="#F7B500" x="30" y="0" width="8" height="1"></rect>
+                <rect id="矩形" fill="#F7B500" x="40" y="0" width="8" height="1"></rect>
+                <rect id="矩形" fill="#56E9FF" x="50" y="0" width="8" height="1"></rect>
+            </g>
+        </g>
+        <polygon id="矩形" fill="#FFFFFF" fill-rule="nonzero" opacity="0.149999991" points="0 0 343 0 343 1 0 1"></polygon>
+    </g>
+</svg>

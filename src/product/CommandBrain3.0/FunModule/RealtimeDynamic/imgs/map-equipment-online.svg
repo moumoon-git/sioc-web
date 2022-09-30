@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="47px" viewBox="0 0 48 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>应急装备备份</title>
+    <defs>
+        <ellipse id="path-1" cx="24" cy="8" rx="24" ry="8"></ellipse>
+        <filter x="-8.3%" y="-25.0%" width="116.7%" height="150.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="4" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.568627451   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="落点切图整合" transform="translate(-866.000000, -148.000000)">
+            <g id="应急装备备份" transform="translate(866.000000, 148.000000)">
+                <g id="编组-7备份-18" transform="translate(0.000000, 30.400000)">
+                    <g id="椭圆形" fill="black" fill-opacity="1">
+                        <use filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    </g>
+                    <ellipse id="椭圆形" fill="#00519B" opacity="0.703760901" filter="url(#filter-3)" cx="24" cy="8" rx="12" ry="4"></ellipse>
+                </g>
+                <g id="编组-8备份-18" transform="translate(8.000000, 0.000000)" fill-rule="nonzero">
+                    <path d="M16.128,0.5 C20.443553,0.5 24.350553,2.24922348 27.1786648,5.07733522 C30.0067765,7.90544697 31.756,11.812447 31.756,16.128 C31.756,20.3446763 30.0860255,24.171316 27.3774173,26.9764069 L27.3774173,26.9764069 L16.1279487,38.2292741 L4.88087975,26.9820736 C2.17000743,24.1714555 0.5,20.3447505 0.5,16.128 C0.5,11.812447 2.24922348,7.90544697 5.07733522,5.07733522 C7.90544697,2.24922348 11.812447,0.5 16.128,0.5 Z" id="形状结合" stroke="#FFFFFF" fill="#0091FF"></path>
+                    <g id="装备" transform="translate(7.000000, 8.000000)" fill="#FFFFFF">
+                        <path d="M17.4156941,9.23629132 L17.4156941,9.27348041 L18.9997286,9.27348041 L18.9997286,16.2286591 C18.9983714,17.0823672 18.2894102,17.7736466 17.4146084,17.7741935 L1.58593447,17.7741935 C0.71167554,17.7741935 0,17.081 0,16.2286591 L0,9.27348041 L6.44579362,9.27348041 C6.80027427,10.6024432 8.02901386,11.5917821 9.49986429,11.5917821 C10.971529,11.5917821 12.2002686,10.6027166 12.553935,9.27348041 L17.2278682,9.27348041 C17.2946386,9.27348041 17.3538092,9.25160448 17.4156941,9.23629132 Z M10.8629591,9.27348041 C10.5749602,9.75449768 10.0574529,10.0478835 9.49986429,10.0462545 C8.93692947,10.0448804 8.4174226,9.75010225 8.13731233,9.27348041 L10.8632305,9.27348041 L10.8629591,9.27348041 Z M12.670919,-3.53495011e-13 C13.8353309,-3.53495011e-13 14.2500679,0.531585112 14.2500679,1.02926252 L14.2500679,3.09106898 L17.4148798,3.09106898 C18.2888673,3.09106898 19,3.78426254 19,4.63687693 L19,7.76513498 L0,7.76513498 L0,4.63687693 C0.00162855612,3.78289529 0.711132704,3.09161589 1.58566307,3.09106898 L4.74993214,3.09106898 L4.74993214,1.02926252 C4.74993214,0.531585088 5.16548335,-3.53495011e-13 6.33016671,-3.53495011e-13 L12.670919,-3.53495011e-13 Z" id="形状备份" transform="translate(9.500000, 8.887097) rotate(-360.000000) translate(-9.500000, -8.887097) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

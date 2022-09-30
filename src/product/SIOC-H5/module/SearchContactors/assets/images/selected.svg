@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>1.图标-面/1.结果-成功备份</title>
+    <g id="新增任务" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="选择参与人备份" transform="translate(-22.000000, -489.000000)">
+            <g id="编组-2" transform="translate(0.000000, 458.000000)">
+                <g id="编组-13" transform="translate(22.000000, 30.000000)">
+                    <g id="彩色icon/结果/成功" transform="translate(0.000000, 1.000000)">
+                        <rect x="0" y="0" width="48" height="48"></rect>
+                        <circle id="color" fill="#0091FF" cx="24" cy="24" r="20"></circle>
+                        <path d="M29.5795049,29.4545049 C29.5795049,30.5088667 28.7636271,31.37267 27.7287672,31.4490191 L27.5795049,31.4545049 L27.5795049,31.4545049 L19.0795049,31.4545049 L19.0795049,28.4545049 L26.5785049,28.4535049 L26.5795049,12.7045049 L29.5795049,12.7045049 L29.5795049,29.4545049 Z" id="形状结合" fill="#FFFFFF" transform="translate(24.329505, 22.079505) rotate(45.000000) translate(-24.329505, -22.079505) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

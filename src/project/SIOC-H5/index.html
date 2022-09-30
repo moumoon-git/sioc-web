@@ -1,0 +1,66 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-04-22 11:35:23
+ * @LastEditTime: 2021-04-25 15:48:17
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \hxt_sinvie3.0\sioc-web\src\project\SIOC-H5\index.html
+-->
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 在 head 标签中添加 meta 标签，并设置 viewport-fit=cover 值 -->
+    <!-- user-scalable=no -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+    <!-- html5页面调用手机打电话功能 -->
+    <meta name="format-detection" content="telephone=yes" />
+    <!-- 开启顶部安全区适配 -->
+    <van-nav-bar safe-area-inset-top />
+    <!-- 开启底部安全区适配 -->
+    <van-number-keyboard safe-area-inset-bottom />
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <!-- 项目专属全局变量配置 -->
+    <script src="/SIOC-H5.config.js"></script>
+    <!-- 项目rem适配 -->
+    <script src="/resizeFontSize.js"></script>
+    <!-- 手机端调试 -->
+    <script src="/debug.js"></script>
+    <!-- 超图 -->
+    <script src="/SuperMap/iClient/libs/SuperMap.Include.js" type="text/javascript"></script>
+    <script src="/SuperMap/iClient/libs/iClientJavaScriptPlottingSymbols.js" type="text/javascript"></script>
+    <script src="/SuperMap/iClient/turf.min.js"></script>
+    <!-- stomp -->
+    <script type="text/javascript" src="/stomp/stomp.min.js"></script>
+    <!-- 高德地图 -->
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=2300898618f6ce0fa1527f4e76866162"></script>
+    <!--pdf预览插件-->
+    <script>
+      window.PDFJS = {
+        workerSrc: '/pdf/pdf.worker.js',
+      }
+    </script>
+    <script type="text/javascript" src="/pdf/pdf.js"></script>
+    <script type="text/javascript" src="/pdf/pdf.worker.js"></script>
+    <!-- 手机端开发环境调试 -->
+    <% if (process.env.NODE_ENV === 'development') { %>
+      <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+      <script>
+        eruda.init();
+      </script>
+    <% } %>
+</head>
+
+<body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>

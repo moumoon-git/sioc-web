@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="398px" height="40px" viewBox="0 0 398 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>合并形状</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.108009178">
+        <g id="情报信息" transform="translate(-1081.000000, -106.000000)" fill="#84A0C1">
+            <g id="右侧预案响应" transform="translate(1080.000000, 72.000000)">
+                <g id="标题" transform="translate(1.000000, 34.000000)">
+                    <path d="M398,-3.55271368e-14 L398,30 L321.283,29.999 L297.905973,39.7680557 C297.53957,39.9211613 297.146416,40 296.749311,40 L106.024971,40 C105.658353,40 105.29484,39.9328003 104.952452,39.801732 L79.347,29.999 L0,30 L0,-3.55271368e-14 L398,-3.55271368e-14 Z" id="合并形状"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+.inline-block {
+  display: inline-block;
+  width: 185px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+
+@mixin little-icon {
+  cursor: pointer;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+@mixin inline_block_width($width) {
+  display: inline-block;
+  width: $width;
+}
+

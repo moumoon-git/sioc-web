@@ -1,0 +1,31 @@
+@import './shared.scss';
+
+.sbs-tabs.el-tabs {
+  .el-tabs__active-bar {
+    display: block !important;
+  }
+
+  .el-tabs__header {
+    margin-bottom: 10px;
+  }
+
+  .el-tabs__nav-wrap::after {
+    display: none;
+  }
+
+  .el-tabs__content {
+    overflow: visible;
+  }
+
+  .el-tabs__item {
+    font-size: 16px !important;
+    color: $tips-color !important;
+    font-weight: normal !important;
+    padding: 0 15.23px 0 16px !important;
+
+    &.is-active {
+      color: $title-color !important;
+      font-weight: bold !important;
+    }
+  }
+}

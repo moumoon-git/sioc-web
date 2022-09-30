@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>已读</title>
+    <defs>
+        <rect id="path-1" x="4" y="5" width="80" height="22"></rect>
+        <filter x="-17.5%" y="-45.5%" width="135.0%" height="227.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.2   0 0 0 0 0.00743902439   0 0 0 0 0.00743902439  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="深汕" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="任务列表" transform="translate(-1390.000000, -689.000000)">
+            <g id="右侧预案响应" transform="translate(1070.000000, 74.000000)">
+                <g id="任务记录备份" transform="translate(20.000000, 615.000000)">
+                    <g id="未读" transform="translate(296.000000, 0.000000)">
+                        <g id="矩形" transform="translate(44.000000, 16.000000) rotate(-315.000000) translate(-44.000000, -16.000000) ">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#F66E6E" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

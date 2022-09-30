@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  padding: 10px;
+  height: 60vh;
+  align-items: stretch;
+  // 左边树形
+  .left {
+    border: 1px solid #F2F2F2;
+    margin-right: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    // 顶部按钮
+    & > div:first-child {
+      flex-shrink: 0;
+      display: flex;
+      background: rgba(240, 246, 255, .4);
+      height: 40px;
+      align-items: center;
+      & > * {
+        flex: 1;
+        margin: 0;
+        &:not(:last-child) {
+          position: relative;
+          &::after {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 20px;
+            background: #D8D8D8;
+            position: absolute;
+            right: -1px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+    // 树形
+    & > :last-child {
+      height: 50%;
+      flex: 1;
+      overflow-y: auto;
+    }
+  }
+  // 右边栏
+  .right {
+    flex: 1;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      background: transparent;
+      width: 5px;
+      height: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #d5d5d5;
+      border-radius: 5px;
+    }
+  }
+}
+// 底部按钮
+.footer {
+  text-align: right;
+  padding-right: 20px;
+  height: 60px;
+  line-height: 60px;
+  border-top: 1px solid #E9ECF1;
+  position: relative;
+  .templateButton {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    & > :not(:last-child) {
+      position: relative;
+      margin-right: 18px;
+      &::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 20px;
+        background: #E6E6E6;
+        position: absolute;
+        right: -14px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

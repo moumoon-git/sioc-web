@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="34px" viewBox="0 0 28 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>风险隐患</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="落点切图整合（保留）" transform="translate(-206.000000, -984.000000)">
+            <g id="风险隐患" transform="translate(206.000000, 984.000000)">
+                <path d="M14,0 C21.7319865,0 28,6.2680135 28,14 C28,18.4749597 25.9004511,22.4595434 22.6326771,25.0224273 L14,33.6 L5.38851486,25.0390152 C2.108629,22.4767549 0,18.4846258 0,14 C0,6.2680135 6.2680135,0 14,0 Z" id="形状结合" fill="#D90C0C" fill-rule="nonzero"></path>
+                <circle id="椭圆形" fill="#FFFFFF" cx="14" cy="14" r="12"></circle>
+                <text id="涝" font-family="AlibabaPuHuiTi_2_55_Regular, Alibaba PuHuiTi 2.0" font-size="16" font-weight="normal" fill="#D90C0C">
+                    <tspan x="6" y="20">涝</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

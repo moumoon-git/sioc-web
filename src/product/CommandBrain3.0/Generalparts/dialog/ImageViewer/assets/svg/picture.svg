@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>图片</title>
+    <defs>
+        <circle id="path-1" cx="11" cy="11" r="11"></circle>
+        <filter x="-31.8%" y="-22.7%" width="163.6%" height="163.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.328452797 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="4.15682264%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#1B7E8D" offset="0%"></stop>
+            <stop stop-color="#2A3934" offset="100%"></stop>
+        </linearGradient>
+        <path d="M13.6783499,10.2115776 L0.885635344,10.2115776 C0.58493728,10.2115776 0.304746265,10.0590979 0.141614858,9.80649651 C-0.0215165496,9.55389509 -0.0452858374,9.23576158 0.0784977832,8.96172335 C0.757491866,7.46394229 1.72605695,5.10077659 2.7928099,4.84448964 C4.27561315,4.4866864 5.38397114,7.34079141 5.38397114,7.34079141 C5.38397114,7.34079141 8.07498446,2.92899409 9.54447411,2.92899409 C11.0139638,2.92899409 13.5934756,7.05621301 14.4305688,9.09818786 C14.5339203,9.34800915 14.5050471,9.63301781 14.3536927,9.85703577 C14.2023382,10.0810537 13.9486925,10.2141981 13.6783499,10.2115776 Z" id="path-4"></path>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="情报信息" transform="translate(-1652.000000, -710.000000)">
+            <g id="右侧预案响应" transform="translate(1486.000000, 72.000000)">
+                <g id="任务记录备份" transform="translate(44.000000, 81.000000)">
+                    <g id="2" transform="translate(9.000000, 500.000000)">
+                        <g id="图片" transform="translate(117.000000, 59.000000)">
+                            <g id="椭圆形" fill-rule="nonzero">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use fill="#FFFFFF" xlink:href="#path-1"></use>
+                            </g>
+                            <g id="编组-19" transform="translate(3.500000, 5.500000)">
+                                <g id="路径">
+                                    <use fill="#D8D8D8" xlink:href="#path-4"></use>
+                                    <use fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+                                </g>
+                                <path d="M2.20923002,1.22152368 C2.20923002,1.89615257 2.7561248,2.44304735 3.43075369,2.44304735 C4.10538259,2.44304735 4.65227737,1.89615257 4.65227737,1.22152368 C4.65227737,0.546894778 4.10538259,2.45957101e-14 3.43075369,2.45957101e-14 C2.7561248,2.45957101e-14 2.20923002,0.546894778 2.20923002,1.22152368 L2.20923002,1.22152368 Z" id="路径" fill="#1B7E8D" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

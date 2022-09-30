@@ -1,0 +1,58 @@
+.sv-tree.el-tree {
+  user-select: none;
+  // 第一层的节点
+  & > .el-tree-node > .el-tree-node__content {
+    background: #F7F8FA !important;
+    color: #333 !important;
+    border: none !important;
+  }
+  // 其余层的节点
+  .el-tree-node__content {
+    height: 36px;
+    color: #666 !important;
+    &:hover {
+      background: rgba(63, 146, 254, .1);
+    }
+  }
+  // 选中的节点
+  .el-tree-node.is-current > .el-tree-node__content {
+    background: rgba(63, 146, 254, .1);
+    border-left: 2px solid #0091FF;
+  }
+  // 折叠图标
+  .sv-tree__icon {
+    width: 6px;
+    height: 6px;
+    position: relative;
+    margin: 0 5px;
+    flex-shrink: 0;
+    &::before {
+      content: '';
+      display: block;
+      width: 7px;
+      height: 1px;
+      position: absolute;
+      left: 6px;
+      top: 10px;
+      background: #C0C0C0;
+      transform: rotate(-45deg);
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 7px;
+      height: 1px;
+      position: absolute;
+      left: 6px;
+      top: 6px;
+      background: #C0C0C0;
+      transform: rotate(45deg);
+    }
+    &.is-leaf {
+      visibility: hidden;
+      margin: 0;
+      padding: 0;
+      width: 10px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.sv-table:not(.el-table) {
+  border-collapse: collapse;
+  color: #666;
+  th,
+  td {
+    border: 1px solid rgba(0, 0, 0, .05);
+    height: 40px;
+    line-height: 40px;
+    width: 100px;
+    text-align: center;
+  }
+  th,
+  td:first-child {
+    font-weight: 500;
+    color: #333;
+  }
+  th {
+    background: #F0F6FF;
+  }
+}

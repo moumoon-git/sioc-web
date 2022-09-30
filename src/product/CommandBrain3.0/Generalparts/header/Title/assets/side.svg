@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="87px" height="64px" viewBox="0 0 87 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 4</title>
+    <g id="工具面板" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="组织动态" transform="translate(-610.000000, 0.000000)" fill="#003C70" fill-rule="nonzero">
+            <g id="编组-4" transform="translate(610.000000, 0.000000)">
+                <polygon id="形状" opacity="0.5" points="650.572961 12 666 64 34 64 49.4270386 12"></polygon>
+                <polygon id="路径" opacity="0.300000012" points="700 64 2.28289609e-13 64 9.49612403 32 690.503876 32"></polygon>
+                <polygon id="矩形-copy" points="86.9807692 8.49986748e-13 613.019231 9.09494702e-13 632 64 68 64"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

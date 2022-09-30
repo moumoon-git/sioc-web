@@ -1,0 +1,161 @@
+.detail__dynamic {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 722px;
+    .detail__dynamic__cards {
+      height: 524px;
+      overflow: auto;
+      overflow-x: hidden;
+      width: 100%;
+      margin: 0 auto;
+      // 滚动条
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        background: transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #56e9ff;
+        border-radius: 5px;
+      }
+      &::-webkit-scrollbar-corner {
+        background: transparent;
+      }
+    }
+    .detail__dynamic__send {
+      width: 100%;
+      height: 137px;
+      border-top: 1px solid rgba(225, 225, 225, 0.15);
+      > img {
+        height: 80px;
+        margin: 2px;
+        cursor: pointer;
+      }
+      &__file {
+        width: 360px;
+        margin: 0 auto;
+        &__out{
+      position: relative;
+      width: 40px;
+      height: 40px;
+      margin: 0px;
+      cursor: pointer;
+      float: left;
+        > img {
+              height: 40px;
+      width: 40px;
+          margin: 0px;
+          cursor: pointer;
+        }
+        > video {
+          height: 40px;
+          width: 40px;
+          margin: 2px;
+          cursor: pointer;
+        }
+        &:hover{
+        .delete__dynamic__send__file__img{
+          width: 14px;
+          height: 14px;
+          background: url(./assets/delete.svg) no-repeat;
+          position: absolute;
+          top: 0;
+          right: 0;
+          cursor: pointer;
+        }
+        }
+  
+        }
+  
+  
+        
+        > p {
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+      .detail__dynamic__send_panel {
+        width: 360px;
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+  
+        & > textarea {
+          width: 100%;
+          background: 0;
+          height: 90px;
+          border: 0;
+          outline: 0;
+          color: #fff;
+          resize: none;
+          // 滚动条
+          &::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+            background: transparent;
+          }
+          &::-webkit-scrollbar-thumb {
+            background: #56e9ff;
+            border-radius: 5px;
+          }
+          &::-webkit-scrollbar-corner {
+            background: transparent;
+          }
+        }
+        &__content {
+          width: 100%;
+          color: #fff;
+          outline: 0;
+          height: 100px;
+          overflow-y: auto;
+          margin-top: 10px;
+          > img {
+            height: 40px;
+          }
+        }
+        .detail__dynamic__send__panelicon1 {
+          width: 17px;
+          height: 16.68px;
+          background: url(./assets/sendImg.svg) no-repeat;
+          margin-right: 12px;
+          margin-top: 8px;
+        }
+        .detail__dynamic__send__panelicon2 {
+          width: 17px;
+          height: 16.68px;
+          background: url(./assets/sendFile.svg) no-repeat;
+          margin-right: 12px;
+          margin-top: 8px;
+        }
+        .detail__dynamic__send__panelicon3 {
+          width: 17px;
+          height: 16.68px;
+          background: url(./assets/sendLocation.svg) no-repeat;
+          margin-right: 12px;
+          margin-top: 8px;
+        }
+      }
+      .detail__dynamic__send_panel__bottom{
+      width: 100%;
+      height: 60px;
+      display: flex;
+      justify-content: flex-end;
+      .detail__dynamic__send_panel__btn {
+      color: #fff;
+      height: 32px;
+      background: #00c1de;
+      width: 64px;
+      text-align: center;
+      line-height: 32px;
+      cursor: pointer;
+      margin-right: 15px;
+      margin-top: 15px;
+      }
+      .detail__dynamic__send_panel__btn--no {
+        cursor: no-drop;
+        }
+      }
+  
+    }
+  }

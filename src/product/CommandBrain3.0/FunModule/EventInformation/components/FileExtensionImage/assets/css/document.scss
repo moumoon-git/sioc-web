@@ -1,0 +1,34 @@
+$img_close: url("./assets/images/icons/close.png"); // 图片-关闭
+
+// flex布局兼容浏览器写法：
+.flex_style {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.document-list-layout {
+  @extend .flex_style;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+
+  .document_name {
+    flex: 1;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 0 6px;
+    line-height: 20px;
+  }
+
+  // 关闭
+  .document_img-close {
+    width: 28px;
+    height: 28px;
+    background-image: $img_close;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}

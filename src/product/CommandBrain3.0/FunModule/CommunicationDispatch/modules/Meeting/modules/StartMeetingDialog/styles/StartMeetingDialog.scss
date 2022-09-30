@@ -1,0 +1,198 @@
+.container {
+  width: 732px;
+  height: 732px;
+  color: #FFF;
+  & > header {
+    display: flex;
+    height: 40px;
+    margin-top: 9px;
+    align-items: center;
+    // 1. 标题
+    .title {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0 0 0 20px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding: 0 0 0 20px;
+      white-space: nowrap;
+      position: relative;
+      color: #56E9FF;
+      // 标题-色块
+      &::before {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 13px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: inherit;
+        background: currentColor;
+        border-radius: 2px;
+      }
+    }
+    // 2. 编辑按钮
+    .editButton {
+      width: 16px;
+      height: 16px;
+      border: none;
+      outline: none;
+      background: #FFF;
+      mask: no-repeat center/100% 100% url(../assets/icon-edit.svg);
+      cursor: pointer;
+      transition: background .3s;
+      margin-left: 5px;
+      position: relative;
+      &:hover {
+        background: #56E9FF;
+      }
+      &:active {
+        top: 1px;
+      }
+    }
+    // 3. 邀请入会按钮
+    & > button:last-child {
+      background: none;
+      border: none;
+      outline: none;
+      margin: 0 20px 0 auto;
+      padding: 0;
+      color: #56E9FF;
+      transition: filter .3s;
+      cursor: pointer;
+      &::before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background: #56E9FF;
+        mask: no-repeat center/100% 100% url(../assets/icon-participant.svg);
+        vertical-align: -3px;
+        margin-right: 4px;
+      }
+      &:hover {
+        filter: brightness(110%);
+      }
+      &:active {
+        filter: brightness(90%);
+      }
+    }
+  }
+  & > main {
+    border: 1px solid rgba(0, 193, 222, .29);
+    background: #000;
+    margin: 0 20px;
+    height: 565px;
+    position: relative;
+    .emptyTips {
+      background: none;
+      color: #FFF;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      font-weight: 500;
+      &::before {
+        content: '';
+        display: inline-block;
+        background: no-repeat center/100% 100% url(../assets/icon-members.svg);
+        width: 21px;
+        height: 21px;
+        margin-right: 5px;
+        vertical-align: -6px;
+      }
+    }
+    .menu {
+      height: 51px;
+      border-bottom: 1px solid rgba(255, 255, 255, .15);
+    }
+    & > ul {
+      height: calc(100% - 52px);
+      overflow-y: auto;
+      // 滚动条
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        background: transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #56E9FF;
+        border-radius: 5px;
+      }
+      &::-webkit-scrollbar-corner {
+        background: transparent;
+      }
+      & > li {
+        line-height: 32px;
+        padding: 0 18px;
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          vertical-align: -2px;
+          margin-right: 10px;
+          background: no-repeat center/100% 100% url(../../../assets/icon-type-4.svg);
+        }
+        &.type1::before,
+        &.type2::before,
+        &.type3::before {
+          background-image: url(../../../assets/icon-type-123.svg);
+        }
+        &.type5::before {
+          background-image: url(../../../assets/icon-type-5.svg);
+        }
+        &.type6::before {
+          background-image: url(../../../assets/icon-type-6.svg);
+        }
+        &.type7::before {
+          background-image: url(../../../assets/icon-type-7.svg);
+        }
+        &.type8::before {
+          background-image: url(../../../assets/icon-type-8.svg);
+        }
+        &.type10::before {
+          background-image: url(../../../assets/icon-type-9.svg);
+        }
+        &:hover {
+          padding-left: 16px;
+          border-left: 2px solid #56E9FF;
+          background: linear-gradient(
+            90deg,
+            rgba(0, 193, 222, .7) 0%,
+            rgba(24, 38, 50, 0) 100%
+          );
+          color: #56E9FF;
+          .deleteButton {
+            display: inline-block;
+          }
+        }
+        .deleteButton {
+          display: none;
+          width: 14px;
+          height: 14px;
+          float: right;
+          outline: none;
+          border: none;
+          background: #FFF;
+          mask: no-repeat center/100% 100% url(../assets/icon-clear.svg);
+          cursor: pointer;
+          margin-top: 9px;
+          &:hover {
+            background: #F66E6E;
+          }
+        }
+      }
+    }
+  }
+  & > footer {
+    height: 126px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

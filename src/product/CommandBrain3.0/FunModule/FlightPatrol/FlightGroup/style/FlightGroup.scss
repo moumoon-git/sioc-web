@@ -1,0 +1,79 @@
+.flight-group {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  &__header {
+    position: relative;
+    & > div:last-child {
+      display: flex;
+      margin: 20px 10px 10px;
+    }
+    // 搜索框
+    &__search {
+      width: 270px;
+      flex: 1;
+    }
+    // 新增按钮
+    &__add {
+      border: none;
+      outline: none;
+      color: #56E9FF;
+      font-size: 14px;
+      font-weight: 400;
+      background: transparent;
+      padding: 0;
+      cursor: pointer;
+      margin-left: 10px;
+      &:hover {
+        opacity: .7;
+      }
+      &:active {
+        top: 1px;
+        position: relative;
+      }
+    }
+    // 批量预览 + 存为分组 + 创建视频链
+    &__button {
+      margin-top: 20px;
+      text-align: right;
+      & > button {
+        color: #56E9FF;
+        font-size: 16px;
+        font-weight: 400;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0 10px;
+        &:hover {
+          opacity: .7;
+        }
+        &:not(:last-child) {
+          border-right: 1px solid rgba(255, 255, 255, 0.15);
+        }
+      }
+    }
+  }
+  & > main {
+    height: calc(100% - 227px);
+    flex: 1;
+    overflow-y: auto;
+    // 滚动条
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #56E9FF;
+      border-radius: 5px;
+    }
+    &::-webkit-scrollbar-corner {
+      background: transparent;
+    }
+  }
+  & > footer {
+    height: 137px;
+    border-top: 1px solid rgba(84, 88, 96, .64);
+  }
+}

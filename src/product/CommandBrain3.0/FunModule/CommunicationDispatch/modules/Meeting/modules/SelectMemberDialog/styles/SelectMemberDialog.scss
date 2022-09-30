@@ -1,0 +1,72 @@
+@import 'SelectMemberDialogLeft.scss';
+@import 'SelectMemberDialogRight.scss';
+
+.container {
+  width: 1313px;
+  height: 742px;
+  color: #FFF;
+  & > main {
+    display: flex;
+    height: calc(100% - 58px);
+    box-sizing: border-box;
+    padding: 20px;
+    & > section {
+      border: 1px solid rgba(0, 193, 222, .29);
+      background: #000;
+      & > header {
+        height: 51px;
+        border-bottom: 1px solid rgba(255, 255, 255, .15);
+        background: linear-gradient(90deg, rgba(20, 98, 140, .35) 0%, rgba(14, 69, 100, 0.25) 100%);
+      }
+    }
+  }
+  & > footer {
+    text-align: right;
+    height: 57px;
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    padding-right: 16px;
+    & > button {
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+  }
+  // 部门树组件
+  :global(.department-tree-item) {
+    padding: 5px;
+  }
+  // 文字按钮
+  .textButton {
+    padding: 0;
+    margin: 0;
+    color: #56E9FF;
+    font-weight: 500;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+      filter: brightness(110%);
+    }
+    &:active {
+      filter: brightness(90%);
+    }
+  }
+
+  .disableItem {
+    color: #666;
+    &:hover {
+      color: #666;
+    }
+  }
+
+  // 离线设备
+  .deviceOffline {
+    color: #747474 !important;
+    &::after {
+      content: '已离线';
+      color: #FFF;
+      margin-left: 10px;
+      background: #747474;
+    }
+  }
+}

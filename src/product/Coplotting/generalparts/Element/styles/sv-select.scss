@@ -1,0 +1,19 @@
+.sv-select.el-select {
+  .el-input__inner {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 8px;
+    border-radius: 3px;
+  }
+  & .el-select__caret {
+    line-height: 30px !important;
+  }
+}
+// 下拉框
+.sv-select__popper.el-select__popper {
+  border: none !important;
+  margin-top: -8px !important;
+  & > .el-popper__arrow {
+    display: none;
+  }
+}

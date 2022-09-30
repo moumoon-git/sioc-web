@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.784314 0 0 0 0 0.788235 0 0 0 0 0.800000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="新增任务" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组" transform="translate(-325.000000, -467.000000)" filter="url(#filter-1)">
+            <g transform="translate(327.000000, 469.000000)">
+                <path d="M48,96 C39.0685714,96 30.7337143,93.5177143 23.5748571,89.2662857 L3.77485714,94.92 C2.12914286,95.3897143 0.606857143,93.8708571 1.08,92.2251429 L6.73371429,72.4285714 C2.48571429,65.2662857 0,56.9314286 0,48 C0,21.4902857 21.4937143,0 48,0 C55.1429734,0 61.9215267,1.56023551 68.0134507,4.35849718 C78.8154039,9.3202616 87.4585291,18.1744976 92.1465151,29.124894 C94.6268262,34.9185098 96,41.2988906 96,48 C96,74.5097143 74.5097143,96 48,96 Z" id="路径" stroke="#1890FF" stroke-width="3.86194286" fill-rule="nonzero"></path>
+                <polyline id="路径-2" stroke="#979797" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" points="27.94623 47.4204255 40.5171947 64.0401503 71.8886719 37.330223"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

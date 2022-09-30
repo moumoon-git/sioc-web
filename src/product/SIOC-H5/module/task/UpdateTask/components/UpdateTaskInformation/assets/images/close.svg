@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>关闭</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="发布任务-输入完毕" transform="translate(-332.000000, -1004.000000)" fill-rule="nonzero">
+            <g id="list" transform="translate(0.000000, 249.000000)">
+                <g id="添加图片-copy-6" transform="translate(212.000000, 755.000000)">
+                    <g id="关闭" transform="translate(120.000000, 0.000000)">
+                        <circle id="椭圆形" fill="#000000" opacity="0.699999988" cx="22" cy="22" r="21"></circle>
+                        <path d="M22,7 C23.1045695,7 24,7.8954305 24,9 L24,20 L35,20 C36.1045695,20 37,20.8954305 37,22 C37,23.1045695 36.1045695,24 35,24 L24,24 L24,35 C24,36.1045695 23.1045695,37 22,37 C20.8954305,37 20,36.1045695 20,35 L19.999,24 L9,24 C7.8954305,24 7,23.1045695 7,22 C7,20.8954305 7.8954305,20 9,20 L20,20 L20,9 C20,7.8954305 20.8954305,7 22,7 Z" id="合并形状" fill="#FFFFFF" transform="translate(22.000000, 22.000000) rotate(-45.000000) translate(-22.000000, -22.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

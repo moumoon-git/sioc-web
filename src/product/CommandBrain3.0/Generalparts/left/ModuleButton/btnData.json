@@ -1,0 +1,196 @@
+[{
+    "name": "快捷通道",
+    "type": "",
+    "distinguishId": "",
+    "icon": "quick",
+    "children": [{
+            "name": "创建任务",
+            "icon": "task",
+            "type": "",
+            "distinguishId": ""
+        },
+        {
+            "name": "周边视频",
+            "icon": "video",
+            "type": "",
+            "distinguishId": ""
+        },
+        {
+            "name": "现场人员",
+            "icon": "people",
+            "type": "",
+            "distinguishId": ""
+        },
+        {
+            "name": "快捷会议",
+            "icon": "meeting",
+            "type": "",
+            "distinguishId": ""
+        },
+        {
+            "name": "资源检索",
+            "icon": "searchScope",
+            "type": "",
+            "distinguishId": ""
+        }
+    ],
+    "activeState": false
+},
+{
+    "name": "预案响应",
+    "type": "",
+    "distinguishId": "",
+    "icon": "reservePlan",
+    "children": [{
+            "name": "预案管理",
+            "icon": "reservePlan_Admin",
+            "type": "",
+            "distinguishId": "",
+            "activeState": false
+        },
+        {
+            "name": "现场指挥部",
+            "icon": "reservePlan_Scene",
+            "type": "",
+            "distinguishId": "",
+            "activeState": false
+        },
+        {
+            "name": "预案文档",
+            "icon": "reservePlan_Document",
+            "type": "",
+            "distinguishId": "",
+            "activeState": false
+        },
+        {
+            "name": "组织架构",
+            "icon": "reservePlan_Structure",
+            "type": "",
+            "distinguishId": "",
+            "activeState": false
+        },
+        {
+            "name": "响应通告",
+            "icon": "reservePlan_Announce",
+            "type": "",
+            "distinguishId": "",
+            "activeState": false
+        },
+        {
+            "name": "预案任务",
+            "icon": "reservePlan_Info",
+            "type": "",
+            "distinguishId": "",
+            "activeState": false
+        },
+        {
+            "name": "现场签到",
+            "icon": "reservePlan_Sign",
+            "type": "",
+            "distinguishId": "",
+            "activeState": false
+        }
+    ],
+    "activeState": false
+},
+{
+    "name": "任务调度",
+    "type": "",
+    "distinguishId": "",
+    "icon": "task",
+    "children": [],
+    "activeState": false
+},
+{
+    "name": "现场支援",
+    "type": "",
+    "distinguishId": "",
+    "icon": "resource",
+    "children": [],
+    "activeState": false
+},
+{
+    "name": "通讯调度",
+    "type": "",
+    "distinguishId": "",
+    "icon": "communication",
+    "children": [],
+    "activeState": false
+},
+{
+    "name": "视频飞巡",
+    "type": "",
+    "distinguishId": "",
+    "icon": "filghtPatrol",
+    "children": [{
+            "name": "新增巡查",
+            "icon": "filghtPatrol_Inspection",
+            "type": "",
+            "distinguishId": "",
+            "activeState": false
+        },
+        {
+            "name": "飞巡记录",
+            "icon": "filghtPatrol_record",
+            "type": "",
+            "distinguishId": "",
+            "activeState": false
+        },
+        {
+            "name": "飞巡分组",
+            "icon": "filghtPatrol_grouping",
+            "type": "",
+            "distinguishId": "",
+            "activeState": false
+        },
+        {
+            "name": "飞巡资源",
+            "icon": "filghtPatrol_resources",
+            "type": "",
+            "distinguishId": "",
+            "activeState": false
+        }
+    ],
+    "activeState": false
+},
+{
+    "name": "实时动态",
+    "type": "",
+    "distinguishId": "",
+    "icon": "dynamic",
+    "children": [],
+    "activeState": false
+},
+{
+    "name": "事件情报",
+    "type": "",
+    "distinguishId": "",
+    "icon": "cuttingEdgeNews",
+    "children": [],
+    "activeState": false
+},
+{
+    "name": "情况汇总",
+    "type": "",
+    "distinguishId": "",
+    "icon": "summary",
+    "children": [],
+    "activeState": false
+},
+{
+    "name": "总结报告",
+    "type": "",
+    "distinguishId": "",
+    "icon": "report",
+    "children": [],
+    "activeState": false
+},
+{
+    "name": "知识库",
+    "type": "",
+    "distinguishId": "",
+    "icon": "knowledgeBase",
+    "children": [],
+    "activeState": false
+}
+]

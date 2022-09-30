@@ -1,0 +1,105 @@
+@import './shared.scss';
+
+.sbs-pagination.el-pagination--small {
+  align-items: center;
+
+  .btn-prev,
+  .btn-next {
+    border: none !important;
+    background: none !important;
+  }
+
+  & > .el-pager {
+    & > li {
+      border: none !important;
+      background: none !important;
+      color: $text-color;
+
+      &.active {
+        background: none !important;
+        color: $main-color !important;
+      }
+    }
+  }
+}
+
+.sbs-pagination.el-pagination:not(.el-pagination--small) {
+  color: $text-color;
+  font-size: 14px;
+  align-items: center;
+
+  .el-pagination__total {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .el-pagination__sizes {
+    height: 30px;
+    line-height: 30px;
+
+    .el-input__inner {
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+
+  @mixin itemBorder {
+    border: 1px solid #dddee1;
+    border-radius: 2px;
+    min-width: auto;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+
+    &:hover {
+      border-color: $main-color;
+    }
+  }
+
+  .btn-prev {
+    margin-right: 10px;
+  }
+
+  .btn-next {
+    margin-left: 10px;
+  }
+
+  .btn-prev,
+  .btn-next {
+    padding-left: 8px;
+    @include itemBorder;
+  }
+
+  .el-pager {
+    li {
+      margin: 0;
+      font-weight: normal;
+      @include itemBorder;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      &.active {
+        border-color: $main-color;
+        background-color: $main-color;
+        color: #FFF;
+      }
+    }
+  }
+
+  .el-pagination__jump {
+    font-size: 14px;
+
+    .el-pagination__editor {
+      width: 36px;
+      height: 30px;
+      line-height: 30px;
+      .el-input__inner {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+}

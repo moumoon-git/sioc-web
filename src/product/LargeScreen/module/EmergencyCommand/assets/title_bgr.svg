@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="630px" height="40px" viewBox="0 0 630 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>矩形备份 5</title>
+    <defs>
+        <linearGradient x1="-2.67766357%" y1="0%" x2="100%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#00A1F3" stop-opacity="0.1" offset="0%"></stop>
+            <stop stop-color="#00A1F3" stop-opacity="0.501742276" offset="52.3762736%"></stop>
+            <stop stop-color="#00A1F3" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-7.1%" y="-250.0%" width="114.3%" height="600.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="15" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应急指挥" transform="translate(-35.000000, -263.000000)" fill="url(#linearGradient-1)">
+            <g id="风险隐患分析" transform="translate(35.000000, 38.000000)">
+                <g id="矩形" transform="translate(0.000000, 225.000000)">
+                    <polygon id="矩形备份-5" filter="url(#filter-2)" transform="translate(315.000000, 31.000000) rotate(-180.000000) translate(-315.000000, -31.000000) " points="-1.21585207e-12 22 630 22 630 40 -1.21585207e-12 40"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

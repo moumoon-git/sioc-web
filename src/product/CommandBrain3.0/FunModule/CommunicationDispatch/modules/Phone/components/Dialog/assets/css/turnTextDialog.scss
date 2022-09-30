@@ -1,0 +1,105 @@
+.dialog-turn-text-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background: rgba(20, 29, 31, 0.94);
+  padding-top: 233px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+// 弹窗
+.dialog-turn-text {
+  width: 473px;
+  height: 235px;
+  background: #000000;
+  border: 1px solid #00c1de;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .dialog_header {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    // 图形按钮
+    .icon-button {
+      outline: none;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .dialog_body {
+    width: 100%;
+    flex: 1;
+
+    .dialog-textarea {
+      resize: none; // 禁止拉升
+      width: 100%;
+      height: 100%;
+      background: #000000;
+      font-size: 14px;
+      font-weight: 400;
+      color: #ffffff;
+      padding: 14px;
+      box-sizing: border-box;
+      border: none;
+      outline: none;
+
+      &:focut {
+        border: none;
+        outline: none;
+      }
+
+      /* 定义滚动条样式 */
+      &::-webkit-scrollbar {
+        width: 3px;
+        height: 5px;
+        /* background-color: rgba(100, 104, 105, 1); */
+        border-radius: 10px;
+      }
+      /*定义滚动条轨道 内阴影+圆角*/
+      &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+        border-radius: 10px;
+        background-color: rgba(100, 104, 105, 1);
+      }
+      /*定义滑块 内阴影+圆角*/
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+        background-color: rgba(86, 233, 255, 1);
+      }
+    }
+  }
+
+  .dialog_footer {
+    width: 100%;
+    height: 56px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+
+    & > button {
+      margin-left: 10px;
+    }
+  }
+}

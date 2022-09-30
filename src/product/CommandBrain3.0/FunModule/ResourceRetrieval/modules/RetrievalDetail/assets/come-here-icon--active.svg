@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="18px" viewBox="0 0 15 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>到这来备份</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="筛地点-选中地点之后" transform="translate(-1834.000000, -1012.000000)">
+            <g id="编组-16" transform="translate(1742.000000, 937.000000)">
+                <g id="到这来备份" transform="translate(91.999773, 76.000000)">
+                    <g id="编组-17" transform="translate(0.000000, 0.231550)">
+                        <circle id="椭圆形" fill="#56E9FF" fill-rule="nonzero" cx="3" cy="12.7684497" r="3"></circle>
+                        <polyline id="路径-2" stroke="#56E9FF" points="3 6.26844974 3 3.59780443e-15 14.3416357 3.59780443e-15"></polyline>
+                        <polygon id="三角形" fill="#56E9FF" fill-rule="nonzero" transform="translate(3.000000, 6.268450) rotate(-180.000000) translate(-3.000000, -6.268450) " points="3 3.26844974 6 9.26844974 0 9.26844974"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

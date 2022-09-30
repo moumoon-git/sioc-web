@@ -1,0 +1,262 @@
+.selectSahreContactor {
+    height: 593px;
+    &__box {
+      height: 540px;
+      border-bottom: 1px solid #e9ecf1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__l {
+        width: 507px;
+        height: 502px;
+        border: 1px solid rgba(221, 221, 221, 1);
+        margin-right: 10px;
+        display: flex;
+        &__tree {
+          width: 50%;
+          border-right: 1px solid #dddddd;
+          height: 100%;
+          overflow: auto;
+          display: flex;
+          flex-direction: column;
+          &::-webkit-scrollbar {
+            background: transparent;
+            width: 5px;
+            height: 5px;
+          }
+          &::-webkit-scrollbar-thumb {
+            background: #d5d5d5;
+            border-radius: 5px;
+          }
+        }
+        &__list {
+          width: 50%;
+          height: 100%;
+          overflow: auto;
+          &::-webkit-scrollbar {
+            background: transparent;
+            width: 5px;
+            height: 5px;
+          }
+          &::-webkit-scrollbar-thumb {
+            background: #d5d5d5;
+            border-radius: 5px;
+          }
+          &__box {
+            display: flex;
+            flex-direction: column;
+            min-height: 480px;
+            overflow: auto;
+            &::-webkit-scrollbar {
+              background: transparent;
+              width: 5px;
+              height: 5px;
+            }
+            &::-webkit-scrollbar-thumb {
+              background: #d5d5d5;
+              border-radius: 5px;
+            }
+            &__item {
+              display: flex;
+              height: 30px;
+              align-items: center;
+              width: 95%;
+              margin: 0 auto;
+              &__checkbox {
+                cursor: pointer;
+                > input {
+                  cursor: pointer;
+                }
+                &:hover {
+                }
+              }
+              &__name {
+                margin-left: 8px;
+              }
+            }
+          }
+          &__checkAll {
+            padding-left: 8px;
+          }
+        }
+      }
+      &__r {
+        width: 255px;
+        height: 502px;
+        border: 1px solid rgba(221, 221, 221, 1);
+        &__top {
+          width: 255px;
+          height: 32px;
+          background: #fbfcff;
+          border-bottom: 1px solid #dddddd;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &__title {
+            margin-left: 14px;
+          }
+          &__btn {
+            margin-right: 7px;
+            cursor: pointer;
+  
+            color: #0091ff;
+          }
+        }
+        &__center {
+          height: 440px;
+          overflow: auto;
+          overflow-x: hidden;
+          &::-webkit-scrollbar {
+            background: transparent;
+            width: 5px;
+            height: 5px;
+          }
+          &::-webkit-scrollbar-thumb {
+            background: #d5d5d5;
+            border-radius: 5px;
+          }
+          &__add {
+            width: 228px;
+            height: 26px;
+            background: #ffffff;
+            border-radius: 3px;
+            border: 1px solid #dddddd;
+            display: flex;
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            &__input {
+              outline: 0;
+              border: 0;
+              padding-left: 10px;
+              width: 176px;
+            }
+            &__btn {
+              width: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              &__sure {
+                width: 11px;
+                height: 9px;
+                background: url(../assets/add.svg) no-repeat;
+                cursor: pointer;
+                background-size: 100% 100%;
+                margin-right: 6px;
+                &:hover {
+                  opacity: 0.7;
+                  transform: scale(0.9);
+                }
+              }
+              &__delete {
+                width: 9px;
+                height: 9px;
+                background: url(../assets/back.svg) no-repeat;
+                cursor: pointer;
+                background-size: 100% 100%;
+                &:hover {
+                  opacity: 0.7;
+                  transform: scale(0.9);
+                }
+              }
+            }
+          }
+          &__item {
+            display: flex;
+            width: 254px;
+            height: 32px;
+            align-items: center;
+            justify-content: space-between;
+            &:hover {
+              background: rgba(0, 145, 255, 0.05);
+              .selectSahreContactor__box__r__center__item__delete {
+                display: block;
+                &:hover {
+                  transform: scale(0.9);
+                }
+              }
+            }
+            &__name {
+              margin-left: 12px;
+            }
+            &__delete {
+              width: 17px;
+              height: 17px;
+              cursor: pointer;
+              background-position: 50% 50%;
+              background: url(../assets/listDelete.svg) no-repeat;
+              background-size: 100% 100%;
+              display: none;
+            }
+          }
+        }
+        &__bottom {
+          border-top: 1px solid #dddddd;
+          display: flex;
+          height: 28px;
+          align-items: center;
+          justify-content: space-between;
+          &__num {
+            color: rgba(153, 153, 153, 1);
+            margin-left: 14px;
+          }
+          &__remove {
+            color: rgba(0, 145, 255, 1);
+            margin-right: 11px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    &__footer {
+      display: flex;
+      height: 52px;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 20px;
+      &__cancle {
+        width: 52px;
+        height: 30px;
+        border-radius: 3px;
+        border: 1px solid #dbe3e9;
+        color: rgba(131, 163, 183, 1);
+        margin-right: 6px;
+        line-height: 30px;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+      &__sure {
+        width: 52px;
+        height: 30px;
+        background: #0091ff;
+        border-radius: 3px;
+        color: #fff;
+        line-height: 30px;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  .bounce-enter-active {
+    animation: bounce-in 0.5s;
+  }
+  .bounce-leave-active {
+    animation: bounce-in 0.3s reverse;
+  }
+  @keyframes bounce-in {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

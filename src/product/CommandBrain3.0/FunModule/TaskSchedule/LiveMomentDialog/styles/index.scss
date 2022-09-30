@@ -1,0 +1,71 @@
+// 弹窗标题内容
+.live-moment-dialog__title {
+  height: 100%;
+  line-height: inherit;
+  font-size: 16px;
+  position: relative;
+  padding-left: 20px;
+  // 收藏按钮
+  & > button:first-child {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    margin: 0;
+    width: 18px;
+    height: 17px;
+    outline: none;
+    border: none;
+    background: no-repeat center/100% 100% url(../assets/star.svg);
+  }
+  &__star {
+    background-image: url(../assets/star-on.svg) !important;
+  }
+  & > span {
+    font-size: inherit;
+    font-weight: 500;
+  }
+}
+// 弹窗内容
+.live-moment-dialog {
+  width: 353px;
+  box-sizing: border-box;
+  padding: 10px;
+  & > div {
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 10px;
+    }
+    &:nth-child(3) {
+      margin-right: -10px;
+      & > img {
+        margin-right: 9px;
+        margin-bottom: 10px;
+        width: 74px;
+        height: 74px;
+        border: 1px solid #00C1DE;
+      }
+      & > a {
+        margin-right: 9px;
+        margin-bottom: 10px;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #FFF;
+        text-decoration: none;
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          background: no-repeat center/100% 100% url(../assets/file.svg);
+          margin-right: 5px;
+          vertical-align: -2px;
+        }
+      }
+    }
+  }
+}

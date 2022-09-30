@@ -1,0 +1,86 @@
+.list {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .search {
+    width: 94%;
+    height: 48px;
+    margin: 25px 16px;
+    border-radius: 40px;
+    background: #2B2F38;
+    font-size: 18px;
+  }
+  .scroll {
+    height: 69vh;
+    overflow: auto;
+    // 滚动条
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #56E9FF;
+      border-radius: 5px;
+    }
+    &::-webkit-scrollbar-corner {
+      background: transparent;
+    }
+    .frame {
+      height: 120px;
+      position: relative;
+      border-bottom: 1px solid rgba(65, 68, 73, 1);
+      p {
+        margin: 0px;
+      }
+      .announceTitle {
+        width: 553px;
+        height: 30px;
+        position: absolute;
+        left: 16px;
+        top: 25px;
+        font-size: 22px;
+        color: rgba(255, 255, 255, 1);
+        box-sizing: border-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+      .announceName {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.6);
+        width: 156px;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        position: absolute;
+        left: 16px;
+        bottom: 25px;
+      }
+      .line {
+        width: 1px;
+        height: 17px;
+        background: #FFFFFF;
+        opacity: 0.23;
+        position: absolute;
+        left: 192px;
+        bottom: 28px;
+      }
+      .announceTime {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.6);
+        position: absolute;
+        left: 213px;
+        bottom: 25px;
+      }
+    }
+    .frame:hover {
+      background: linear-gradient(90deg, #00C1DE 0%, rgba(24, 38, 50, 0) 100%);
+    }
+  }
+}

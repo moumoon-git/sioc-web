@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 40px);
+  & > header {
+    padding: 0 10px;
+    flex-shrink: 0;
+    height: 50px;
+    line-height: 50px;
+  }
+  & > main {
+    flex: 1;
+    height: 100%;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      background: transparent;
+      width: 5px;
+      height: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #d5d5d5;
+      border-radius: 5px;
+    }
+  }
+}
+// 树节点
+.treeNode {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  width: 50%;
+  height: 100%;
+  & > span {
+    flex-shrink: 0;
+  }
+  & > div {
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &:hover > .deleteIcon {
+    display: block;
+  }
+}
+.typeBasic,
+.typeDefault,
+.typeCustom {
+  border: 1px solid;
+  border-radius: 13px;
+  background: #FFF;
+  font-size: 12px;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 18px;
+  margin-right: 5px;
+}
+.typeBasic {
+  color: #FF9F40;
+  border-color: #FFE4C9;
+}
+.typeDefault {
+  color: #0091FF;
+  border-color: #AAD8FB;
+}
+.typeCustom {
+  color: #18C26A;
+  border-color: #95DCB9;
+}
+// 删除按钮
+.deleteIcon {
+  display: none;
+  padding: 0;
+  margin: 0 10px 0;
+  width: 16px;
+  height: 16px;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+  opacity: .4;
+  cursor: pointer;
+  flex-shrink: 0;
+  background: no-repeat center/100% 100% url(../assets/delete.svg);
+  &:hover {
+    opacity: 1;
+  }
+}
+// 编辑按钮
+.editIcon {
+  @extend .deleteIcon;
+  background: no-repeat center/100% 100% url(../assets/edit.svg);
+  &:not(:last-child) {
+    margin-right: -5px;
+  }
+}

@@ -1,0 +1,112 @@
+.task-dynamic-dialog__title {
+  width: 342px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .text1 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+  .text2 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+  .star {
+    background: url('./assets/images/star.svg');
+    background-size: 18px 17px;
+    background-repeat: no-repeat;
+    background-position: 0px 12px;
+    padding-left: 20px;
+  }
+  .star--disabled {
+    background: url('./assets/images/star__disabled.svg');
+    background-size: 18px 17px;
+    background-repeat: no-repeat;
+    background-position: 0px 12px;
+    padding-left: 20px;
+  }
+
+  .task-dynamic-dialog__title__left {
+    height: 100%;
+    position: relative;
+    @extend .text1;
+    padding-right: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 6px;
+      width: 2px;
+      height: 32px;
+      background: url(./assets/images/division3.svg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+  .task-dynamic-dialog__title__right {
+    @extend .text1;
+    height: 100%;
+    padding-left: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.task-dynamic-dialog__content {
+  padding: 5px;
+  box-sizing: border-box;
+
+  &__text {
+    @extend .text2;
+    padding: 5px;
+  }
+
+  &__images {
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .task-image {
+      width: 76.5px;
+      height: 76.5px;
+      border: 1px solid #00c1de;
+      margin: 5px;
+      box-sizing: border-box;
+
+      .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__address {
+    padding: 4px 5px 7px 5px;
+    min-height: 20px;
+  }
+
+  .haveIcon {
+    background: url('./assets/images/location.png');
+    background-size: 13px 16px;
+    background-repeat: no-repeat;
+    padding: 4px 5px 7px 23px;
+    background-position: 5px 6px;
+  }
+}
+.mapPupopWrap {
+  background: repeating-linear-gradient(45deg, #fff 0%, #fff 10%, #000 10%, #000 20%);
+}

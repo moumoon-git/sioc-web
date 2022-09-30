@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>任务备份 2</title>
+    <defs>
+        <ellipse id="path-1" cx="24" cy="8" rx="24" ry="8"></ellipse>
+        <filter x="-6.2%" y="-18.8%" width="112.5%" height="137.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="3" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="落点切图整合" transform="translate(-544.000000, -214.000000)">
+            <g id="任务备份-2" transform="translate(544.000000, 215.000000)">
+                <g id="编组-7备份-37" transform="translate(0.000000, 30.400000)">
+                    <g id="椭圆形备份-11" opacity="0.646650042" fill="black" fill-opacity="1">
+                        <use filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    </g>
+                    <ellipse id="椭圆形备份-12" fill="#999999" opacity="0.294852121" cx="24" cy="8" rx="12" ry="4"></ellipse>
+                </g>
+                <g id="编组-8备份-37" transform="translate(8.000000, 0.000000)" fill-rule="nonzero">
+                    <path d="M16.128,-5.71986902e-13 C25.0352484,-5.71986902e-13 32.256,7.22075156 32.256,16.128 C32.256,20.479606 30.532567,24.4286826 27.7310241,27.3299069 L27.74016,27.3291834 L16.128,38.9364363 L4.52099812,27.3291834 C1.72343298,24.4286826 -1.17239551e-13,20.479606 -1.17239551e-13,16.128 C-1.17239551e-13,7.22075156 7.22075156,-5.71986902e-13 16.128,-5.71986902e-13 Z" id="形状结合" stroke="#FFFFFF" stroke-width="0.8" fill="#999999"></path>
+                    <path d="M8,8 L8,26.4617669 L8.03688691,26.4617669 L15.9853938,20.9010057 L23.990345,26.4617669 L24,26.4617669 L24,8 L8,8 Z M18.8937645,19.3678477 L16.0002476,17.8463252 L13.1067306,19.3678477 L13.6590438,16.1455671 L11.3175925,13.8635308 L14.552994,13.3931611 L16,10.4615194 L17.4467585,13.3931611 L20.68216,13.8635308 L18.3412038,16.1455671 L18.8937645,19.3678477 L18.8937645,19.3678477 Z" id="形状" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

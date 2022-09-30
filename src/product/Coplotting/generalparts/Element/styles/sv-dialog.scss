@@ -1,0 +1,33 @@
+.sv-dialog {
+  &.el-dialog {
+    border-radius: 5px !important;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2) !important;
+    // 标题
+    .el-dialog__header {
+      padding: 10px 40px 10px 20px;
+      background: #F1F4F6;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      position: relative;
+      // 关闭按钮
+      &btn {
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        // 关闭按钮-图标
+        & > i {
+          font-weight: 600;
+          font-size: 20px;
+        }
+      }
+    }
+    // 标题-文字
+    .el-dialog__title {
+      font-size: 16px;
+    }
+    // 主体内容
+    .el-dialog__body {
+      padding: 0;
+    }
+  }
+}

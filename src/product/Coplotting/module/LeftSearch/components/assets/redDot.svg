@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="40px" viewBox="0 0 42 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>1</title>
+    <defs>
+        <ellipse id="path-1" cx="20.6896552" cy="33.1034483" rx="20.6896552" ry="6.89655172"></ellipse>
+        <filter x="-9.7%" y="-29.0%" width="119.3%" height="158.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="4" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.976470588   0 0 0 0 0.305882353   0 0 0 0 0.211764706  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="PC端" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="搜索" transform="translate(-434.000000, -318.000000)">
+            <g id="1" transform="translate(434.000000, 318.000000)">
+                <g id="椭圆形" fill="black" fill-opacity="1">
+                    <use filter="url(#filter-2)" xlink:href="#path-1"></use>
+                </g>
+                <ellipse id="椭圆形" fill="#7E0F00" opacity="0.5" cx="20.6896552" cy="33.1034483" rx="10.3448276" ry="3.44827586"></ellipse>
+                <path d="M20.8,0.5 C24.50126,0.5 27.8521221,2.00023205 30.2776692,4.42577911 C32.7032162,6.85132617 34.2034483,10.2021882 34.2034483,13.9034483 C34.2034483,17.519863 32.7712204,20.8017699 30.4490803,23.2066816 L30.4490803,23.2066816 L20.7999483,32.8587314 L11.1538484,23.2125341 C8.82881466,20.8019115 7.39655172,17.5199388 7.39655172,13.9034483 C7.39655172,10.2021882 8.89678377,6.85132617 11.3223308,4.42577911 C13.7478779,2.00023205 17.09874,0.5 20.8,0.5 Z" id="形状结合" stroke="#FFFFFF" fill="#F94E36" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

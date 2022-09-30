@@ -1,0 +1,203 @@
+.mapoperation {
+    width: 378px;
+    height: 90vh;
+    background: #FFFFFF;
+    box-shadow: -3px 0px 7px 0px rgba(230, 232, 244, 0.46);
+    border-radius: 3px;
+    position: absolute;
+    right: 0;
+    z-index: 10001;
+    top: 90px;
+    transition: right .4s;
+    &--active {
+        right: -378px;
+    }
+    &__tabs {
+        height: 45px;
+        border-bottom: 1px solid whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        &__item {
+            cursor: pointer;
+            color: rgba(51, 51, 51, 0.31);
+            width: 55px;
+            height: 100%;
+            line-height: 45px;
+            text-align: center;
+            &:hover {
+                color: #666
+            }
+            &--active {
+                color: #333333;
+                font-weight: 500;
+                border-bottom: 2px solid #0091FF
+            }
+        }
+    }
+    &__content {
+        height: 85vh;
+        overflow: auto;
+        // &滚动条
+        &::-webkit-scrollbar {
+            background: transparent;
+            width: 5px;
+            height: 5px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #d5d5d5;
+            border-radius: 5px;
+        }
+    }
+    &__icon {
+        position: absolute;
+        bottom: 234px;
+        left: -15px;
+        width: 20px;
+        height: 70px;
+        background: url(../assets/backBg.svg)no-repeat;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        &__arraw {
+            width: 20px;
+            height: 20px;
+            background: url(../assets/left.svg)no-repeat;
+        }
+    }
+    &__icon2 {
+        position: absolute;
+        bottom: 234px;
+        left: -15px;
+        width: 20px;
+        height: 70px;
+        background: url(../assets/backBg.svg)no-repeat;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        &__arraw {
+            width: 20px;
+            height: 20px;
+            background: url(../assets/right.svg)no-repeat;
+        }
+    }
+    // &__icon2{
+    // position: absolute;
+    // bottom: 350px;
+    // left: -20px;
+    // background: #FFFFFF url(./assets/right.svg)no-repeat;
+    // cursor: pointer;
+    // width: 20px;
+    // height: 70px;
+    // border-radius: 78px 3px 3px 70px;
+    // background-position: 50% 50%;
+    // }
+}
+
+// 指挥大脑演示
+.mapoperationc {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    position: absolute;
+    color: #fff;
+    &--active {
+        right: -378px;
+    }
+    &__tabs {
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #fff;
+        background: linear-gradient( 90deg, rgba(0, 193, 222, 0.4) 0%, rgba(24, 38, 50, 0) 100%);
+        &__item {
+            cursor: pointer;
+            color: #A6ADB4;
+            width: 80px;
+            height: 100%;
+            line-height: 38px;
+            text-align: center;
+            font-size: 16px;
+            &:hover {
+                color: #00ECFF;
+            }
+            &--active {
+                font-weight: 500;
+                color: #00ECFF;
+                background: url(../assets/command/tab.svg) no-repeat;
+            }
+        }
+    }
+    &__content {
+        height: 91%;
+        overflow: auto;
+        // &滚动条
+        &::-webkit-scrollbar {
+            background: transparent;
+            width: 5px;
+            height: 5px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #d5d5d5;
+            border-radius: 5px;
+        }
+        // .sv-tree{
+        //     background: rgba(0, 193, 222, 0.15);
+        //     :hover{
+        //         background: rgba(0, 193, 222, 0.7);
+        //     }
+        //     .is-focusable{
+        //         background: 0;
+        //     }
+        //     .el-tree-node__content{
+        //         background: 0;
+        //     }
+        // }
+    }
+    &__icon {
+        position: absolute;
+        bottom: 234px;
+        left: -15px;
+        width: 20px;
+        height: 70px;
+        background: url(../assets/backBg.svg)no-repeat;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        display: none;
+        &__arraw {
+            width: 20px;
+            height: 20px;
+            background: url(../assets/left.svg)no-repeat;
+        }
+    }
+    &__icon2 {
+        position: absolute;
+        bottom: 234px;
+        left: -15px;
+        width: 20px;
+        height: 70px;
+        background: url(../assets/backBg.svg)no-repeat;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        display: none;
+        &__arraw {
+            width: 20px;
+            height: 20px;
+            background: url(../assets/right.svg)no-repeat;
+        }
+    }
+    // &__icon2{
+    // position: absolute;
+    // bottom: 350px;
+    // left: -20px;
+    // background: #FFFFFF url(./assets/right.svg)no-repeat;
+    // cursor: pointer;
+    // width: 20px;
+    // height: 70px;
+    // border-radius: 78px 3px 3px 70px;
+    // background-position: 50% 50%;
+    // }
+}

@@ -1,0 +1,118 @@
+.container {
+  height: calc(100% - 40px);
+}
+.historyList {
+  height: calc(100% - 58px);
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  // 滚动条
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #56E9FF;
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}
+.historyItem {
+  display: inline-block;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(0, 193, 222, .3) 0%, transparent 100%);
+  cursor: pointer;
+  color: #FFF;
+  position: relative;
+  &:hover {
+    filter: brightness(120%);
+  }
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  // 标题
+  & > h4:first-child {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0;
+    padding: 0 100px 0 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    // 标题-色块
+    &::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 13px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: inherit;
+      background: currentColor;
+      border-radius: 2px;
+    }
+  }
+  // 日期
+  & > p:nth-child(2) {
+    margin: 0 0 10px;
+    padding-left: 16px;
+    & > span:first-child {
+      margin-right: 20px;
+      position: relative;
+      &::after {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 22px;
+        position: absolute;
+        right: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: linear-gradient(transparent, #FFF, transparent);
+      }
+    }
+  }
+  // 会议状态
+  & > div:last-child {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 3px 13px;
+    border: 1px solid currentColor;
+    border-radius: 3px;
+    color: #0091FF;
+    background: repeating-linear-gradient(
+      -45deg,
+      change-color(#0091FF, $alpha: .15),
+      change-color(#0091FF, $alpha: .15) 1px,
+      transparent,
+      transparent 6px
+    )
+    change-color(#0091FF, $alpha: .1);
+    &.meetingEnded {
+      color: #A6ADB4;
+      background: repeating-linear-gradient(
+        -45deg,
+        change-color(#A6ADB4, $alpha: .15),
+        change-color(#A6ADB4, $alpha: .15) 1px,
+        transparent,
+        transparent 6px
+      )
+      change-color(#A6ADB4, $alpha: .1);
+    }
+  }
+  &.historyItemActive {
+    background: linear-gradient(90deg, rgba(0, 193, 222, .7) 0%, transparent 100%);
+    & > h4:first-child {
+      color: #56E9FF;
+    }
+  }
+}

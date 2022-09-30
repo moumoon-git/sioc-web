@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>联系人</title>
+    <defs>
+        <ellipse id="path-1" cx="20" cy="33" rx="20" ry="7"></ellipse>
+        <filter x="-10.0%" y="-28.6%" width="120.0%" height="157.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="4" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.568627451   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="落点切图" transform="translate(-198.000000, -81.000000)">
+            <g id="联系人" transform="translate(198.000000, 81.000000)">
+                <g id="椭圆形" fill="black" fill-opacity="1">
+                    <use filter="url(#filter-2)" xlink:href="#path-1"></use>
+                </g>
+                <ellipse id="椭圆形" fill="#00519B" opacity="0.703760901" filter="url(#filter-3)" cx="20" cy="33" rx="10" ry="3.5"></ellipse>
+                <path d="M20,0.5 C23.7279221,0.5 27.1029221,2.01103897 29.5459415,4.45405845 C31.988961,6.89707794 33.5,10.2720779 33.5,14 C33.5,18.3257105 31.4654458,22.1761668 28.3012384,24.6468968 L28.3012384,24.6468968 L20.000092,32.895055 L11.7196612,24.6631831 C8.54351615,22.1931056 6.5,18.3352269 6.5,14 C6.5,10.2720779 8.01103897,6.89707794 10.4540585,4.45405845 C12.8970779,2.01103897 16.2720779,0.5 20,0.5 Z" id="形状结合" stroke="#FFFFFF" fill="#0091FF" fill-rule="nonzero"></path>
+                <path d="M24.1235359,15.8414919 C26.2889595,17.1879527 27.7948495,19.5507532 28,22.2910238 C27.2418269,22.3916825 25.8934169,22.5 23.9694705,22.5 L23.9694705,22.5 L16.0278865,22.5 C14.1048276,22.5 12.7572664,22.3916825 12,22.2910238 C12.2068482,19.5524887 13.7127575,17.1879527 15.8755766,15.8414919 C17.0180066,16.7208217 18.4365235,17.2683514 20.0004244,17.2683514 C21.5643061,17.2683514 22.9837297,16.7225006 24.1235359,15.8414919 Z M20.0004244,5.5 C22.9499495,5.5 25.3507732,7.84670944 25.3507732,10.7308374 C25.3507732,13.6132488 22.9499495,15.9608448 20.0004244,15.9608448 C17.0500119,15.9608448 14.6509244,13.6132299 14.6509244,10.7308374 C14.6509244,7.84670944 17.0517675,5.5 20.0004244,5.5 Z" id="形状结合备份-2" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

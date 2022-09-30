@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="97px" viewBox="0 0 32 97" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>形状复制 2</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0CD0F0" offset="0%"></stop>
+            <stop stop-color="#05A3DD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应急管理" transform="translate(-35.000000, -145.000000)" fill-rule="nonzero" stroke="url(#linearGradient-1)" stroke-width="2">
+            <g id="风险隐患分析" transform="translate(35.000000, 38.000000)">
+                <g id="风险总数" transform="translate(1.000000, 108.000000)">
+                    <g id="编组-49" transform="translate(-0.000000, -0.000219)">
+                        <path d="M25.1314256,0.332412101 C9.56147126,10.6372304 8.8817842e-15,28.0391009 8.8817842e-15,47.0635054 C8.8817842e-15,66.577141 10.0624722,84.3658581 26.2902967,94.541262 C27.2261131,95.1280511 28.4604288,94.8451085 29.0472178,93.9092921 C29.6340069,92.9734757 29.3510643,91.73916 28.4152479,91.152371 C13.3422657,81.7010929 4,65.1855768 4,47.0635054 C4,29.3955509 12.8768424,13.2397044 27.3390678,3.66802536 C28.260172,3.05840179 28.5126769,1.81750178 27.9030533,0.896397615 C27.2934298,-0.0247065513 26.0525297,-0.277211467 25.1314256,0.332412101 Z" id="形状复制-2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

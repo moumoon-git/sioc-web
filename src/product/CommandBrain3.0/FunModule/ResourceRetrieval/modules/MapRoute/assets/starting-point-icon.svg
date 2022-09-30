@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 16</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="步行-骑行-驾车" transform="translate(-982.000000, -141.000000)">
+            <g id="编组备份" transform="translate(945.000000, 131.000000)">
+                <g id="编组-16" transform="translate(37.000000, 10.000000)">
+                    <circle id="椭圆形" stroke="#FFFFFF" fill="#0BD295" cx="12" cy="12" r="11.5"></circle>
+                    <text id="起" font-family="PingFangSC-Medium, PingFang SC" font-size="14" font-weight="400" fill="#FFFFFF">
+                        <tspan x="5" y="17">起</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

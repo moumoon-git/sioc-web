@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>8</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应急管理" transform="translate(-7396.000000, -56.000000)">
+            <g id="编组-37" transform="translate(5600.000000, 38.000000)">
+                <g id="编组-43" transform="translate(688.000000, 18.000000)">
+                    <g id="分屏" transform="translate(892.000000, 0.000000)">
+                        <g id="8" transform="translate(216.000000, 0.000000)">
+                            <rect id="矩形备份" stroke="#414449" stroke-width="2.4" fill="#2B2E34" x="1.2" y="1.2" width="45.6" height="45.6" rx="3.6"></rect>
+                            <rect id="矩形" fill="#3C3D42" x="2.4" y="34.8" width="43.2" height="2.4"></rect>
+                            <rect id="矩形备份-4" fill="#3C3D42" x="36" y="10.8" width="9.6" height="2.4"></rect>
+                            <rect id="矩形备份-6" fill="#3C3D42" x="36" y="22.8" width="9.6" height="2.4"></rect>
+                            <rect id="矩形备份-2" fill="#3C3D42" transform="translate(36.000000, 24.000000) rotate(-270.000000) translate(-36.000000, -24.000000) " x="14.4" y="22.8" width="43.2" height="2.4"></rect>
+                            <rect id="矩形备份-3" fill="#3C3D42" transform="translate(12.000000, 40.200000) rotate(-270.000000) translate(-12.000000, -40.200000) " x="6.6" y="39" width="10.8" height="2.4"></rect>
+                            <rect id="矩形备份-5" fill="#3C3D42" transform="translate(24.000000, 40.200000) rotate(-270.000000) translate(-24.000000, -40.200000) " x="18.6" y="39" width="10.8" height="2.4"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

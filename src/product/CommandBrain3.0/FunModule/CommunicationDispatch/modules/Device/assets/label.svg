@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57px" height="20px" viewBox="0 0 57 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 11</title>
+    <defs>
+        <linearGradient x1="40.8578842%" y1="42.2527653%" x2="90.0560937%" y2="42.2527653%" id="linearGradient-1">
+            <stop stop-color="#A8BFD5" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#A6ADB4" stop-opacity="0.25" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="集群终端" transform="translate(-1335.000000, -279.000000)" fill="url(#linearGradient-1)">
+            <g id="弹窗" transform="translate(554.000000, 142.000000)">
+                <g id="编组-6备份-3" transform="translate(471.000000, 69.000000)">
+                    <g id="编组-2备份-8" transform="translate(21.000000, 68.000000)">
+                        <g id="编组-7" transform="translate(289.000000, 0.000000)">
+                            <path d="M57,-3.64153152e-13 L57,20 L26.5339978,20 C24.4555807,20 22.4587504,19.1911179 20.9662872,17.7446148 L3.837,1.144 L3.83738641,1.18056045 C3.11283218,0.451423021 2.10913384,0 1,0 L57,-3.64153152e-13 Z" id="形状结合"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

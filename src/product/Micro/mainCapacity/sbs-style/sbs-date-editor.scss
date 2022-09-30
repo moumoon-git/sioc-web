@@ -1,0 +1,49 @@
+@import './shared.scss';
+
+.el-select.sbs-time-select {
+  height: $height;
+  line-height: $height;
+  .el-input__inner {
+    height: $height;
+    line-height: $height;
+  }
+
+  .el-input__icon {
+    line-height: $height;
+    vertical-align: 4px;
+  }
+}
+
+.el-date-editor.el-input {
+  &.sbs-date-picker,
+  &.sbs-time-select {
+    .el-input__inner {
+      height: $height;
+      line-height: $height;
+    }
+  
+    .el-input__icon {
+      line-height: $height;
+    }
+  }
+}
+
+.el-range-editor.sbs-date-picker {
+  width: 275px !important;
+  height: $height !important;
+  line-height: $height !important;
+  padding-right: 0px;
+
+  .el-range-separator {
+    margin-top: -10px !important;
+  }
+
+  .el-input__icon {
+    line-height: 0 !important;
+    margin-top: 1px;
+
+    &.el-range__close-icon {
+      // margin-bottom: 8px;
+    }
+  }
+}

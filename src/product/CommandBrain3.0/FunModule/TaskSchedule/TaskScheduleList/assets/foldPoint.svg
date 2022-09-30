@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="26px" viewBox="0 0 15 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>形状结合</title>
+    <defs>
+        <path d="M209,75 C209,75.9664983 209.783502,76.75 210.75,76.75 C211.716498,76.75 212.5,75.9664983 212.5,75 C212.5,74.3747852 212.166452,73.7970629 211.625,73.4844555 C211.083548,73.1718481 210.416452,73.1718481 209.875,73.4844555 C209.333548,73.7970629 209,74.3747852 209,75 L209,75 Z M203.75,75 C203.75,75.6252148 204.083548,76.2029371 204.625,76.5155445 C205.166452,76.8281519 205.833548,76.8281519 206.375,76.5155445 C206.916452,76.2029371 207.25,75.6252148 207.25,75 C207.25,74.3747852 206.916452,73.7970629 206.375,73.4844555 C205.833548,73.1718481 205.166452,73.1718481 204.625,73.4844555 C204.083548,73.7970629 203.75,74.3747852 203.75,75 L203.75,75 Z M214.25,75 C214.25,75.9664983 215.033502,76.75 216,76.75 C216.966498,76.75 217.75,75.9664983 217.75,75 C217.75,74.0335017 216.966498,73.25 216,73.25 C215.033502,73.25 214.25,74.0335017 214.25,75 L214.25,75 Z" id="path-1"></path>
+        <filter x="-64.3%" y="-257.1%" width="228.6%" height="614.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.140585543   0 0 0 0 0.553507333   0 0 0 0 1  0 0 0 0.399748689 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="任务调度" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="任务全景" transform="translate(-1733.000000, -659.000000)">
+            <g id="右侧预案响应" transform="translate(1510.000000, 74.000000)">
+                <g id="任务记录备份" transform="translate(20.000000, 523.000000)">
+                    <g id="形状结合" transform="translate(210.750000, 75.000000) scale(-1, -1) rotate(-270.000000) translate(-210.750000, -75.000000) ">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#56E9FF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

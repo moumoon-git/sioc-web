@@ -1,0 +1,28 @@
+.task-dynamic-dialog-animation{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px 10px rgba(50, 176, 255, 0.5);
+    animation: zoomInOut 1s linear 1s infinite alternate;
+  }
+}
+
+// 动画
+@keyframes zoomInOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

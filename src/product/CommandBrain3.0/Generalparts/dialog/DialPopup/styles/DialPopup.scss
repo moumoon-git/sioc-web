@@ -1,0 +1,136 @@
+// 拨号盘
+.popup {
+  user-select: none;
+  color: #FFF;
+  position: fixed;
+  left: calc(50vw - 159px);
+  top: calc(50vh - 181px);
+  width: 317px;
+  background: #212122;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  border: 1px solid #313137;
+  z-index: 20001;
+  & > header {
+    height: 34px;
+    line-height: 34px;
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid rgba(65, 68, 73, .5);
+    & > span {
+      font-size: 16px;
+    }
+    // 关闭按钮
+    & > button {
+      background: #BCC5CF;
+      mask: no-repeat center/100% 100% url(../assets/close.svg);
+      outline: none;
+      border: none;
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      &:hover {
+        background: #56E9FF;
+      }
+    }
+  }
+  & > main {
+    & > input:first-child {
+      display: block;
+      color: #FFF;
+      font-size: 20px;
+      border: none;
+      border-radius: 2px;
+      outline: none;
+      width: 257px;
+      height: 40px;
+      background: #3B3B3C;
+      box-sizing: border-box;
+      padding: 0 7px;
+      margin: 10px auto;
+    }
+    .numbers {
+      padding: 0 30px;
+      text-align: center;
+      & > button {
+        border: none;
+        outline: none;
+        width: 78px;
+        height: 45px;
+        background: no-repeat center/100% 100%;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+        &:hover {
+          filter: brightness(110%);
+        }
+        &:active {
+          filter: brightness(90%);
+        }
+        @for $i from 1 through 9 {
+          &:nth-child(#{$i}) {
+            background-image: url(../assets/#{$i}.svg);
+          }
+        }
+        &:nth-child(10) {
+          background-image: url(../assets/star.svg);
+        }
+        &:nth-child(11) {
+          background-image: url(../assets/0.svg);
+        }
+        &:nth-child(12) {
+          background-image: url(../assets/hash.svg);
+        }
+        &:not(:nth-child(3n)) {
+          margin-right: 11px;
+        }
+      }
+    }
+    .footer {
+      padding-left: 118px;
+      margin-bottom: 10px;
+      position: relative;
+      & > button {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+        background: no-repeat center/100% 100%;
+        &:hover {
+          filter: brightness(110%);
+        }
+        &:active {
+          filter: brightness(90%);
+        }
+        &:first-child {
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          left: 50px;
+          top: 5px;
+          background-image: url(../assets/contact.svg);
+        }
+        &:nth-child(2) {
+          width: 78px;
+          height: 45px;
+          background-image: url(../assets/add.svg);
+          &.phone {
+            background-image: url(../assets/call.svg);
+          }
+        }
+        &:last-child {
+          width: 54px;
+          height: 33px;
+          margin-left: 12px;
+          vertical-align: 5px;
+          background-image: url(../assets/delete.svg);
+        }
+      }
+    }
+  }
+}

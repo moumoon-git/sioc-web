@@ -1,0 +1,8 @@
+@import './shared.scss';
+
+.el-cascader.sbs-cascader {
+  .el-input__inner {
+    height: $height;
+    line-height: $height;
+  }
+}

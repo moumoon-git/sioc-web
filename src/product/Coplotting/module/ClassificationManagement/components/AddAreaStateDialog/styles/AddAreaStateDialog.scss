@@ -1,0 +1,25 @@
+// 预览
+.preview {
+  margin: 50px 20px 10px;
+  display: flex;
+  align-items: center;
+  & > div {
+    margin-left: 20px;
+    width: 150px;
+    box-sizing: border-box;
+    height: 40px;
+    & > div {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+// 底部按钮
+.footer {
+  text-align: right;
+  padding-right: 20px;
+  height: 60px;
+  line-height: 60px;
+  border-top: 1px solid #E9ECF1;
+}

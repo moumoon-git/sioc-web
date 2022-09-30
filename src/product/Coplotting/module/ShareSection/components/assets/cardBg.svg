@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="134px" viewBox="0 0 128 134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>4</title>
+    <defs>
+        <linearGradient x1="50%" y1="81.8340115%" x2="50%" y2="18.95542%" id="linearGradient-1">
+            <stop stop-color="#EEF3FF" offset="0%"></stop>
+            <stop stop-color="#C6D6FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="38.8014984%" y1="54.3733355%" x2="57.0945447%" y2="12.3377923%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F2F7FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="36.6019039%" y1="74.3114383%" x2="66.2154858%" y2="27.7006615%" id="linearGradient-3">
+            <stop stop-color="#F5F8FF" offset="0%"></stop>
+            <stop stop-color="#C7D6FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="71.7175933%" x2="54.9703451%" y2="7.22886773%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#DAE7FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#C1D4FF" offset="0%"></stop>
+            <stop stop-color="#F8FAFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="81.8340115%" x2="50%" y2="18.95542%" id="linearGradient-6">
+            <stop stop-color="#EEF3FF" offset="0%"></stop>
+            <stop stop-color="#C6D6FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="43.6832594%" y1="74.2652245%" x2="55.5431676%" y2="8.27766643%" id="linearGradient-7">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#E1E9FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#FDFDFF" offset="0%"></stop>
+            <stop stop-color="#F9FAFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="PC端" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.23">
+        <g id="通过PC浏览器访问" transform="translate(-764.000000, -350.000000)">
+            <g id="4" transform="translate(474.000000, 234.000000)">
+                <g id="背景" transform="translate(290.000000, 97.000000)">
+                    <g id="编组-2" transform="translate(46.000000, 0.000000)">
+                        <polygon id="矩形备份" fill="url(#linearGradient-1)" transform="translate(22.960173, 86.858824) scale(-1, 1) translate(-22.960173, -86.858824) " points="0 73.0588235 45.9203463 46.5411765 45.9203463 100.379622 0 127.176471"></polygon>
+                        <polygon id="矩形备份-4" fill="url(#linearGradient-2)" transform="translate(22.960173, 152.556124) scale(-1, 1) translate(-22.960173, -152.556124) " points="0 126.714948 45.9203463 100.197301 45.9203463 202.651432 0 204.914948"></polygon>
+                        <polygon id="矩形备份-2" fill="url(#linearGradient-3)" points="45.9203463 73.0588235 91.8406925 46.5411765 91.8406925 100.379622 45.9203463 127.176471"></polygon>
+                        <polygon id="矩形备份-5" fill="url(#linearGradient-4)" points="45.9203463 126.714948 91.8406925 100.197301 91.8406925 202.651432 45.9203463 204.914948"></polygon>
+                        <polygon id="矩形备份-3" fill="url(#linearGradient-5)" transform="translate(45.920346, 46.541176) rotate(45.000000) translate(-45.920346, -46.541176) " points="27.2258619 27.8466921 78.3909345 14.0705882 64.6148306 65.2356608 13.449758 79.0117647"></polygon>
+                    </g>
+                    <g id="编组" transform="translate(0.000000, 97.479509)">
+                        <polygon id="矩形" fill="url(#linearGradient-6)" transform="translate(17.220130, 65.144118) scale(-1, 1) translate(-17.220130, -65.144118) " points="0 54.7941176 34.4402597 34.9058824 34.4402597 75.2847164 0 95.3823529"></polygon>
+                        <polygon id="矩形" fill="url(#linearGradient-7)" points="34.4402597 54.7941176 68.8805194 34.9058824 68.8805194 75.2847164 34.4402597 95.3823529"></polygon>
+                        <polygon id="矩形" fill="url(#linearGradient-8)" transform="translate(34.440260, 34.905882) rotate(45.000000) translate(-34.440260, -34.905882) " points="20.4193964 20.8850191 58.7932009 10.5529412 48.461123 48.9267456 10.0873185 59.2588235"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

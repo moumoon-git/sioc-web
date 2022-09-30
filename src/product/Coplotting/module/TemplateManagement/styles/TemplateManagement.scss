@@ -1,0 +1,314 @@
+.container {
+  height: 600px;
+  display: flex;
+  .left {
+    width: 250px;
+  }
+  .right {
+    flex: 1;
+  }
+}
+// 左边
+.left {
+  border-right: 1px solid #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  & > header {
+    flex-shrink: 0;
+    border-bottom: 1px solid #F2F2F2;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    // 标题
+    .title {
+      font-weight: 500;
+      color: #333;
+      position: relative;
+      padding-left: 15px;
+      margin-left: 15px;
+      flex: 1;
+      &::before {
+        content: '';
+        width: 2px;
+        height: 14px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #0091FF;
+      }
+    }
+    // 新建模板按钮
+    .addBtn {
+      margin-right: 10px;
+      position: relative;
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        left: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #0091FF;
+      }
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        left: -15px;
+        top: 50%;
+        transform: translateY(-50%) rotate(90deg);
+        background: #0091FF;
+      }
+    }
+  }
+  // 列表
+  .list {
+    flex: 1;
+    height: 50%;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      background: transparent;
+      width: 5px;
+      height: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #d5d5d5;
+      border-radius: 5px;
+    }
+    & > ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      & > li {
+        height: 36px;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+        cursor: pointer;
+        &:hover {
+          background: rgba(63, 146, 254, .05);
+        }
+        &.activeTemplate {
+          background: rgba(63, 146, 254, .05);
+          border-left: 2px solid #0091FF;
+          padding-left: 13px;
+        }
+        & > .listItem {
+          display: flex;
+          align-items: center;
+          width: 50%;
+          flex: 1;
+          height: 100%;
+          & > div:first-child {
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          // 按钮
+          & > div:last-child {
+            display: none;
+            & > button {
+              width: 16px;
+              height: 16px;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              opacity: .4;
+              position: relative;
+              &:hover {
+                opacity: 1;
+              }
+              &:active {
+                top: 1px;
+              }
+              &:first-child {
+                margin: 0 5px;
+                background: no-repeat center/100% 100% url(../assets/edit.svg);
+              }
+              &:last-child {
+                background: no-repeat center/100% 100% url(../assets/delete.svg);
+              }
+            }
+          }
+          &:hover > div:last-child {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+// 右边
+.right {
+  display: flex;
+  flex-direction: column;
+  & > header {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    & > * {
+      width: 100px;
+    }
+    .activeTab {
+      color: #0091FF;
+      border-color: #0091FF;
+      background-color: #ecf5ff;
+    }
+  }
+  & > main {
+    flex: 1;
+    background: #F2F8F8;
+    border-bottom-right-radius: 5px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+    // 图标通用样式
+    & > div {
+      display: inline-block;
+      width: 69px;
+      height: 69px;
+      margin: 10px;
+      overflow: hidden;
+      border: 1px solid #DDD;
+      border-radius: 2px;
+      background: #FFF;
+      user-select: none;
+      &:hover {
+        border-color: #0091FF;
+        box-shadow: 0px 3px 10px 2px rgba(54, 121, 225, 0.09);
+      }
+    }
+    // 添加分类按钮
+    .addClass {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #0091FF;
+      & > div {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        &::before,
+        &::after {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 2px;
+          background: currentColor;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &::after {
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
+      }
+      & > span {
+        font-size: 12px;
+      }
+    }
+    // 图标样式
+    .icon {
+      position: relative;
+      // 遮罩与操作按钮
+      & > div:last-child {
+        display: none;
+        background: rgba(255, 255, 255, .95);
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        & > button {
+          border: none;
+          outline: none;
+          width: 16px;
+          height: 16px;
+          margin: 6px;
+          cursor: pointer;
+          opacity: .4;
+          &:hover {
+            opacity: 1;
+          }
+          &:first-child {
+            background: no-repeat center/100% 100% url(../assets/info.svg);
+          }
+          &:last-child {
+            background: no-repeat center/100% 100% url(../assets/delete.svg);
+          }
+          &:active {
+            position: relative;
+            top: 1px;
+          }
+        }
+      }
+      &:hover > div:last-child {
+        display: flex;
+      }
+      // 样式预览
+      & > div:first-child {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        & > div:first-child {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        & > div:last-child {
+          white-space: nowrap;
+          overflow: hidden;
+          width: 90%;
+          text-overflow: ellipsis;
+          font-size: 12px;
+          text-align: center;
+        }
+        // 点分类
+        .iconClass {
+          background: no-repeat center/100% 100%;
+          width: 100%;
+          height: 100%;
+        }
+        // 线分类
+        .lineClass,
+        // 其他分类
+        .otherClass {
+          width: 100%;
+          border-color: currentColor;
+        }
+        // 面分类
+        .areaClass {
+          box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          & > div {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

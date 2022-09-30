@@ -1,0 +1,21 @@
+@import './shared.scss';
+
+.sbs-title {
+  color: $title-color;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 12px;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 2px;
+    height: 16px;
+    background: $main-color;
+    position: absolute;
+    margin: 0;
+    margin-left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

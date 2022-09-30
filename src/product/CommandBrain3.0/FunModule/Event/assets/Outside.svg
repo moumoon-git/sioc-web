@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="136px" height="136px" viewBox="0 0 136 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>选中光环</title>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="#D83F3F" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#D83F3F" stop-opacity="0" offset="56.4102564%"></stop>
+            <stop stop-color="#D83F3F" offset="100%"></stop>
+        </radialGradient>
+        <circle id="path-2" cx="67.5149453" cy="67.5149453" r="66.1300464"></circle>
+        <filter x="-17.4%" y="-17.4%" width="134.8%" height="134.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="3" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.847058824   0 0 0 0 0.247058824   0 0 0 0 0.247058824  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="事件信息、组织动态、辅助工具" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.2">
+        <g id="组织动态" transform="translate(-939.000000, -532.000000)">
+            <g id="突发点" transform="translate(939.000000, 532.000000)">
+                <g id="外" transform="translate(0.550972, 0.581285)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <use stroke="#FFFFFF" stroke-width="1" fill-opacity="0.300000012" fill="#162936" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

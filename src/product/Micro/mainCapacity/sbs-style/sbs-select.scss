@@ -1,0 +1,13 @@
+@import './shared.scss';
+
+.el-select.sbs-select {
+  .el-input__inner {
+    height: $height;
+    line-height: $height;
+  }
+
+  .el-input__icon {
+    line-height: $height;
+    vertical-align: 5px;
+  }
+}

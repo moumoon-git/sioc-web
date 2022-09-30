@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="18px" viewBox="0 0 15 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pdf</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="雪碧图" transform="translate(-250.000000, -292.000000)">
+            <g id="pdf" transform="translate(250.000000, 292.000000)">
+                <path d="M1.86335404,0 L10.947205,0 L14.9068323,3.825 L14.9068323,16.2 C14.9068323,17.1941125 14.0725803,18 13.0434783,18 L1.86335404,18 C0.834252019,18 0,17.1941125 0,16.2 L0,1.8 C0,0.80588745 0.834252019,0 1.86335404,0 Z" id="路径" fill="#3792F3" fill-rule="nonzero"></path>
+                <path d="M10.9544837,2.925 L10.9544837,0 L14.914111,3.825 L11.8861607,3.825 C11.3716097,3.825 10.9544837,3.42205627 10.9544837,2.925 Z" id="路径" fill="#FFFFFF" fill-rule="nonzero" opacity="0.6"></path>
+                <text id="w" font-family="Alibaba-PuHuiTi-M, Alibaba PuHuiTi" font-size="12" font-weight="400" fill="#FFFFFF">
+                    <tspan x="2" y="13.5">w</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="10px" viewBox="0 0 28 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>路径-6</title>
+    <defs>
+        <linearGradient x1="50%" y1="13.9641608%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#003C70" offset="0%"></stop>
+            <stop stop-color="#B3CEE6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <polyline id="路径-6" points="5.93303184e-13 0 14.1367188 10 27.7460937 0"></polyline>
+        </g>
+    </g>
+</svg>

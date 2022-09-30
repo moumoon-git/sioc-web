@@ -1,0 +1,142 @@
+// 右边
+.communication-dispatch-phone_right {
+  flex: 1;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  .communication-dispatch-phone_right_contactor {
+    border: 1px solid rgba(0, 193, 222, 0.29);
+    background: rgba(0, 0, 0, 0.29);
+  }
+  .communication-dispatch-phone_right_Historys {
+    flex: 1;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 193, 222, 0.29);
+    display: flex;
+    flex-direction: column;
+
+    // 头部
+    .communication-dispatch-phone_right_Historys_header {
+      width: 100%;
+      height: 52px;
+      background: linear-gradient(
+        90deg,
+        rgba(20, 98, 140, 0.35) 0%,
+        rgba(14, 69, 100, 0.35) 100%
+      );
+      border-bottom: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10px 0 13px;
+      box-sizing: border-box;
+
+      .header-left {
+        font-size: 16px;
+        font-weight: 500;
+        color: #FFFFFF;
+        position: relative;
+        padding-left: 26px;
+
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          background: url('../../assets/svg/history.svg');
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          width: 22px;
+          height: 22px;
+          top: 2px;
+          left: 0px;
+        }
+      }
+      .header-right {
+        & > button {
+          margin-right: 10px;
+          width: 66px;
+          height: 28px;
+
+          &:hover {
+            filter: brightness(1.2);
+          }
+        }
+      }
+    }
+
+    // 身体
+    .communication-dispatch-phone_right_Historys_body {
+      width: 100%;
+      height: calc(100% - 52px);
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      box-sizing: border-box;
+      background: rgba(0,0,0,0.29);
+      padding-top: 10px;
+      overflow-y: scroll;
+      
+      /* 定义滚动条样式 */
+      &::-webkit-scrollbar {
+        width: 3px;
+        height: 5px;
+        /* background-color: rgba(100, 104, 105, 1); */
+        border-radius: 10px;
+      }
+      /*定义滚动条轨道 内阴影+圆角*/
+      &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+        border-radius: 10px;
+        background-color: rgba(100, 104, 105, 1);
+      }
+      /*定义滑块 内阴影+圆角*/
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+        background-color: rgba(86, 233, 255, 1);
+      }
+
+      .History-item {
+        position: relative;
+      }
+
+      .History-item::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        width: 684px;
+        height: 1px;
+        z-index: 1;
+        background: rgba(255,255,255,0.29);
+      }
+    }
+    
+  }
+  
+  // 暂无数据
+  .noData {
+    width: 100%;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    & > img {
+      margin-right: 2px;
+    }
+  }
+  
+  // 没有更多了
+  .noMore {
+    color: #c5c5c5;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.5;
+  }
+}

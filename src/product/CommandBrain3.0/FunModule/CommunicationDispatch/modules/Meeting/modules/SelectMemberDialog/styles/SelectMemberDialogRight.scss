@@ -1,0 +1,123 @@
+.right {
+  flex: 1;
+  // 标题
+  & > header > h2 {
+    height: 51px;
+    line-height: 51px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #56E9FF;
+    padding-left: 17px;
+    position: relative;
+    &::before {
+      content: '';
+      width: 6px;
+      height: 13px;
+      border-radius: 2px;
+      color: inherit;
+      background: currentColor;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  & > main {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 52px);
+    // 类型切换
+    & > div:first-child {
+      border-bottom: 1px solid rgba(255, 255, 255, .15);
+    }
+    // 列表
+    & > div:nth-child(2) {
+      flex: 1;
+      overflow-y: auto;
+      // 滚动条
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        background: transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #56E9FF;
+        border-radius: 5px;
+      }
+      &::-webkit-scrollbar-corner {
+        background: transparent;
+      }
+      .rightItem {
+        padding: 5px 15px;
+        display: flex;
+        align-items: center;
+        & > div {
+          flex: 1;
+        }
+        // 删除按钮
+        & > button:last-child {
+          display: none;
+          width: 14px;
+          height: 14px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          background: #FFF;
+          mask: no-repeat center/100% 100% url(../assets/icon-clear.svg);
+          &:hover {
+            background: #F66E6E;
+          }
+        }
+        &:hover {
+          padding-left: 13px;
+          border-left: 2px solid #56E9FF;
+          background: linear-gradient(
+            90deg,
+            rgba(0, 193, 222, .7) 0%,
+            rgba(24, 38, 50, 0) 100%
+          );
+          color: #56E9FF;
+          & > button:last-child {
+            display: inline-block;
+          }
+        }
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          vertical-align: -2px;
+          margin-right: 10px;
+          background: no-repeat center/100% 100% url(../../../assets/icon-type-4.svg);
+        }
+        &.type1::before,
+        &.type2::before,
+        &.type3::before {
+          background-image: url(../../../assets/icon-type-123.svg);
+        }
+        &.type5::before {
+          background-image: url(../../../assets/icon-type-5.svg);
+        }
+        &.type6::before {
+          background-image: url(../../../assets/icon-type-6.svg);
+        }
+        &.type7::before {
+          background-image: url(../../../assets/icon-type-7.svg);
+        }
+        &.type8::before {
+          background-image: url(../../../assets/icon-type-8.svg);
+        }
+        &.type10::before {
+          background-image: url(../../../assets/icon-type-9.svg);
+        }
+      }
+    }
+    // 底部按钮
+    & > div:last-child {
+      padding: 15px;
+      & > :last-child {
+        float: right;
+      }
+    }
+  }
+}

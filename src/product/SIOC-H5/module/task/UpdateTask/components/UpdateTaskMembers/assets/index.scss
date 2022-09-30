@@ -1,0 +1,120 @@
+.update-task-members-container {
+  background: #F5F5F5;
+  height: 100%;
+  overflow: scroll;
+  // 行
+  .form-row {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    padding: 0 0.4rem;
+    background: #ffffff;
+
+    &::after {
+      position: absolute;
+      box-sizing: border-box;
+      content: ' ';
+      pointer-events: none;
+      right: 16px;
+      bottom: 0;
+      left: 16px;
+      border-bottom: 1px solid #ebedf0;
+      transform: scaleY(0.5);
+    }
+    &__top {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    // 左边
+    &__left {
+      width: 1.28rem;
+      line-height: 1.12rem;
+      height: 1.12rem;
+      align-items: center;
+      margin-right: 0.8rem;
+      &__label {
+        font-size: 0.32rem;
+        font-weight: 400;
+        color: #333333;
+      }
+    }
+    // 中间
+    &__center {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 0.08rem;
+
+      &__value {
+        font-size: 0.32rem;
+        font-weight: 400;
+        color: #333333;
+      }
+
+      &__placeholder {
+        font-size: 0.32rem;
+        font-weight: 400;
+        color: #999999;
+      }
+    }
+    // 右边
+    &__right {
+      width: 0.3rem;
+      display: flex;
+      align-items: center;
+      // 图标
+      .van-icon-add-o {
+        font-size: 0.4rem;
+      }
+      .van-icon-add-o::before {
+        color: RGBA(0, 145, 255, 1);
+      }
+    }
+    &__bottom {
+        width: 100%;
+        height: auto;
+      .list {
+        height: 0.9rem;
+        border-top: 0.01rem solid rgba(221, 221, 221, 1);
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-label {
+          font-size: 0.28rem;
+          font-weight: 400;
+          color: #333333;
+        }
+        &-icon {
+          width: 0.36rem;
+          height: 0.36rem;
+          background-image: url('./assets/images/close.svg');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+
+  .form-row1 {
+    margin-bottom: 0.2rem;
+    border-radius: 0.1rem;
+  }
+
+  .body__top {
+  }
+
+  .body__center {
+    padding: 0.2rem;
+    height: 100%;
+  }
+}

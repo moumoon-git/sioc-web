@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.968627 0 0 0 0 0.709804 0 0 0 0 0.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.699999988">
+        <g id="监测预警" transform="translate(-1194.000000, -81.000000)">
+            <g id="编组" transform="translate(1188.000000, 72.000000)" filter="url(#filter-1)">
+                <g transform="translate(6.000000, 9.000000)">
+                    <path d="M7.99363057,11.3351955 C7.7133758,11.3351955 7.48407643,11.4022346 7.28025478,11.5698324 C7.08917197,11.726257 7,11.9162011 7,12.1620112 C7,12.396648 7.07643312,12.5977654 7.28025478,12.7653631 C7.47133758,12.9217877 7.7133758,13 7.99363057,13 C8.27388535,13 8.51592357,12.9217877 8.71974522,12.7653631 C8.89808917,12.6089385 9,12.4189944 9,12.1620112 C9,11.9273743 8.89808917,11.726257 8.71974522,11.5698324 C8.51592357,11.4022346 8.27388535,11.3351955 7.99363057,11.3351955 Z M8.50318471,10.3072626 L8.77070064,3 L7.24203822,3 L7.48407643,10.3072626 L8.50318471,10.3072626 Z" id="形状" fill="#000000" fill-rule="nonzero"></path>
+                    <circle id="椭圆形" stroke="#FFFFFF" stroke-width="0.8" cx="8" cy="8" r="7.6"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,167 @@
+.headquarters-contianer {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f5f7fa;
+
+  .context {
+    font-size: 0.28rem;
+    font-weight: 400;
+    color: #333333;
+  }
+
+  .headquarters-contianer__header {
+    width: 100%;
+    padding: 0 0.32rem;
+    box-sizing: border-box;
+    background: #ffffff;
+
+    // 定位
+    .headquarters-contianer__header__location {
+      width: 100%;
+      // height: 1.32rem;
+      box-sizing: border-box;
+      border-bottom: 0.01rem solid #dddddd;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0.2rem 0;
+    }
+
+    // 定位
+    .location {
+      .task-location_img-loaction2 {
+        width: 0.28rem;
+        height: 0.34rem;
+      }
+
+      .task-location-name {
+        font-size: 0.28rem;
+        color: #999999 !important;
+      }
+    }
+
+    // 搜索
+    .search-container {
+      margin: 0.3rem 0;
+    }
+    // 面包屑
+    .headquarters-contianer__header__unit-breadcrumb {
+      width: 100%;
+      padding: 0 0 0.25rem 0;
+
+      & > div {
+        display: inline-block;
+      }
+
+      & > span {
+        font-size: 0.28rem;
+        font-weight: 400;
+        color: #0091ff;
+        line-height: 0.4rem;
+      }
+
+      & > div > span {
+        font-size: 0.28rem;
+        font-weight: 400;
+        color: #0091ff;
+        line-height: 0.4rem;
+      }
+
+      .division {
+        font-size: 0.28rem;
+        margin: 0 0.15rem;
+        color: #999999;
+      }
+    }
+  }
+
+  .headquarters-contianer__body {
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    .headquarters-contianer__body__unit-function {
+      width: 100%;
+      padding: 0.15rem 0.32rem;
+      box-sizing: border-box;
+      background: #ffffff;
+      margin-top: 0.2rem;
+
+      .unit-name {
+        font-size: 0.28rem;
+        font-weight: 400;
+        color: #333333;
+        line-height: 0.4rem;
+        padding: 0.1rem 0;
+      }
+
+      .unit-description {
+        font-size: 0.28rem;
+        font-weight: 400;
+        color: #999999;
+        line-height: 0.4rem;
+      }
+    }
+
+    .headquarters-contianer__body__headquarters-principal {
+      background: #ffffff;
+      margin-top: 0.2rem;
+      padding: 0 0.32rem;
+      box-sizing: border-box;
+    }
+
+    // 单位
+    .headquarters-contianer__body__headquarters-units {
+      padding: 0 0.32rem;
+      margin-top: 0.2rem;
+      box-sizing: border-box;
+      background: #ffffff;
+      flex: 1;
+      overflow: auto;
+
+      .headquarters-unit-item {
+        height: 0.9rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 0.01rem solid #dddddd;
+
+        .unitName {
+          font-size: 0.28rem;
+          font-weight: 400;
+          color: #333333;
+          line-height: 0.9rem;
+          margin-right: 0.12rem;
+        }
+        .leadUnit {
+          font-size: 0.2rem;
+          font-weight: 400;
+          color: #86a0ba;
+          line-height: 0.28rem;
+          height: 0.28rem;
+          border-radius: 0.14rem;
+          border: 0.02rem solid #cdd6e1;
+          padding: 0 0.12rem;
+        }
+        & > img {
+          width: 0.18rem;
+          height: 0.3rem;
+        }
+      }
+    }
+    // 暂无数据
+    .no-data {
+      font-size: 0.28rem;
+      color: #cccccc;
+      height: 0.9rem;
+      line-height: 0.9rem;
+    }
+  }
+}

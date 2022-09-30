@@ -1,0 +1,165 @@
+.plottingIndex{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    min-width: 1920px;
+    min-height: 768px;
+    max-height: 1080px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: auto;
+    background: #F2F8F8;
+
+    &__header{
+        height: 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 1px 0px rgba(238,238,238,1);
+        display: flex;
+        border-bottom: 1px solid rgba(216, 216, 216, 0.5);
+        &__title{
+            font-size: 16px;
+            color: #333333;
+            font-weight: 600;
+            width: 150px;
+            line-height: 40px;
+            text-align: center;
+            background: url(../assets/titleIcon.svg)no-repeat;
+            background-position: 10% 50%;
+        }
+        &__admin{
+
+        }
+    }
+    &__main{
+        &__tab{
+            height: 65px;
+            background: #FFFFFF;
+            display: flex;
+            justify-content: space-between;
+            &__boxs{
+                display: flex;               
+                color: rgba(51, 51, 51, 0.31);
+                align-items: center;
+                margin-left: 32px;
+                .plottingIndex__tabitem{
+                    width: 108px;
+                    height: 100%;
+                    line-height: 65px;
+                    text-align: center;
+                    cursor: pointer;                    
+                    font-weight: 500;
+                    font-size: 16px;
+                    &--active{
+                        border-bottom: 3px solid #0091FF;
+                        color: #333333;
+                    }
+                    &:hover{ 
+                        color: #333333;
+                    }
+                }
+            }
+            &__adminBox{
+                width: 460px;
+                display: flex;
+                align-items: center;
+                .plottingIndex__adminBox__adminName{
+                    color: #0091FF;
+                    width: 77px;
+                    text-align: center;
+                    cursor: pointer;
+                    height: 20px;
+                    line-height: 20px;
+                    border-right: 1px solid #E6E6E6;
+                    font-size: 16px;
+                    &:nth-child(3){
+                        border-right: 1px solid #E6E6E6;
+                        
+                    }
+                    &:nth-child(1){
+                        border-right: 0;
+                    }
+                    &:nth-child(2){
+                        border-right: 1px solid #E6E6E6;
+                        width: 110px;
+                        margin-left: 11px;
+                    }
+                    &:nth-child(4){
+                        border-right: 0;
+                    }
+                    &:hover{
+                        color: rgba(0, 145, 255, 0.8);
+                    }
+                }
+            }
+        }
+        &__content{          
+            height: 82vh;
+            padding-top: 8px;
+            background: url(../assets/cardIcon.png) no-repeat;
+            background-position: 100% 100%;
+            overflow: auto;
+            &::-webkit-scrollbar {
+                background: transparent;
+                width: 5px;
+                height: 5px;
+              }
+              &::-webkit-scrollbar-thumb {
+                background: #d5d5d5;
+                border-radius: 5px;
+              }
+        }
+        &__page{
+            height: 60px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background: #FFFFFF;
+            box-shadow: 0px 3px 10px 2px rgba(54, 121, 225, 0.09);
+            border-radius: 0px 0px 3px 3px;
+        }
+        &__new{
+            width: 71px;
+            height: 68px;
+            background: url(../assets/new.svg) no-repeat;
+            background-size: 100% 100%;
+            position: fixed;
+            bottom: 70px;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left: 14px;
+            &__text{
+                width: 45px;
+                font-size: 16px;
+                color: #fff;
+                font-weight: 500;
+                height: 45px;
+                text-align: center;
+                line-height: 20px;
+                cursor: pointer;
+            }
+            &:hover{
+                transform: scale(1.15);
+            }
+        }
+
+    }
+    .sv-input--search .el-input__inner{
+        padding-right: 55px;
+    }
+}   
+@keyframes one-in {
+    from {
+        padding-top: 50px;
+        height: 0%;
+    }
+    to {
+        padding-top: 0px;
+        height: 37px;
+    }
+}

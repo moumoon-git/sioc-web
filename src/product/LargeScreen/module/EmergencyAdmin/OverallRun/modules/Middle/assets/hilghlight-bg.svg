@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="489px" height="303px" viewBox="0 0 489 303" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 59</title>
+    <defs>
+        <linearGradient x1="91.5532257%" y1="19.5638644%" x2="2.70098022%" y2="60.815555%" id="linearGradient-1">
+            <stop stop-color="#121A35" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#47B9FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应急管理" transform="translate(-804.000000, -439.000000)">
+            <g id="突发事件分析" transform="translate(735.000000, 38.000000)">
+                <g id="编组-25" transform="translate(0.000000, 334.000000)">
+                    <g id="编组-23" transform="translate(69.000000, 71.000000)">
+                        <g id="编组-59" transform="translate(0.000000, 1.000000)">
+                            <g id="编组-50" transform="translate(102.199996, 0.000000)">
+                                <circle id="椭圆形" stroke="#FFFFFF" stroke-width="8.99999946" opacity="0.103671846" cx="146.399991" cy="146.399991" r="146.399991"></circle>
+                                <circle id="椭圆形" stroke="#6AAAFE" stroke-width="53.3333302" opacity="0.107051304" cx="146.399991" cy="146.399991" r="111.999993"></circle>
+                            </g>
+                            <g id="椭圆形备份-56" opacity="0.300000012" transform="translate(54.799999, 34.599996)" fill="url(#linearGradient-1)">
+                                <circle id="椭圆形备份-7" cx="11.4000003" cy="11.600003" r="11.1999993"></circle>
+                            </g>
+                            <g id="椭圆形备份-61" opacity="0.300000012" transform="translate(434.799977, 122.199993)" fill="url(#linearGradient-1)">
+                                <circle id="椭圆形备份-8" cx="9.80002213" cy="10.4000065" r="9.59999943"></circle>
+                            </g>
+                            <g id="椭圆形备份-60" opacity="0.802331107" transform="translate(0.000000, 203.000000)" fill="url(#linearGradient-1)">
+                                <circle id="椭圆形备份-4" opacity="0.697232201" cx="13.9999992" cy="13.9999992" r="13.9999992"></circle>
+                            </g>
+                            <g id="椭圆形备份-57" opacity="0.596158709" transform="translate(443.399977, 12.999999)" fill="url(#linearGradient-1)">
+                                <circle id="椭圆形备份-10" cx="22.6000212" cy="21.9999999" r="21.9999987"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

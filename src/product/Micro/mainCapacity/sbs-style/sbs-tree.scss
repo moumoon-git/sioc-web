@@ -1,0 +1,37 @@
+@import './shared.scss';
+
+.sbs-tree.el-tree {
+  height: 100%;
+  overflow: hidden;
+  &:hover {
+    overflow: auto;
+  }
+  @include scrollbar;
+  .el-tree-node__content {
+    min-height: 45px;
+    height: auto;
+  }
+  .el-tree-node__label {
+    font-size: 14px;
+  }
+  .is-current > .el-tree-node__content {
+    background: rgba(0, 145, 255, 0.1);
+    border-left: 2px solid rgba(0, 145, 255, 1);
+    color: rgba(0, 145, 255, 1);
+  }
+  .el-tree-node__content:hover {
+    background: rgba(0, 145, 255, 0.1);
+  }
+  .el-tree-node__expand-icon:not(.is-leaf) ~ .el-tree-node__label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background: no-repeat center/100% 100% url(./assets/folder.svg);
+    vertical-align: middle;
+  }
+  .expanded.el-tree-node__expand-icon ~ .el-tree-node__label::before {
+    background: no-repeat center/100% 100% url(./assets/folder_expend.svg) !important;
+  }
+}

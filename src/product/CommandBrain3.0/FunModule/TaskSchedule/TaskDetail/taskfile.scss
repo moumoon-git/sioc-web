@@ -1,0 +1,87 @@
+.detail__file {
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 10px;
+  .detail__file__liveVideo {
+    width: 360px;
+    height: 69px;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 193, 222, 0.3) 0%,
+      rgba(24, 38, 50, 0) 100%
+    );
+    margin-bottom: 10px;
+    .detail__file__liveVideo__title {
+      display: flex;
+      align-items: center;
+      .file__liveVideo__title__name {
+        font-size: 16px;
+        color: rgba(86, 233, 255, 1);
+      }
+    }
+    .detail__file__liveVideo__divs:empty::before {
+      content: "暂无直播";
+      display: block;
+      text-align: center;
+      color: #fff;
+    }
+  }
+  .detail__file__historFile {
+    width: 360px;
+    // height: 780px;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 193, 222, 0.3) 0%,
+      rgba(24, 38, 50, 0) 100%
+    );
+    .detail__file__historFile__title {
+      display: flex;
+      align-items: center;
+      .file__historFile__title__name {
+        font-size: 16px;
+        color: rgba(86, 233, 255, 1);
+      }
+      .file__historFile__title__checkbox {
+        display: flex;
+        color: #56e9ff;
+        margin-left: 60px;
+        & > p {
+          width: 55px;
+          height: 20px;
+          line-height: 20px;
+          & > input[type="checkbox"] {
+            cursor: pointer;
+            position: relative;
+            width: 16px;
+            height: 16px;
+            visibility: hidden;
+          }
+          & > input[type="checkbox"]::after {
+            color: #fff;
+            width: 16px;
+            height: 16px;
+            border-radius: 2px;
+            border: 1px solid #a6adb4;
+            display: inline-block;
+            visibility: visible;
+            padding-left: 0px;
+            text-align: center;
+            content: " ";
+            box-sizing: border-box;
+            line-height: 16px;
+
+            margin-top: 3px;
+          }
+          & > input[type="checkbox"]:checked::after {
+            background-color: #56e9ff;
+            border: none;
+            content: "✓";
+            font-size: 14px;
+            // font-weight: bold;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}

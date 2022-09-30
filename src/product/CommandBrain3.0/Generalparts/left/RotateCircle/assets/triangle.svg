@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Triangle Copy</title>
+    <defs>
+        <polygon id="path-1" points="54 27.6 58.8 34 49.2 34"></polygon>
+        <filter x="-93.7%" y="-140.6%" width="287.5%" height="381.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.140585543   0 0 0 0 0.553507333   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="事件信息、组织动态、辅助工具" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="动效切图" transform="translate(-568.000000, -62.000000)">
+            <g id="预案响应" transform="translate(404.000000, 40.000000)">
+                <g id="Group-12-Copy" transform="translate(120.400000, 0.000000)">
+                    <g id="Triangle-Copy" transform="translate(54.000000, 30.800000) scale(1, -1) translate(-54.000000, -30.800000) ">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#56E9FF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

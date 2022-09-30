@@ -1,0 +1,247 @@
+@import '@/product/SIOC-H5/module/task/TaskDetail/assets/css/common.scss'; /*引入公共样式*/
+// 改写vant样式
+.reset-vant {
+
+  // 改写 .van-cell 样式
+  .van-cell {
+    font-size: 0.32rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.12rem;
+    height: 1.12rem;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 0.4rem;
+
+    .van-field__label {
+      width: 1.28rem;
+      margin-right: 0.8rem;
+
+      &>span {
+        font-size: 0.32rem;
+        font-weight: 400;
+        color: #333333;
+      }
+      &>label {
+        font-size: 0.32rem;
+        font-weight: 400;
+        color: #333333;
+      }
+    }
+
+    .van-field__body {
+      // 输入框
+      &>input::placeholder {
+        font-size: 0.32rem;
+        font-weight: 400;
+        color: #999999;
+      }
+      &>input {
+        font-size: 0.32rem;
+        font-weight: 400;
+        color: #333333;
+      }
+      &>textarea::placeholder {
+        font-size: 0.32rem;
+        font-weight: 400;
+        color: #999999;
+      }
+      &>textarea {
+        font-size: 0.32rem;
+        font-weight: 400;
+        color: #333333;
+      }
+      // 图标
+      .van-field__right-icon {
+        .van-icon {
+          font-size: 0.3rem;
+        }
+        .van-icon-add-o {
+          font-size: 0.4rem;
+        }
+        .van-icon-add-o::before {
+          color: RGBA(0, 145, 255, 1);
+        }
+      }
+
+    }
+
+    // .van-cell__title {
+    //   &>span {
+    //     font-size: 0.32rem;
+    //     font-weight: 400;
+    //     color: #333333;
+    //   }
+    // }
+  }
+
+  // 改写 .van-picker 样式
+  .van-picker {
+
+    .van-picker__toolbar {
+      height: 0.52rem;
+      padding: 0.25rem 0.4rem;
+
+      // 取消按钮
+      .van-picker__cancel {
+        font-size: 0.32rem;
+        font-weight: 400;
+        padding: 0;
+        width: 1rem;
+        text-align: left;
+      }
+      // 中间
+      .van-picker__title {
+        font-size: 0.36rem;
+        font-weight: 500;
+        color: #333333;
+      }
+
+      // 确定按钮
+      .van-picker__confirm {
+        font-size: 0.32rem;
+        font-weight: 400;
+        color: #0091FF;
+        padding: 0;
+        width: 1rem;
+        text-align: right;
+      }
+    }
+
+    
+    .van-picker-column__item {
+      .van-ellipsis {
+        font-size: 0.32rem;
+        font-weight: 500;
+        color: #999999;
+      }
+    }
+    .van-picker-column__item--selected {
+      .van-ellipsis {
+        font-size: 0.32rem;
+        font-weight: 500;
+        font-size: 0.32rem;
+        color: #333333;
+      }
+    }
+  }
+
+  .van-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .van-overlay {
+
+    .preview-video-dialog {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      .video-dialog {
+        width: 100%;
+        height: auto;
+      }
+      .icon-cross {
+        position: absolute;
+        right: 0.2rem;
+        top: 0.2rem;
+        color: #ffffff;
+        z-index: 1;
+      }
+    }
+  }
+}
+// 弹出层
+.van-popup {
+
+  .reset-vant-popup-container-layout {
+    height: 100%;
+    @extend .flex_style;
+    flex-direction: column;
+    justify-content: space-between;
+
+    // 头部
+    .reset-vant-popup-container-header {
+      height: 0.88rem;
+      line-height: 0.88rem;
+      font-size: 0.24rem;
+      color: #333333;
+      padding: 0 0.3rem;
+    }
+
+    // 身体
+    .reset-vant-popup-container-body {
+      flex: 1;
+      padding: 0 0.3rem;
+
+      .van-uploader {
+        width: 100%;
+        height: 100%;
+        .van-uploader__input-wrapper {
+          width: 100%;
+          height: 100%;
+          .uploader__inner {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            // 相机
+            .img-camera {
+              width: 0.6rem;
+              height: 0.6rem;
+              background-image: url('./assets/images/camera2.svg'); // 图片-相机
+              background-repeat: no-repeat;
+              background-size: 0.39rem 0.34rem;
+              background-position: center;
+            }
+            // 视频
+            .img-vidicon {
+              width: 0.6rem;
+              height: 0.6rem;
+              background-image: url('./assets/images/vidicon.svg'); // 图片-视频
+              background-repeat: no-repeat;
+              background-size: 0.44rem 0.32rem;
+              background-position: center;
+            }
+          }
+        }
+      }
+
+      .body__label {
+        border-top: 0.01rem solid #dddddd;
+        @extend .flex_style;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0.2rem 0;
+        box-sizing: border-box;
+        font-size: 0.24rem;
+        color: #333333;
+
+        .body__label__inner {
+          font-size: 0.28rem;
+          color: #666666;
+        }
+      }
+    }
+
+    // 尾部
+    .reset-vant-popup-container-footer {
+      height: 1rem;
+      line-height: 1rem;
+      text-align: center;
+      border-top: 0.12rem solid #f5f5f5;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.audio-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+
+  .audio-button {
+    width: 12px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+
+    // 播放按钮/暂停按钮
+    .audio-button_play,
+    .audio-button_stop {
+      width: 11px;
+      height: 12px;
+    }
+
+    &:hover {
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  }
+  // 进度条
+  .audio-progress {
+    width: 522px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .audio-progress_ran {
+      position: absolute;
+      z-index: 100;
+      top: 2px;
+      width: 0px;
+      height: 4px;
+      border-radius: 6px;
+      background: #00c1de;
+    }
+  }
+
+  .audio-time {
+    padding: 0 !important;
+  }
+
+  // 图形按钮
+  .icon-button {
+    outline: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    &:hover {
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  }
+}

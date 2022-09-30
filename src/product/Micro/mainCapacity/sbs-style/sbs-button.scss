@@ -1,0 +1,84 @@
+@import './shared.scss';
+
+.el-button.sbs-button,
+.el-button-group.sbs-button-group > .el-button {
+  height: $height !important;
+  min-height: $height !important;
+  font-size: $font-size;
+  padding: 0 14px !important;
+}
+
+// 主按钮 type="primary"
+.el-button--primary.sbs-button {
+  background: $main-color;
+
+  &:hover {
+    background: $hover-color;
+  }
+
+  &:active {
+    background: $active-color;
+  }
+}
+
+// 次按钮
+.el-button--default.sbs-button {
+  background: rgba($main-color, 0.08);
+  border-color: $secondary-color;
+  color: $main-color;
+
+  &:hover {
+    border-color: $main-color;
+  }
+
+  &:active {
+    color: $active-color;
+    border-color: currentColor;
+  }
+}
+
+// 幽灵按钮 plain
+.el-button--default.is-plain.sbs-button {
+  border-color: $input-border-color;
+  background: transparent;
+  color: $text-color;
+
+  &:hover {
+    color: $main-color !important;
+    border-color: $main-color;
+  }
+
+  &:active,
+  &:focus {
+    color: $active-color !important;
+    border-color: $active-color;
+  }
+}
+
+// 文字按钮 type="text"
+.el-button--text.sbs-button {
+  padding: 0 !important;
+}
+
+// 按钮组
+.el-button-group.sbs-button-group {
+  vertical-align: -10px;
+  
+  & > .el-button {
+    color: $text-color;
+    border-color: $input-border-color;
+
+    &:hover,
+    &:focus {
+      color: $main-color;
+      border-color: $main-color;
+      background: transparent;
+    }
+
+    &:active {
+      background: $main-color;
+      border-color: $main-color;
+      color: #FFF;
+    }
+  }
+}

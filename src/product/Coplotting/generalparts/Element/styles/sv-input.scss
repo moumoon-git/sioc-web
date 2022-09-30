@@ -1,0 +1,24 @@
+// 一般输入框
+.sv-input.el-input {
+  & > .el-input__inner {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 8px;
+  }
+}
+// 搜索输入框
+.sv-input--search.el-input {
+  & > .el-input__inner {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 12px;
+    border-radius: 15px;
+    background: #F5F5F5;
+    border: none;
+  }
+  // 放大镜图标
+  & .el-input__icon.el-icon-search {
+    color: #999999;
+    font-weight: bolder;
+  }
+}

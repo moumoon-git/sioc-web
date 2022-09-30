@@ -1,0 +1,144 @@
+.left {
+  width: 653px;
+  margin-right: 10px;
+  & > main {
+    display: flex;
+    height: calc(100% - 52px);
+    & > div {
+      flex: 1;
+      // 左边分组
+      &:first-child {
+        border-right: 1px solid rgba(255, 255, 255, .15);
+        display: flex;
+        flex-direction: column;
+        // 树形组件
+        & > div:last-child {
+          flex: 1;
+          overflow-y: auto;
+          // 滚动条
+          &::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+            background: transparent;
+          }
+          &::-webkit-scrollbar-thumb {
+            background: #56E9FF;
+            border-radius: 5px;
+          }
+          &::-webkit-scrollbar-corner {
+            background: transparent;
+          }
+          // 大标题
+          & > h2 {
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #56E9FF;
+            padding-left: 17px;
+            position: relative;
+            &::before {
+              content: '';
+              width: 6px;
+              height: 13px;
+              border-radius: 2px;
+              color: inherit;
+              background: currentColor;
+              position: absolute;
+              left: 0;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+          & > .deviceGroup {
+            padding: 10px;
+            background: rgba(43, 47, 56, .74);
+            font-size: 16px;
+            position: relative;
+            cursor: pointer;
+            &::after {
+              content: '';
+              display: block;
+              width: 16px;
+              height: 16px;
+              position: absolute;
+              right: 10px;
+              top: 15px;
+              background: no-repeat center/100% 100% url(../assets/icon-arrow.svg);
+              transition: transform .3s;
+            }
+            &.deviceGroupActive::after {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+      // 右边分组详情
+      &:last-child {
+        display: flex;
+        flex-direction: column;
+        & > div:first-child {
+          flex: 1;
+          overflow-y: auto;
+          // 滚动条
+          &::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+            background: transparent;
+          }
+          &::-webkit-scrollbar-thumb {
+            background: #56E9FF;
+            border-radius: 5px;
+          }
+          &::-webkit-scrollbar-corner {
+            background: transparent;
+          }
+          & > ul > h3 {
+            padding: 5px 15px;
+            font-weight: 500;
+          }
+        }
+        & > div:last-child {
+          padding: 15px;
+          & > button {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+  // 列表项
+  .leftItem {
+    padding: 5px 15px;
+    cursor: pointer;
+    &:hover {
+      padding-left: 13px;
+      border-left: 2px solid #56E9FF;
+      background: linear-gradient(
+        90deg,
+        rgba(0, 193, 222, .7) 0%,
+        rgba(24, 38, 50, 0) 100%
+      );
+      color: #56E9FF;
+      .moreButton {
+        display: inline-block;
+      }
+    }
+    .moreButton {
+      display: none;
+    }
+    // 勾选框
+    .checkbox {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+      vertical-align: middle;
+      margin-right: 5px;
+      background: no-repeat center/100% 100% #FFF url(../assets/icon-unchecked.svg);
+      &.checked {
+        background-image: url(../assets/icon-checked.svg);
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="113px" viewBox="0 0 60 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 3</title>
+    <g id="事件上报" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="事发地点" transform="translate(-355.000000, -429.000000)">
+            <g id="位图" transform="translate(-13.000000, 116.000000)">
+                <g id="编组-3" transform="translate(368.000000, 313.000000)">
+                    <circle id="椭圆形" stroke="#03C160" stroke-width="16" fill="#FFFFFF" cx="30" cy="30" r="22"></circle>
+                    <circle id="椭圆形" stroke="#FFFFFF" stroke-width="7" fill="#1385EE" cx="30" cy="94" r="15.5"></circle>
+                    <rect id="矩形" fill="#03C160" x="26" y="55" width="8" height="42" rx="4"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

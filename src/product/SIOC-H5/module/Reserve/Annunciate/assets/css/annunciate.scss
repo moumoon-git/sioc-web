@@ -1,0 +1,232 @@
+// 响应通告
+.annunciate-container {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .annunciate-container__body {
+    width: 100%;
+    flex: 1;
+    padding: 0.2rem;
+    box-sizing: border-box;
+    background: #f5f7fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+
+    // 通告详情
+    .annunciate-detail-container {
+      width: 100%;
+      padding: 0 0.2rem 0.2rem 0.2rem;
+      box-sizing: border-box;
+      background: #ffffff;
+      margin-bottom: 0.2rem;
+      position: relative;
+
+      // 头部
+      .annunciate-detail-container__header {
+        width: 100%;
+        height: 0.9rem;
+        line-height: 0.92rem;
+        border-bottom: 0.01rem solid #dddddd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+
+        .img-event {
+          width: 0.23rem;
+          height: 0.28rem;
+          margin-right: 0.11rem;
+        }
+      }
+
+      // 身体
+      .annunciate-detail-container__body {
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 0.2rem;
+
+        .annunciate-detail-item {
+          width: 100%;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: flex-start;
+          align-items: baseline;
+
+          .annunciate-detail-item__label {
+            font-size: 0.28rem;
+            font-weight: 400;
+            color: #999999;
+            line-height: 0.6rem;
+            width: 1.54rem;
+          }
+
+          .annunciate-detail-item__value {
+            flex: 1;
+            @extend .annunciate-detail--context;
+          }
+        }
+        .annunciate-detail-input.van-cell {
+          background: #ffffff;
+          padding: 0;
+
+          textarea {
+            font-size: 0.28rem;
+            font-weight: 500;
+            color: #333333;
+          }
+        }
+        .annunciate-detail-textarea.van-cell {
+          background: #f2f2f2;
+          padding: 0.15rem 0.2rem;
+
+          textarea {
+            font-size: 0.28rem;
+          }
+        }
+      }
+
+      .annunciate-detail--context {
+        font-size: 0.28rem;
+        font-weight: 500;
+        color: #333333;
+      }
+
+      // 响应状态
+      .annunciate-detail__annunciate-state {
+        width: 0.8rem;
+        height: 0.8rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+
+        .state-img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .annunciate-button {
+      margin: 0.6rem 0 0.4rem 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      .h5-button {
+        width: 6.4rem;
+        height: 0.88rem;
+      }
+    }
+  }
+
+  // 底部
+  .annunciate-container__footer {
+    width: 100%;
+    height: 1.12rem;
+    line-height: 1.12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0rem -0.01rem 0rem 0rem #EEEEEE;
+
+    .button-style {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__left {
+      width: 2.06rem;
+      height: 1.12rem;
+      text-align: center;
+      position: relative;
+      
+      &__button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+      &__img {
+        width: 0.3rem;
+        height: 0.32rem;
+      }
+      &__text {
+        font-size: 0.2rem;
+        font-weight: 400;
+        color: #666666;
+        line-height: 0.28rem;
+      }
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        top: calc(50% - 0.32rem);
+        width: 0.01rem;
+        height: 0.64rem;
+        background: #DDDDDD;
+      }
+    }
+
+    &__center {
+      width: 2.72rem;
+      height: 1.12rem;
+      line-height: 1.12rem;
+      font-size: 0.36rem;
+      font-weight: 400;
+      color: #0091FF;
+      text-align: center;
+    }
+
+    &__right {
+      flex: 1;
+      height: 1.12rem;
+      line-height: 1.12rem;
+      background: #0091FF;
+      font-size: 0.36rem;
+      font-weight: 400;
+      color: #FFFFFF;
+      text-align: center;
+
+      &:focus-visible {
+        filter: brightness(0.9);
+      }
+    }
+  }
+}
+
+// Toast：重写vant样式
+.van-toast {
+  background: rbga(0, 0, 0, 0.8);
+  width: 3.2rem;
+  padding: 0.34rem 0.2rem;
+
+  .van-toast__icon {
+    font-size: 0.72rem;
+  }
+
+  .van-toast__text {
+    font-size: 0.28rem;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 0.4rem;
+  }
+}
+
+// Loading：重写loading样式
+.van-loading {
+  .van-loading__text {
+    font-size: 0.28rem;
+  }
+}

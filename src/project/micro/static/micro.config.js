@@ -1,0 +1,3 @@
+window.microProps = {
+  module: 'TemplateDemo',
+};

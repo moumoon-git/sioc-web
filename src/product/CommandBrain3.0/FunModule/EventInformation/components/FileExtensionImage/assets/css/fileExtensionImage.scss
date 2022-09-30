@@ -1,0 +1,73 @@
+.icon-common-style {
+  width: 15px;
+  height: 18px;
+  background-size: 100% 100%;
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+
+.icon-excel_colored {
+  @extend .icon-common-style;
+  background-image: url('./assets/images/fileExtensions/colored/excel.png');
+}
+.icon-pdf_colored {
+  @extend .icon-common-style;
+  background-image: url('./assets/images/fileExtensions/colored/pdf.png');
+}
+.icon-word_colored {
+  @extend .icon-common-style;
+  background-image: url('./assets/images/fileExtensions/colored/word.png');
+}
+.icon-ppt_colored {
+  @extend .icon-common-style;
+  background-image: url('./assets/images/fileExtensions/colored/ppt.png');
+}
+.icon-file_colored {
+  @extend .icon-common-style;
+  background-image: url('./assets/images/fileExtensions/colored/file.png');
+}
+.icon-txt_colored {
+  @extend .icon-common-style;
+  background-image: url('./assets/images/fileExtensions/colored/txt.png');
+}
+.icon-zip_colored {
+  @extend .icon-common-style;
+  background-image: url('./assets/images/fileExtensions/colored/zip.png');
+}
+.icon-rar_colored {
+  @extend .icon-common-style;
+  background-image: url('./assets/images/fileExtensions/colored/rar.png');
+}
+
+.icon-excel_gray {
+  @extend .icon-common-style;
+  background-image: url('./assets/images/fileExtensions/gray/excel.png');
+}
+.icon-pdf_gray {
+  @extend .icon-common-style;
+  background-image: url('./assets/images/fileExtensions/gray/pdf.png');
+}
+.icon-word_gray {
+  @extend .icon-common-style;
+  background-image: url('./assets/images/fileExtensions/gray/word.png');
+}
+.icon-ppt_gray {
+  @extend .icon-common-style;
+  background-image: url('./assets/images/fileExtensions/gray/ppt.png');
+}
+.icon-file_gray {
+  @extend .icon-common-style;
+  background-image: url('./assets/images/fileExtensions/gray/file.png');
+}
+.icon-txt_gray {
+  @extend .icon-common-style;
+  background-image: url('./assets/images/fileExtensions/gray/txt.png');
+}
+.icon-zip_gray {
+  @extend .icon-common-style;
+  background-image: url('./assets/images/fileExtensions/gray/zip.png');
+}
+.icon-rar_gray {
+  @extend .icon-common-style;
+  background-image: url('./assets/images/fileExtensions/gray/rar.png');
+}

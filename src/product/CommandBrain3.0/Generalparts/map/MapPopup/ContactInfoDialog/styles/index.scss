@@ -1,0 +1,119 @@
+.contact-info-dialog {
+  width: 353px;
+  position: relative;
+  // 头像
+  &__avatar {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: blue;
+  }
+  & > main {
+    padding: 10px;
+  }
+  // 表单项
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    & > label {
+      width: 70px;
+      text-align: right;
+      flex-shrink: 0;
+    }
+    & > div {
+      flex: 1;
+      font-weight: 500;
+    }
+  }
+  // 底部按钮组
+  & > footer {
+    position: relative;
+    padding: 10px;
+    // 上边框
+    &::before {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      top: -1px;
+      left: 0;
+      background: linear-gradient(to right, rgba(86, 233, 255, .2) 1%, rgba(86, 233, 255, .6), rgba(86, 233, 255, .2) 99%);
+    }
+    // 按钮组
+    & > div {
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+      & > button {
+        background: none;
+        border: none;
+        outline: none;
+        color: #FFFFFF;
+        cursor: pointer;
+        position: relative;
+        text-align: left;
+        width: 76px;
+        padding: 0 0 0 20px;
+        &:hover {
+          opacity: .7;
+        }
+        // 间隔竖线
+        &:not(:last-child) {
+          margin-right: 9px;
+          &::after {
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 16px;
+            background: rgba(255, 255, 255, 0.15);
+            position: absolute;
+            right: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+        // 图标
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0px;
+          top: 50%;
+          transform: translateY(-50%);
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: no-repeat center/100% 100% transparent;
+        }
+        $icon-list: voice-call video-call live-stream route-location dispatch-task dynamic-follow topo-graph;
+        @each $icon in $icon-list {
+          &.contact-info-dialog__button__#{$icon} {
+            &::before {
+              background-image: url(../assets/#{$icon}.svg);
+            }
+          }
+          &.contact-info-dialog__button__#{$icon}--active {
+            color: #56E9FF;
+            &::before {
+              background-image: url(../assets/#{$icon}-active.svg);
+            }
+          }
+          &.contact-info-dialog__button__#{$icon}--disabled {
+            color: #A6ADB4;
+            cursor: not-allowed;
+            &:hover {
+              opacity: unset;
+            }
+            &::before {
+              background-image: url(../assets/#{$icon}-disabled.svg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

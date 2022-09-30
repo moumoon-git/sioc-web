@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="115px" viewBox="0 0 61 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>路径备份 2</title>
+    <defs>
+        <radialGradient cx="100%" cy="7.44818253%" fx="100%" fy="7.44818253%" r="185.103635%" gradientTransform="translate(1.000000,0.074482),scale(1.000000,0.500000),rotate(90.000000),translate(-1.000000,-0.074482)" id="radialGradient-1">
+            <stop stop-color="#56E9FF" offset="0%"></stop>
+            <stop stop-color="#0E8FFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <path d="M107.64,0 C78.015446,0 54,24.015446 54,53.64 C54,83.264554 78.015446,107.28 107.64,107.28" id="path-2"></path>
+        <filter x="-10.3%" y="-5.1%" width="120.5%" height="110.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="2" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.170063406 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="事件信息、组织动态、辅助工具" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="动效切图" transform="translate(-575.000000, -36.000000)">
+            <g id="预案响应" transform="translate(404.000000, 40.000000)">
+                <g id="Group-12-Copy" transform="translate(120.400000, 0.000000)">
+                    <g id="路径备份-2" transform="translate(80.820000, 53.640000) scale(-1, -1) translate(-80.820000, -53.640000) ">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                        <use stroke="url(#radialGradient-1)" stroke-width="1" xlink:href="#path-2"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

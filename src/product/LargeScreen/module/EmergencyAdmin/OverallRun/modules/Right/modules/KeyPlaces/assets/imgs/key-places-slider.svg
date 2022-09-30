@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="108px" height="66px" viewBox="0 0 108 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <linearGradient x1="23.8608666%" y1="0%" x2="38.9653179%" y2="108.83751%" id="linearGradient-1">
+            <stop stop-color="#00F1F3" offset="0%"></stop>
+            <stop stop-color="#2677FC" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="31.1456766%" y1="0%" x2="42.0406135%" y2="108.83751%" id="linearGradient-2">
+            <stop stop-color="#00F1F3" offset="0%"></stop>
+            <stop stop-color="#2677FC" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="35.5556621%" y1="0%" x2="43.9022969%" y2="108.83751%" id="linearGradient-3">
+            <stop stop-color="#00F1F3" offset="0%"></stop>
+            <stop stop-color="#2677FC" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.2">
+        <g id="Group">
+            <path d="M26.578125,2.77932932e-11 L60.75,31.5 L26.578125,63 L1.03028697e-13,63 L1.03028697e-13,-3.90798505e-14 L1.285,-3.90798505e-14 L1.28571429,61.875 L35.0357143,30.375 L2.49,-3.90798505e-14 L26.578125,2.77932932e-11 Z" id="形状结合" fill="url(#linearGradient-1)"></path>
+            <path d="M56.1863741,1.85987539e-11 L91.6238741,32.625 L56.1863741,65.25 L39.9893741,65.25 L74.7488741,33.75 L38.7488741,1.125 L38.7483741,65.25 L38.1863741,65.25 L38.1863741,0 L56.1863741,1.85987539e-11 Z" id="形状结合复制-2" fill="url(#linearGradient-2)"></path>
+            <path d="M68.7701192,3.103 L68.6761192,3.02586207 C69.2464202,3.53716642 70.3714202,3.87337332 72.0511192,4.03448276 L72.0498545,4.489 L76.3266839,4.02762067 L107.389355,32.625 L79.0513365,58.713969 L72.8151192,58.526 L101.764355,32.625 L68.7701192,3.103 Z M67.5511192,-7.10542736e-14 C67.7226158,1.43719756 68.0719909,2.42144326 68.5992447,2.9527371 L65.3021192,-7.10542736e-14 L67.5511192,-7.10542736e-14 Z" id="形状结合复制-2" fill="url(#linearGradient-3)"></path>
+        </g>
+    </g>
+</svg>

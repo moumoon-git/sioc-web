@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="70px" viewBox="0 0 42 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>底复制 7</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="48.1426451%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#00F1F3" offset="0%"></stop>
+            <stop stop-color="#0076CC" offset="100%"></stop>
+        </linearGradient>
+        <path d="M37,36 L42,42 L42,66 C42,68.209139 40.209139,70 38,70 L38,70 L4,70 C1.790861,70 -2.705415e-16,68.209139 0,66 L0,66 L0,42 L4,36 L37,36 Z M38,0 C40.209139,-4.05812251e-16 42,1.790861 42,4 L42,28 L37,34 L4,34 L0,28 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 L38,0 Z" id="path-2"></path>
+        <linearGradient x1="63.3008678%" y1="-3.05435389%" x2="38.0270432%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#0078CD" offset="0%"></stop>
+            <stop stop-color="#0145A2" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应急管理" transform="translate(-232.000000, -160.000000)">
+            <g id="风险隐患分析" transform="translate(35.000000, 38.000000)">
+                <g id="风险总数" transform="translate(1.000000, 108.000000)">
+                    <g id="底" transform="translate(196.000000, 14.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="形状结合" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                        <path d="M42,0 L42,66 C42,68.209139 40.209139,70 38,70 L7.06476152,70 C4.85562252,70 3.06476152,68.209139 3.06476152,66 C3.06476152,65.2750242 3.26179285,64.5636786 3.63478981,63.942017 L42,0 L42,0 Z" id="矩形" fill="url(#linearGradient-4)" opacity="0.6" mask="url(#mask-3)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

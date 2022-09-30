@@ -1,0 +1,48 @@
+// 颜色：
+$warning_color: #F2B626; // 警告颜色
+$error_color: #F66E6E; // 危险颜色
+$save_color: #0BD295; // 安全颜色
+$primary_color: #0091FF; // 常规颜色
+
+// 字体大小：
+$font_size_1: 0.28rem;; // 字体大小
+$font_size_2: 0.24rem; // 字体大小
+$font_size_3: 0.2rem; // 字体大小
+
+
+// 颜色
+$color_1: #DDDDDD;
+$color_2: #999999;
+$color_3: #333333;
+$color_4: #666666;
+$color_5: #0091FF;
+$color_6: #E6EFFF;
+$color_7: #FF7A45;
+$color_8: #FFBB96;
+$color_9: #685FCF;
+$color_10: #E9EDFF;
+$color_11: #16C88B;
+$color_12: #999999;
+
+// flex布局兼容浏览器写法：
+.flex_style {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+// flex 行反向排列
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+// 旋转180度
+.rotate_180{
+  transform:rotate(180deg);
+  -ms-transform:rotate(180deg); 	/* IE 9 */
+  -moz-transform:rotate(180deg); 	/* Firefox */
+  -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+  -o-transform:rotate(180deg); 	/* Opera */
+}

@@ -1,0 +1,101 @@
+@mixin alltitle {
+  position: absolute;
+  left: 0px;
+  top: 19px;
+  font-size: 20px;
+  color: #333333;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.list {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  .search {
+    display: flex;
+    align-items: center;
+    padding-left: 0.2rem;
+    height: 1.1rem;
+    box-sizing: border-box;
+  }
+  .loading {
+    text-align: center;
+    margin-top: 50%;
+  }
+  .scroll {
+    height: 87vh;
+    overflow: auto;
+    .frame {
+      width: 88%;
+      height: 126px;
+      position: relative;
+      margin: 0px 26px;
+      border-bottom: 1px solid rgb(216, 216, 216);
+      p {
+        margin: 0px;
+      }
+      .announceTitle {
+        width: 214px;
+        @include alltitle;
+      }
+      .announceTitleWithNoCover {
+        @include alltitle;
+      }
+      .announceName {
+        color: #999999;
+        width: 95px;
+        position: absolute;
+        left: 0px;
+        bottom: 19px;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+      .line {
+        width: 2px;
+        height: 14px;
+        background: #DDDDDD;
+        position: absolute;
+        left: 87px;
+        bottom: 22px;
+      }
+      .announceTime {
+        color: #999999;
+        position: absolute;
+        left: 93px;
+        bottom: 18px;
+      }
+      .grayBack {
+        background: #EEEEEE;
+        display: flex;
+        width: 117px;
+        height: 83px;
+        border-radius: 6px;
+        position: absolute;
+        right: 0px;
+        top: 23px;
+        img {
+          width: 50%;
+          height: 50%;
+          margin: 17% auto;
+        }
+      }
+      .cover {
+        width: 117px;
+        height: 83px;
+        border-radius: 6px;
+        position: absolute;
+        right: 0px;
+        top: 23px;
+      }
+    }
+  }
+}

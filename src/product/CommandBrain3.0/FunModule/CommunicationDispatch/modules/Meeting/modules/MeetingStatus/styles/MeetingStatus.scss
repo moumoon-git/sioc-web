@@ -1,0 +1,112 @@
+.container {
+  border: 1px solid rgba(0, 193, 222, .29);
+  background: rgba(0, 0, 0, .29);
+  color: #FFF;
+  padding: 10px 15px;
+  position:relative;
+  // 第一行标题
+  & > h3:first-child {
+    line-height: 28px;
+    & > span:first-child:not(.title) {
+      margin-right: 10px;
+      padding: 3px 13px;
+      border: 1px solid currentColor;
+      border-radius: 3px;
+      color: #0091FF;
+      background: repeating-linear-gradient(
+        -45deg,
+        change-color(#0091FF, $alpha: .15),
+        change-color(#0091FF, $alpha: .15) 1px,
+        transparent,
+        transparent 6px
+      )
+      change-color(#0091FF, $alpha: .1);
+      &.meetingEnded {
+        color: #A6ADB4;
+        background: repeating-linear-gradient(
+          -45deg,
+          change-color(#A6ADB4, $alpha: .15),
+          change-color(#A6ADB4, $alpha: .15) 1px,
+          transparent,
+          transparent 6px
+        )
+        change-color(#A6ADB4, $alpha: .1);
+      }
+    }
+    // 标题
+    & > .title {
+      font-size: 16px;
+      font-weight: 500;
+      color: #56E9FF;
+    }
+    // 编辑按钮
+    & > button:last-child {
+      width: 16px;
+      height: 16px;
+      border: none;
+      outline: none;
+      background: #FFF;
+      mask: no-repeat center/100% 100% url(../assets/icon-edit.svg);
+      cursor: pointer;
+      transition: background .3s;
+      vertical-align: -2px;
+      margin-left: 10px;
+      &:hover {
+        background: #56E9FF;
+      }
+      &:active {
+        vertical-align: -3px;
+      }
+    }
+  }
+  // 第二行开始时间
+  & > p:nth-child(2) {
+    margin-top: 10px;
+    & > span:not(:last-child) {
+      margin-right: 30px;
+      position: relative;
+      &::after {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 22px;
+        position: absolute;
+        right: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: linear-gradient(transparent, #FFF, transparent);
+      }
+    }
+  }
+  // 邀请入会按钮
+  & > button:last-child {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    outline: none;
+    height: 32px;
+    line-height: 32px;
+    color: #FFF;
+    background: #00C1DE;
+    transition: filter .3s;
+    cursor: pointer;
+    padding: 0 10px;
+    &:hover {
+      filter: brightness(110%);
+    }
+    &:active {
+      filter: brightness(90%);
+    }
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      background: no-repeat center/100% 100% url(../assets/icon-participant.svg);
+      vertical-align: -2px;
+      margin-right: 5px;
+    }
+  }
+}

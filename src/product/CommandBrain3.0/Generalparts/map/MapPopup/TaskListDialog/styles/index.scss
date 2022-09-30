@@ -1,0 +1,223 @@
+// 弹窗标题栏
+.task-list-dialog__title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  & > div {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  // 图钉按钮
+  & > button {
+    flex-shrink: 0;
+    border: none;
+    outline: none;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    background: no-repeat center/100% 100% url(../assets/pin.svg);
+    &:hover {
+      opacity: .7;
+    }
+  }
+  &__pin {
+    background-image: url(../assets/pin-on.svg) !important;
+  }
+}
+// 弹窗内容
+.task-list-dialog {
+  width: 353px;
+  // 头部
+  & > header {
+    height: 38px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    // 剩余时间
+    & > span:first-child {
+      color: #56E9FF;
+      font-size: 16px;
+      font-weight: 500;
+      padding-left: 12px;
+      position: relative;
+      flex: 1;
+      // 左边色块
+      &::before {
+        color: inherit;
+        content: '';
+        display: block;
+        width: 6px;
+        height: 13px;
+        border-radius: 2px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: currentColor;
+      }
+    }
+  }
+  // 表单内容
+  & > main {
+    padding: 0 10px 10px 10px;
+    // 表单项
+    .task-list-dialog__item {
+      display: flex;
+      align-items: flex-start;
+      & > label {
+        display: block;
+        width: 70px;
+        text-align: left;
+        flex-shrink: 0;
+      }
+      & > div {
+        font-weight: 500;
+        flex: 1;
+      }
+    }
+    // 图片
+    .task-list-dialog__imgs {
+      margin-right: -10px;
+      // margin-bottom: -10px;
+      & > img {
+        margin-right: 9px;
+        margin-bottom: 10px;
+        width: 74px;
+        height: 74px;
+        border: 1px solid #00C1DE;
+      }
+      & > a {
+        margin-right: 9px;
+        margin-bottom: 10px;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #FFF;
+        text-decoration: none;
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          background: no-repeat center/100% 100% url(../assets/file.svg);
+          margin-right: 5px;
+          vertical-align: -2px;
+        }
+      }
+    }
+    // 标签
+    .task-list-dialog__labels {
+      margin: 10px 0 -5px -5px;
+      & > div {
+        display: inline-block;
+        vertical-align: middle;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 16px;
+        margin: 0 0 5px 5px;
+        font-size: 12px;
+        background: rgba(166, 173, 180, .25);
+        border-radius: 16px;
+        box-shadow: 0px 0px 3px 0px rgba(86, 233, 255, .25) inset;
+        position: relative;
+        max-width: 100px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        &:nth-child(4n) {
+          color: #56E9FF;
+        }
+        &:nth-child(4n + 1) {
+          color: #F2B626;
+        }
+        &:nth-child(4n + 2) {
+          color: #F66E6E;
+        }
+        &:nth-child(4n + 3) {
+          color: #0091FF;
+        }
+      }
+    }
+  }
+  // 底部按钮组
+  & > footer {
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    // 按钮
+    & > button {
+      color: #00C1DE;
+      border: 1px solid currentColor;
+      padding: 0 10px;
+      line-height: 30px;
+      vertical-align: middle;
+      background: transparent;
+      outline: none;
+      cursor: pointer;
+      &:hover {
+        opacity: .7;
+      }
+    }
+    // 上边框
+    &::before {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      top: -1px;
+      left: 0;
+      background: linear-gradient(to right, rgba(86, 233, 255, .2) 1%, rgba(86, 233, 255, .6), rgba(86, 233, 255, .2) 99%);
+    }
+  }
+}
+// 任务状态标识
+.task-list-dialog__status {
+  $status-blue: #0091FF;
+  $status-green: #0BD295;
+  $status-grey: #A6ADB4;
+  padding: 3px 13px;
+  flex-shrink: 0;
+  margin-right: 10px;
+  color: $status-blue;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  background: repeating-linear-gradient(
+    -45deg,
+    change-color($status-blue, $alpha: .15),
+    change-color($status-blue, $alpha: .15) 1px,
+    transparent,
+    transparent 6px
+  )
+  change-color($status-blue, $alpha: .1);
+  &--complete {
+    color: $status-green;
+    background: repeating-linear-gradient(
+      -45deg,
+      change-color($status-green, $alpha: .15),
+      change-color($status-green, $alpha: .15) 1px,
+      transparent,
+      transparent 6px
+    )
+    change-color($status-green, $alpha: .1);
+  }
+  &--cancel {
+    color: $status-grey;
+    background: repeating-linear-gradient(
+      -45deg,
+      change-color($status-grey, $alpha: .15),
+      change-color($status-grey, $alpha: .15) 1px,
+      transparent,
+      transparent 6px
+    )
+    change-color($status-grey, $alpha: .1);
+  }
+}

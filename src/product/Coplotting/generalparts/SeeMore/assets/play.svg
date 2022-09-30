@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>窗体</title>
+    <defs>
+        <path d="M22,44 C9.8497355,44 0,34.1502645 0,22 C0,9.8497355 9.8497355,0 22,0 C34.1502645,0 44,9.8497355 44,22 C44,34.1502645 34.1502645,44 22,44 Z M30.9162734,21.0885898 C29.8886328,20.46 17.8325898,13.1057266 17.2291797,12.7285898 C16.9125762,12.5319217 16.5125114,12.5290772 16.1931433,12.7212234 C15.8737753,12.9133697 15.6888766,13.2681547 15.7143164,13.64 L15.7143164,30.3914102 C15.6877032,30.7567023 15.8668941,31.1063755 16.178958,31.2981117 C16.4910219,31.4898478 16.8839308,31.4916803 17.1977695,31.3028633 C18.0746328,30.7685898 30.1777695,23.3828633 30.9163164,22.9114102 C31.229018,22.713894 31.4186294,22.369858 31.4186294,22 C31.4186294,21.630142 31.229018,21.286106 30.9163164,21.0885898 L30.9162734,21.0885898 Z" id="path-1"></path>
+        <filter x="-33.0%" y="-21.6%" width="165.9%" height="165.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.328452797 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="PC端" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="点标绘-视频暂停静音" transform="translate(-742.000000, -355.000000)" fill-rule="nonzero">
+            <g id="win-copy-2" transform="translate(266.000000, 85.000000)">
+                <g id="形状备份-3" transform="translate(476.000000, 270.000000)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

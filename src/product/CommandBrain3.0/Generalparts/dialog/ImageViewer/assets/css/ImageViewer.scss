@@ -1,0 +1,199 @@
+.imageViewer {
+  width: 660px;
+  height: 486px;
+  background: rgba(5, 5, 5, 0.9);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(166, 173, 180, 0.3);
+  user-select: none;
+  color: #fff;
+  position: fixed;
+  left: calc(50vw - 330px);
+  top: calc(50vh - 243px);
+  z-index: 20001;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.imageViewerMini {
+  width: 360px;
+  height: 311px;
+  background: rgba(0, 36, 60, 0.82);
+  border: 1px solid #014b71;
+  user-select: none;
+  color: #fff;
+  position: fixed;
+  left: calc(50vw - 180px);
+  top: calc(50vh - 155px);
+  z-index: 20001;
+  box-sizing: border-box;
+}
+
+.imageViewerHeader {
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imageViewerHeaderMini {
+  width: 358px;
+  height: 42px;
+  line-height: 42px;
+  background: linear-gradient(90deg, #32b0ff 0%, rgba(24, 38, 50, 0) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 11px 0 10px;
+  box-sizing: border-box;
+}
+
+.imageViewerHeaderLeft {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.imageViewerHeaderLeftMini {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.imageViewerHeaderRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hideButton {
+  width: 23px;
+  height: 23px;
+  margin-left: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.hide {
+  width: 23px;
+  height: 2px;
+  background: #838282;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.hideButton:hover .hide {
+  width: 23px;
+  height: 2px;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.close {
+  background: no-repeat center/100% url('../svg/close.svg');
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+.close:hover {
+  background: no-repeat center/100% url('../svg/closeHover.svg');
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+}
+.closeMini {
+  background: no-repeat center/100% url('../svg/closeMini.svg');
+  width: 9px;
+  height: 9px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+
+.imageViewerFooter {
+  width: 100%;
+  height: 78px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageViewerMain {
+  width: 100%;
+  height: 380px;
+  box-sizing: border-box;
+}
+
+.imageViewerMainMin {
+  width: 100%;
+  height: 211px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.fix {
+  background: no-repeat center/100% url('../svg/fix.svg');
+  width: 17px;
+  height: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+
+.fix:hover {
+  background: no-repeat center/100% url('../svg/fixHover.svg');
+  width: 17px;
+  height: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+
+.fixActive {
+  background: no-repeat center/100% url('../svg/fixActive.svg');
+  width: 17px;
+  height: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+
+.fixMini {
+  background: no-repeat center/100% url('../svg/fix.svg');
+  width: 13px;
+  height: 12px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+.fixMini:hover {
+  background: no-repeat center/100% url('../svg/fixHover.svg');
+  width: 13px;
+  height: 12px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+  margin-left: 12px;
+}

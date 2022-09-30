@@ -1,0 +1,152 @@
+// 图标
+.maskIcon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  color: inherit;
+  background: currentColor;
+  transition: background .1s;
+  cursor: pointer;
+}
+.iconVisible {
+  mask: no-repeat center/100% 100% url(../../assets/imgs/icon-visible.svg);
+}
+.iconHide {
+  mask: no-repeat center/100% 100% url(../../assets/imgs/icon-hide.svg);
+}
+.listIcon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 6px;
+  vertical-align: -6px;
+  background: no-repeat center/100% 100% transparent;
+}
+
+@mixin line {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 14px;
+  right: 0;
+  color: inherit;
+  background: currentColor;
+  opacity: .15;
+}
+
+// 布局
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+
+  // 顶部栏
+  .header {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 0;
+
+    & > * {
+      font-size: 16px;
+    }
+
+    & > :first-child {
+      margin-right: auto;
+    }
+
+    .hideAll {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      margin-right: 30px;
+      position: relative;
+      &:hover { color: #56E9FF; }
+      &::after {
+        @include line;
+        right: -15px;
+        color: #FFF;
+      }
+      & > i:last-child { margin-left: 6px; }
+    }
+
+    .expandAll {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      &:hover { color: #56E9FF; }
+      &::after {
+        content: '';
+        width: 14px;
+        height: 8px;
+        margin-left: 6px;
+        color: inherit;
+        background: currentColor;
+        transition: transform .3s;
+        mask: no-repeat center/100% 100% url(../../assets/imgs/icon-arrow.svg);
+      }
+      &.up::after {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+  
+  // 数据列表
+  .main {
+    flex: 1;
+    height: 100%;
+    overflow-y: auto;
+    // 滚动条
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #56E9FF;
+      border-radius: 5px;
+    }
+    &::-webkit-scrollbar-corner {
+      background: transparent;
+    }
+  }
+}
+
+// 展开组件标题
+.title {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  color: inherit;
+  position: relative;
+
+  .titleIcon {
+    @extend .maskIcon;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  &::after {
+    @include line;
+  }
+}
+
+.iconList {
+  display: grid;
+  padding: 10px 0;
+  grid-template-columns: 1fr 1fr;
+  & > li {
+    height: 36px;
+    line-height: 36px;
+    padding: 0 20px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    &.itemInactive {
+      color: #A6ADB4;
+    }
+    &:hover > span { color: #56E9FF !important; }
+  }
+}
